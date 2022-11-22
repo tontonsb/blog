@@ -1,0 +1,42 @@
+html {
+	line-height: 1.4;
+
+	overflow-y: scroll;
+}
+
+body {
+	min-height: 100vh;
+	max-width: 70rem;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-columns:
+		[viewport-start]
+			minmax(var(--space-base), 1fr)
+			[container-start]
+				minmax(0, 50rem)
+			[container-end]
+			minmax(var(--space-base), 1fr)
+		[viewport-end];
+
+	grid-template-rows:
+		[header] auto
+		[main] 1fr
+		[footer] auto;
+}
+
+.app > * {
+	grid-column: container;
+}
+
+header {
+	grid-row: header;
+}
+
+main {
+	grid-row: main;
+}
+
+footer {
+	grid-row: footer;
+}

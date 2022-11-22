@@ -1,20 +1,15 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+	<div class="brand">
+		<a href="/">
+			Džuris
 		</a>
 	</div>
 
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
@@ -26,70 +21,53 @@
 				<a href="/about">About</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
-
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
-		</a>
-	</div>
 </header>
 
 <style>
 	header {
+		grid-column: viewport;
+		margin-top: var(--space-sm);
+		height: var(--space-xl);
+
 		display: flex;
 		justify-content: space-between;
+
+		font-size: var(--font-lg);
+		line-height: 1.1;
+
+		font-family: var(--font-alt);
+		font-weight: var(--font-light);
+		color: var(--color-dim);
+
+		box-shadow: 0 0.2rem 0.6rem -0.4rem var(--color-light);
 	}
 
-	.corner {
-		width: 3em;
-		height: 3em;
-	}
-
-	.corner a {
+	.brand {
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
+		gap: 1rem;
+
+		color: var(--color-accent);
+		font-weight: var(--font-strong);
+		text-transform: uppercase;
 	}
 
-	.corner img {
-		width: 2em;
-		height: 2em;
+	.brand img {
+		width: 1.5em;
+		height: 1.5em;
 		object-fit: contain;
 	}
 
 	nav {
 		display: flex;
-		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
+		align-items: center;
 	}
 
 	ul {
 		position: relative;
-		padding: 0;
-		margin: 0;
-		height: 3em;
+		height: 100%;
 		display: flex;
-		justify-content: center;
-		align-items: center;
 		list-style: none;
-		background: var(--background);
-		background-size: contain;
 	}
 
 	li {
@@ -97,8 +75,18 @@
 		height: 100%;
 	}
 
-	li[aria-current='page']::before {
-		--size: 6px;
+	a {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		padding: 0 0.5rem;
+		letter-spacing: 0.07em;
+		text-decoration: none;
+		transition: color 0.2s linear;
+	}
+
+	li::before {
+		--size: 9px;
 		content: '';
 		width: 0;
 		height: 0;
@@ -106,24 +94,15 @@
 		top: 0;
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
+		transition: border-color 0.2s linear;
+		border-top: var(--size) solid transparent;
 	}
 
-	nav a {
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 0.5rem;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
-		transition: color 0.2s linear;
+	li[aria-current='page']::before {
+		border-top: var(--size) solid var(--color-accent);
 	}
 
-	a:hover {
-		color: var(--color-theme-1);
+	li:not([aria-current='page']):is(:hover, :focus-within)::before {
+		border-top: var(--size) solid var(--color-light);
 	}
 </style>
