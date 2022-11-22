@@ -1,5 +1,8 @@
 <script>
-	import { page } from '$app/stores';
+	import { page } from '$app/stores'
+	import Hamburger from './Hamburger.svelte'
+
+	let open = false
 </script>
 
 <header>
@@ -9,19 +12,21 @@
 		</a>
 	</div>
 
-	<nav>
+	<nav class:open>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<a href="/" on:click={() => open = false}>Home</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined}>
-				<a href="/blog">Blog</a>
+				<a href="/blog" on:click={() => open = false}>Blog</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+				<a href="/about" on:click={() => open = false}>About</a>
 			</li>
 		</ul>
 	</nav>
+
+	<Hamburger bind:open />
 </header>
 
 <style>
@@ -35,11 +40,10 @@
 
 		font-size: var(--font-lg);
 		line-height: 1.1;
-
 		font-family: var(--font-alt);
 		font-weight: var(--font-light);
-		color: var(--color-dim);
 
+		color: var(--color-dim);
 		box-shadow: 0 0.2rem 0.6rem -0.4rem var(--color-light);
 	}
 
@@ -52,21 +56,48 @@
 		text-transform: uppercase;
 	}
 
-	.brand img {
-		width: 1.5em;
-		height: 1.5em;
-		object-fit: contain;
-	}
-
 	nav {
 		display: flex;
 		align-items: center;
 	}
 
+	@media (max-width: 35rem) {
+		nav {
+			position: absolute;
+			top: calc(var(--space-sm) + var(--space-xl));
+			width: 100%;
+
+			flex-direction: column;
+			max-height: 0;
+			overflow: hidden;
+
+			background: white;
+			box-shadow: 0 0.2rem 0.6rem -0.4rem var(--color-light);
+			transition: max-height .1s cubic-bezier(.77, 0, .175, 1);
+		}
+
+		nav.open {
+			max-height: 200px;
+			transition: max-height .25s cubic-bezier(.77, 0, .175, 1);
+		}
+
+		nav ul {
+			flex-direction: column;
+			align-items: center;
+			gap: var(--space-sm);
+		}
+
+		nav ul li {
+			padding: var(--space-base);
+		}
+	}
+
 	ul {
 		position: relative;
 		height: 100%;
+
 		display: flex;
+
 		list-style: none;
 	}
 
@@ -76,23 +107,29 @@
 	}
 
 	a {
-		display: flex;
 		height: 100%;
-		align-items: center;
+
 		padding: 0 0.5rem;
+		display: flex;
+		align-items: center;
+
 		letter-spacing: 0.07em;
+
 		text-decoration: none;
 		transition: color 0.2s linear;
 	}
 
 	li::before {
 		--size: 9px;
-		content: '';
-		width: 0;
-		height: 0;
+
 		position: absolute;
 		top: 0;
 		left: calc(50% - var(--size));
+		width: 0;
+		height: 0;
+
+		content: '';
+
 		border: var(--size) solid transparent;
 		transition: border-color 0.2s linear;
 		border-top: var(--size) solid transparent;

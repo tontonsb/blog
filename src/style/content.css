@@ -49,14 +49,14 @@ h1 + p {
 	padding-right: var(--space-lg);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 35rem) {
 	h1 + p {
 		padding-left: var(--space-xl);
 		padding-right: var(--space-xl);
 	}
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50rem) {
 	h1 + p {
 		padding-left: var(--space-2xl);
 		padding-right: var(--space-2xl);

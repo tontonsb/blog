@@ -24,18 +24,17 @@
 	footer {
 		grid-column: viewport;
 		margin-top: var(--space-base);
-		padding: var(--space-sm) var(--space-base);
 
+		padding: var(--space-sm) var(--space-base);
 		display: flex;
 		justify-content: space-between;
 
 		font-size: var(--font-base);
-
-		border-top: 1px solid var(--color-accent);
-
 		font-family: var(--font-alt);
 		font-weight: var(--font-light);
+
 		color: var(--color-dim);
+		border-top: 1px solid var(--color-accent);
 	}
 
 	div {
@@ -43,9 +42,17 @@
 		gap: 1rem;
 	}
 
+	@media (max-width: 30rem) {
+		div {
+			flex-direction: column;
+		}
+	}
+
 	a {
 		display: flex;
+		gap: var(--space-sm);
 		align-items: center;
+
 		color: var(--color-dim);
 	}
 

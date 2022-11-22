@@ -35,3 +35,9 @@
 
 	--letter-spacing: .075em;
 }
+
+@media (max-width: 25rem) {
+	:root {
+		--font-xl: 2rem;
+	}
+}
