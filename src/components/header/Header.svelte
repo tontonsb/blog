@@ -8,7 +8,7 @@
 <header>
 	<div class="brand">
 		<a href="/">
-			Džuris
+			∂²𝑧
 		</a>
 	</div>
 
