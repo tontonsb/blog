@@ -19,6 +19,7 @@
 		"@types/cookie": "^0.5.1",
 		"eslint": "^8.16.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"mdsvex": "^0.10.6",
 		"sass": "^1.56.1",
 		"svelte": "^3.46.0",
 		"svelte-check": "^2.7.1",
