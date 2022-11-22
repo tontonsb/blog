@@ -15,13 +15,13 @@
 	<nav class:open>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/" on:click={() => open = false}>Home</a>
+				<a href="/" on:click={() => open = false}>Sākums</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined}>
-				<a href="/blog" on:click={() => open = false}>Blog</a>
+				<a href="/blog" on:click={() => open = false}>Raksti</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about" on:click={() => open = false}>About</a>
+				<a href="/about" on:click={() => open = false}>Par</a>
 			</li>
 		</ul>
 	</nav>

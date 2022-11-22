@@ -1,18 +1,12 @@
-<script>
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-</script>
-
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Džuris raksta</title>
+	<meta name="description" content="Raksti. Iespējams, ka raksti." />
 </svelte:head>
 
 <h1>
-	Pārdomas
+	Džuris raksta
 </h1>
 
-<p>Kā tu te iekļuvi?</p>
+<p>Šeit teorētiski varētu būt blogs. Pagaidām izveidots viena raksta
+publicēšanai. Enjoy!</p>
 
-<style>
-</style>

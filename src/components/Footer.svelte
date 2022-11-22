@@ -16,7 +16,7 @@
 	</div>
 
 	<a href="https://github.com/tontonsb/blog" target="_blank" rel="noreferrer">
-		page source
+		source
 	</a>
 </footer>
 

@@ -1,26 +1,26 @@
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
+	<title>Par mani</title>
+	<meta name="description" content="Par autoru" />
 </svelte:head>
 
 <div class="text-column">
-	<h1>About this app</h1>
+	<h1>Par mani</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
-
-	<pre>npm create svelte@latest</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
+		Sveiks! Esmu Juris, vismaz tādu vārdu man laikam piešķīra vecāki. Pats
+		pēdējos gados lietoju vārdu Džuris, internetos arī tontonsb un Chazz.
+		Droši drīksti arī izvēlēties jebkādu citu vārdu ar kādu mani apzīmēt,
+		vienīgi patīkamāk jūtos, ja mani uzrunā vienskaitlī.
 	</p>
 
 	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
+		Šobrīd esmu datoriķis. Projektēju un realizēju informācijas sistēmas un
+		citus tamlīdzīgus štruntiņus. Izglītību esmu ieguvis gan fizikā, gan
+		datorikā.
+	</p>
+
+	<p>
+		Ja vēlies sazināties par jebkādu jautājumu, droši atraksti pastu uz
+		<a href="mailto:juris@glaive.pro">juris@glaive.pro</a>.
 	</p>
 </div>
