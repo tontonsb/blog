@@ -11,7 +11,7 @@
 	</svg>
 </button>
 
-<style>
+<style lang="scss">
 	button {
 		display: none;
 		margin-right: var(--space-sm);
@@ -20,10 +20,8 @@
 		background: transparent;
 		color: var(--color-dim);
 		cursor: pointer;
-	}
 
-	@media (max-width: 35rem) {
-		button {
+		@media (max-width: 35rem) {
 			display: unset;
 		}
 	}
@@ -31,27 +29,29 @@
 	svg {
 		min-height: 24px;
 		transition: transform 0.3s ease-in-out;
+
+		line {
+			stroke: currentColor;
+			stroke-width: 3;
+			transition: transform 0.3s ease-in-out
+		}
 	}
 
-	svg line {
-		stroke: currentColor;
-		stroke-width: 3;
-		transition: transform 0.3s ease-in-out
-	}
+	.open {
+		svg {
+			transform: scale(0.7)
+		}
 
-	.open svg {
-		transform: scale(0.7)
-	}
+		#top {
+			transform: translate(6px, 0px) rotate(45deg)
+		}
 
-	.open #top {
-		transform: translate(6px, 0px) rotate(45deg)
-	}
+		#middle {
+			opacity: 0;
+		}
 
-	.open #middle {
-		opacity: 0;
-	}
-
-	.open #bottom {
-		transform: translate(-12px, 9px) rotate(-45deg)
+		#bottom {
+			transform: translate(-12px, 9px) rotate(-45deg)
+		}
 	}
 </style>

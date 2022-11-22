@@ -29,7 +29,7 @@
 	<Hamburger bind:open />
 </header>
 
-<style>
+<style lang="scss">
 	header {
 		grid-column: viewport;
 		margin-top: var(--space-sm);
@@ -74,20 +74,20 @@
 			background: white;
 			box-shadow: 0 0.2rem 0.6rem -0.4rem var(--color-light);
 			transition: max-height .1s cubic-bezier(.77, 0, .175, 1);
+
+			&.open {
+				max-height: 200px;
+				transition: max-height .25s cubic-bezier(.77, 0, .175, 1);
+			}
 		}
 
-		nav.open {
-			max-height: 200px;
-			transition: max-height .25s cubic-bezier(.77, 0, .175, 1);
-		}
-
-		nav ul {
+		ul {
 			flex-direction: column;
 			align-items: center;
 			gap: var(--space-sm);
 		}
 
-		nav ul li {
+		li {
 			padding: var(--space-base);
 		}
 	}

@@ -20,7 +20,7 @@
 	</a>
 </footer>
 
-<style>
+<style lang="scss">
 	footer {
 		grid-column: viewport;
 		margin-top: var(--space-base);
@@ -40,10 +40,8 @@
 	div {
 		display: flex;
 		gap: 1rem;
-	}
 
-	@media (max-width: 30rem) {
-		div {
+		@media (max-width: 30rem) {
 			flex-direction: column;
 		}
 	}
@@ -54,13 +52,13 @@
 		align-items: center;
 
 		color: var(--color-dim);
-	}
 
-	a:is(:hover, :focus) {
-		color: var(--color-accent);
-	}
+		&:is(:hover, :focus) {
+			color: var(--color-accent);
 
-	a:is(:hover, :focus) > :global(svg) {
-		color: var(--color-light);
+			& > :global(svg) {
+				color: var(--color-light);
+			}
+		}
 	}
 </style>

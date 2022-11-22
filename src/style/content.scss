@@ -47,17 +47,13 @@ h1 + p {
 
 	padding-left: var(--space-lg);
 	padding-right: var(--space-lg);
-}
 
-@media (min-width: 35rem) {
-	h1 + p {
+	@media (min-width: 35rem) {
 		padding-left: var(--space-xl);
 		padding-right: var(--space-xl);
 	}
-}
 
-@media (min-width: 50rem) {
-	h1 + p {
+	@media (min-width: 50rem) {
 		padding-left: var(--space-2xl);
 		padding-right: var(--space-2xl);
 	}
@@ -73,10 +69,10 @@ p a {
 	color: var(--color-accent);
 	font-family: var(--font-alt);
 	font-weight: var(--text-normal);
-}
 
-p a:is(:hover, :focus, :active) {
-	color: var(--color-dim);
+	&:is(:hover, :focus, :active) {
+		color: var(--color-dim);
+	}
 }
 
 pre {

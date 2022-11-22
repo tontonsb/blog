@@ -16,6 +16,10 @@
 	--font-lg: 1.5rem;
 	--font-xl: 2.8rem;
 
+	@media (max-width: 25rem) {
+		--font-xl: 2rem;
+	}
+
 	--color-main: #101318;
 	--color-dim: #182439;
 	--color-accent: #ff3b00;
@@ -34,10 +38,4 @@
 	--border-radius: .3px;
 
 	--letter-spacing: .075em;
-}
-
-@media (max-width: 25rem) {
-	:root {
-		--font-xl: 2rem;
-	}
 }
