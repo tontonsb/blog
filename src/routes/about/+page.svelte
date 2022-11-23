@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>Par mani</title>
-	<meta name="description" content="Par autoru" />
+	<meta name="description" content="Par autoru">
 </svelte:head>
 
 <div class="text-column">

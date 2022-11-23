@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>Džuris raksta</title>
-	<meta name="description" content="Raksti. Iespējams, ka raksti." />
+	<meta name="description" content="Raksti. Iespējams, ka raksti.">
 </svelte:head>
 
 <h1>
