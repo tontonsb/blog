@@ -2,6 +2,11 @@
 	export let data
 </script>
 
+<svelte:head>
+	<title>Raksti</title>
+	<meta name="description" content="Rakstu sarkasts Džura blogā.">
+</svelte:head>
+
 <h1>Raksti</h1>
 
 {#each data.posts as post}
