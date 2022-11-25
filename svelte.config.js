@@ -7,8 +7,10 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			'$style': 'src/style',
 			'$components': 'src/components',
+			'$lib': 'src/lib',
+			'$posts': 'src/posts',
+			'$style': 'src/style',
 		},
 	},
 	extensions: ['.svelte', '.md'],

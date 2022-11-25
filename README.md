@@ -11,6 +11,7 @@ Whenever I was uncertain what to do, I stole ideas from
 - Build with GitHub Actions
 - Add analytics by Fathom
 - Introduce hyphenation
+- Add post pagination
 
 ## Development
 
