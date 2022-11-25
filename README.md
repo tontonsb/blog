@@ -5,8 +5,12 @@ This project was built using Svelte, SvelteKit and mdsvex as the core tools.
 Whenever I was uncertain what to do, I stole ideas from 
 [this blog post](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog).
 
-Hosted on GitHub Pages, /TODO:/ built with GitHub Actions,
-/TODO:/ analytics by Fathom.
+## TODO
+
+- Host on GitHub Pages
+- Build with GitHub Actions
+- Add analytics by Fathom
+- Introduce hyphenation
 
 ## Development
 
