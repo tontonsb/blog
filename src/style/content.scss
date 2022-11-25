@@ -29,7 +29,8 @@ h2 {
 
 p {
     padding-top: var(--space-sm);
-	text-align: justify;
+	// TODO: Introduce hyphenation through mdsvex pipe if possible.
+	// text-align: justify;
 
     font-size: var(--font-base);
 	font-weight: var(--font-light);
