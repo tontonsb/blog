@@ -14,6 +14,11 @@
 	</p>
 
 	<p>
+		Šobrīd šī lapa ir paslēpta — uz to neved neviena saite vietnē.
+		Ja tu šo lasi, tad apsveicu! Vari sevi saukt par haķieri.
+	</p>
+
+	<p>
 		Šobrīd esmu datoriķis. Projektēju un realizēju informācijas sistēmas un
 		citus tamlīdzīgus štruntiņus. Izglītību esmu ieguvis gan fizikā, gan
 		datorikā.

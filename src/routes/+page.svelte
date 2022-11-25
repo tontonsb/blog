@@ -8,7 +8,7 @@
 </h1>
 
 <p>Šeit teorētiski varētu būt blogs. Pagaidām izveidots vienas esejas
-publicēšanai. Enjoy!</p>
+publicēšanai. Baudiet!</p>
 
 <p>
 	Ja vēlies sazināties par kādu jautājumu, atraksti pastu uz
