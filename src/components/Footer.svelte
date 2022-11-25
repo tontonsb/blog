@@ -15,9 +15,13 @@
 		</a>
 	</div>
 
-	<a href="https://github.com/tontonsb/blog" target="_blank" rel="noreferrer">
-		source
-	</a>
+	<div>
+		<a href="/privacy">Datu politika</a>
+
+		<a href="https://github.com/tontonsb/blog" target="_blank" rel="noreferrer">
+			Izejas kods
+		</a>
+	</div>
 </footer>
 
 <style lang="scss">
@@ -41,7 +45,7 @@
 		display: flex;
 		gap: 1rem;
 
-		@media (max-width: 30rem) {
+		@media (max-width: 34rem) {
 			flex-direction: column;
 		}
 	}
