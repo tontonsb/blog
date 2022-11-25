@@ -36,6 +36,8 @@
 		font-size: var(--font-base);
 		font-family: var(--font-alt);
 		font-weight: var(--font-light);
+		font-variant-caps: small-caps;
+		letter-spacing: var(--letter-spacing);
 
 		color: var(--color-dim);
 		border-top: 1px solid var(--color-accent);
@@ -54,8 +56,6 @@
 		display: flex;
 		gap: var(--space-sm);
 		align-items: center;
-
-		color: var(--color-dim);
 
 		&:is(:hover, :focus) {
 			color: var(--color-accent);
