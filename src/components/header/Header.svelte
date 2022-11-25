@@ -20,9 +20,11 @@
 			<li aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined}>
 				<a href="/blog" on:click={() => open = false}>Raksti</a>
 			</li>
+			<!--
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about" on:click={() => open = false}>Par</a>
 			</li>
+			-->
 		</ul>
 	</nav>
 
