@@ -1,38 +1,39 @@
-# create-svelte
+# My blog — a SvelteKit project
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This project was built using Svelte, SvelteKit and mdsvex as the core tools.
 
-## Creating a project
+Whenever I was uncertain what to do, I stole ideas from 
+[this blog post](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog).
 
-If you're seeing this, you've probably already done this step. Congrats!
+Hosted on GitHub Pages, /TODO:/ built with GitHub Actions,
+/TODO:/ analytics by Fathom.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Development
 
-# create a new project in my-app
-npm create svelte@latest my-app
+First time (after cloning the repo) deps should be installed:
+
+```sh
+npm install
 ```
 
-## Developing
+Run the site in development mode like this (includes HMR):
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+```sh
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Build the production version if needed:
 
-To create a production version of your app:
-
-```bash
+```sh
 npm run build
+
+# To run the built site:
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## Resources
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- [Svelte](https://svelte.dev/)
+- [SvelteKit](https://kit.svelte.dev/)
+- [mdsvex](https://mdsvex.com/)
+- [Fathom Analytics](https://usefathom.com/pricing)
