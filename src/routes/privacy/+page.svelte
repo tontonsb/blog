@@ -7,7 +7,7 @@
 	Datu politika
 </h1>
 
-<p>Cenšos nodrošināt, lai tavs apmeklējums būtu pēc iespējas tuuvāks anonīmam.</p>
+<p>Cenšos nodrošināt, lai tavs apmeklējums būtu pēc iespējas tuvāks anonīmam.</p>
 
 <p>
 	Šeit netiek likti nekādi cepumi. Neveicam lietotāju identificēšanu arī pēc
