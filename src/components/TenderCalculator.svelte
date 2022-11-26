@@ -1,6 +1,8 @@
 <script>
 	import Counter from '$components/Counter.svelte'
-	import { RotateCw, Slice } from 'lucide-svelte';
+
+	export let editable = false // Changing numbers
+	export let configurable = false // Changing participants and positions
 
 	export let positionCount = 3
 	export let participantCount = 3
@@ -63,6 +65,7 @@
 	$: ranks = results.map(result => 1 + results.filter(r => r > result).length)
 </script>
 
+{#if configurable}
 <div class=row>
 	<div class=row>
 		Pozīciju skaits
@@ -77,6 +80,7 @@
 			min={1} />
 	</div>
 </div>
+{/if}
 
 <div class=container>
 	<table>

@@ -5,7 +5,7 @@ intro: Reizēm valsts iepirkumu dalībnieki tiek vērtēti pēc tādas sistēmas
 ---
 
 <script>
-import Calculator from '$components/tenders/Calculator.svelte'
+import Calculator from '$components/TenderCalculator.svelte'
 </script>
 
 # Valsts iepirkumi

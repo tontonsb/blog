@@ -15,7 +15,7 @@
 
 {#if meta.date}
 <p class=date>
-	Published {meta.date}
+	Publicēts {meta.date}
 </p>
 {/if}
 

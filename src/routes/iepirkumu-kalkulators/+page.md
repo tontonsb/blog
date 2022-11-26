@@ -1,5 +1,5 @@
 <script>
-	import Calculator from '$components/tenders/Calculator.svelte'
+	import Calculator from '$components/TenderCalculator.svelte'
 </script>
 
 <svelte:head>
@@ -12,7 +12,7 @@
 Šeit vari paeksperimentēt ar kalkulatoru, kurš realizē ļoti sliktu, bet
 pēdējos gados nereti izmantotu konkursantu vērtēšanas modeli.
 
-<Calculator />
+<Calculator editable=true configurable=true />
 
 ## Aprēķinu skaidrojums
 
