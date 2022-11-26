@@ -9,7 +9,7 @@
 	--font-mono: Fira Mono, monospace;
 
 	--font-light: 300;
-	--font-strong: 500;
+	--font-strong: 500; // Only available for --font-alt
 
 	--font-sm: 1rem;
 	--font-base: 1.15rem;
@@ -25,6 +25,7 @@
 	--color-accent: #ff3b00;
 	--color-light: #ffb199;
 
+	--space-xs: .15rem;
 	--space-sm: .4rem;
 	--space-base: 1rem;
 	--space-lg: 1.8rem;
@@ -34,8 +35,6 @@
 	--border-light: 1px;
 	--border-base: 1.5px;
 	--border-thick: 3px;
-
-	--border-radius: .3px;
 
 	--letter-spacing: .075em;
 }
