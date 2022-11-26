@@ -1,8 +1,8 @@
 
 <script>
 	export let count = 0
-	export let min
-	export let max
+	export let min = null
+	export let max = null
 
 	const increment = () => {
 		count++
