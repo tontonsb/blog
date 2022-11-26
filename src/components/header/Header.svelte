@@ -43,7 +43,6 @@
 		font-size: var(--font-lg);
 		line-height: 1.1;
 		font-family: var(--font-alt);
-		font-weight: var(--font-light);
 
 		color: var(--color-dim);
 		box-shadow: 0 0.2rem 0.6rem -0.4rem var(--color-light);

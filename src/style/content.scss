@@ -25,6 +25,7 @@ h1 {
 
 h2 {
 	font-size: var(--font-lg);
+	font-weight: var(--font-strong);
 }
 
 p {
@@ -33,7 +34,6 @@ p {
 	// text-align: justify;
 
     font-size: var(--font-base);
-	font-weight: var(--font-light);
 }
 
 h1 + p {

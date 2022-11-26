@@ -35,7 +35,6 @@
 
 		font-size: var(--font-base);
 		font-family: var(--font-alt);
-		font-weight: var(--font-light);
 		font-variant-caps: small-caps;
 		letter-spacing: var(--letter-spacing);
 
