@@ -1,12 +1,12 @@
 <svelte:head>
-	<title>Džuris raksta domrakstus</title>
-	<meta name="description" content="Raksti. Iespējams, ka raksti.">
+	<title>Nestandarta analīze</title>
+	<meta name="description" content="Šeit mēs runāsim par bezgalīgi maziem un bezgalīgi lieliem lielumiem. Kā pie īstiem vīriem. Kā Leibnics nevis Veierštrāss.">
 </svelte:head>
 
-# Sacerējumi
+# Nestandarta analīze
 
 Šeit teorētiski varētu būt blogs. Pagaidām izveidots vienas esejas
 publicēšanai. Baudiet!
 
-Ja vēlies sazināties par kādu jautājumu, atraksti pastu uz
+Ja vēlies privāti sazināties par kādu jautājumu, atraksti pastu uz
 [juris@glaive.pro](mailto:juris@glaive.pro).
