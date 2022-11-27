@@ -88,8 +88,10 @@
 			<th></th>
 			{#if configurable}
 				{#each positions.slice(0, positionCount) as position, i}
+				<!-- using contenteditable because sizing inputs in td is hard -->
 				<th
 					contenteditable=true
+					role=textbox
 					bind:textContent={positions[i]}></th>
 				{/each}
 			{:else}
@@ -104,6 +106,7 @@
 				{#each weights.slice(0, positionCount) as weight, i}
 				<td
 					contenteditable=true
+					role=textbox
 					class:invalid={!/^\d*(\.\d*)?$/.test(weight.toString())}
 					bind:textContent={weights[i]}></td>
 				{/each}
@@ -122,16 +125,17 @@
 			{#if configurable}
 				<td
 					contenteditable=true
+					role=textbox
 					bind:textContent={participants[j]}></td>
 			{:else}
 				<td>{participant}</td>
 			{/if}
 			{#if editable}
 				{#each positions.slice(0, positionCount) as position, i}
-				<!-- using contenteditable because sizing inputs in td is hard -->
 				<td
 					contenteditable=true
-					class:invalid={!/^[1-9]\d*(\.\d+)?$/.test(matrix[i][j].toString())}
+					role=textbox
+					class:invalid={!/^[1-9]\d*(\.\d+)?$/s.test(matrix[i][j].toString())}
 					bind:textContent={matrix[i][j]}
 				></td>
 				{/each}
@@ -142,12 +146,13 @@
 			{/if}
 		</tr>
 		{/each}
-		<tr class=totals>
+		<tr class=totals aria-live=polite>
 			<td>Zemākā cena</td>
 			{#each best.slice(0, positionCount) as price}
 			<td>{price}</td>
 			{/each}
 		</tr>
+	<tbody aria-live=polite>
 		<tr>
 			<th></th>
 			<th colspan={positionCount}>Saņemtie punkti</th>
