@@ -9,6 +9,7 @@ html {
 	font-weight: var(--font-light);
 	font-size: var(--font-sm);
 	color: var(--color-main);
+	text-rendering: optimizeLegibility;
 }
 
 a {
