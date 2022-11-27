@@ -1,7 +1,7 @@
 ---
 title: Valsts iepirkumi
 date: "2022-11-28"
-intro: Reizēm valsts iepirkumu dalībnieki tiek vērtēti pēc tādas sistēmas, kas ļauj uzvarēt piedāvājumam, kurš nav izdevīgākais. Izskatīsim šo vērtēšanas modeli un veidus, kādā rezultāti ir manipulējami.
+intro: Nereti valsts iepirkumos vērtēšanas sistēma ļauj uzvarēt piedāvājumam, kurš nav izdevīgākais. Izskatīsim šo vērtēšanas modeli un veidus, kādā rezultāti ir manipulējami.
 ---
 
 <script>
@@ -10,10 +10,35 @@ import Calculator from '$components/TenderCalculator.svelte'
 
 # Valsts iepirkumi
 
-huh huh huh huhuu?
+Ar iepirkumiem ir dimbā. Katru dienu tiek publicēti iepirkumi, kuros
+vērtēšanas sistēma tā vien uzprasās pēc manipulācijām un ļauj viegli
+izvēlēties tādu uzvarētāju, kura piedāvājums nebūt nav labākais. Iztirzāsim
+šo problemātisko sistēmu un tās trūkumus. Pameklēsim piemērus un padomāsim,
+ko varētu darīt lietas labā.
 
-## Apakšvirsraksts tudum tudumm
+Iepirkuma process paredzēts, lai valsts uzņēmumi godīgā konkurencē varētu
+izvēlēties komersantu, kas sniegs valstij nepieciešamo pakalpojumu pēc iespējas
+izdevīgāk. Izdevīgumu [drīkst mērīt](https://likumi.lv/ta/id/287760#p51)
+dažādi: pēc cenas, kvalitātes, termiņiem... Dažos gadījumos tiek izmantoti
+vairāki saimnieciskā izdevīguma mēri un, lai saliktu tos kopā, tie tiek
+pārvērsti punktos pēc noteikta algoritma.
 
-<Calculator />
+Tieši viens no šādiem punktu aprēķina algoritmiem ir šī raksta fokusā. Tas
+ir nelāgs, bet bieži izmantots algoritms, kas ļauj vairāk punktu iegūt 
+dārgākam piedāvājumam. Turklāt tas var notikt ne tikai ļaunprātīgu
+manipulāciju rezultātā, bet arī salīdzinot normālus, godīgus piedāvājumus.
 
-aerfajoihilqr
+## Kāda ir šī sliktā sistēma?
+
+<Calculator
+	editable={true}
+	positionCount={3}
+	participantCount={3} />
+
+## Sistēma nav stabila
+
+## Sistēma nav monotona
+
+## Problēmas mērogs
+
+## Ko darīt?
