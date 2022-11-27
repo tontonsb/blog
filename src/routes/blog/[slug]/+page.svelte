@@ -5,10 +5,7 @@
 
 <svelte:head>
 	<title>{ meta.title ?? 'Blog' }</title>
-	<!--
-	<meta name="description" content="Raksti. Iespējams, ka raksti.">
-
-	-->
+	<meta name="description" content="{meta.intro}">
 </svelte:head>
 
 <Content />
