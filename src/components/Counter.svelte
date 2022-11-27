@@ -1,7 +1,9 @@
 
 <script>
 	export let count = 0
+	/** @type number? */
 	export let min = null
+	/** @type number|null */
 	export let max = null
 
 	const increment = () => {
