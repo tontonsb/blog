@@ -1,5 +1,6 @@
 <script>
 	import Counter from '$components/Counter.svelte'
+	import { LogIn } from 'lucide-svelte';
 
 	export let editable = false // Changing numbers
 	export let configurable = false // Changing participants and positions
@@ -54,7 +55,7 @@
 	// Total points = sum over that participant (column)
 	// Maybe transpose in the prev step (pointMatrix)?
 	$: results = pointMatrix.slice(0, positionCount).reduce((totals, row) => {
-		row.slice(0).forEach((points, j) => {
+		row.slice(0, participantCount).forEach((points, j) => {
 			totals[j] ??= 0
 
 			totals[j] += points
@@ -103,9 +104,20 @@
 		{#each participants.slice(0, participantCount) as participant, j}
 		<tr>
 			<td>{participant}</td>
-			{#each positions.slice(0, positionCount) as position, i}
-			<td>{matrix[i][j]}</td>
-			{/each}
+			{#if editable}
+				{#each positions.slice(0, positionCount) as position, i}
+				<!-- using contenteditable because sizing inputs in td is hard -->
+				<td
+					contenteditable=true
+					class:invalid={!/^[1-9]\d*(\.\d+)?$/.test(matrix[i][j].toString())}
+					bind:innerHTML={matrix[i][j]}
+				></td>
+				{/each}
+			{:else}
+				{#each positions.slice(0, positionCount) as position, i}
+				<td>{matrix[i][j]}</td>
+				{/each}
+			{/if}
 		</tr>
 		{/each}
 		<tr class=totals>
@@ -124,16 +136,16 @@
 		<tr>
 			<td>{participant}</td>
 			{#each pointMatrix.slice(0, positionCount) as points}
-			<td>{points[j]}</td>
+			<td>{points[j].toFixed(2)}</td>
 			{/each}
-			<td>{results[j]}</td>
+			<td>{results[j].toFixed(2)}</td>
 			<td class:winner={1 === ranks[j]}>{ranks[j]}</td>
 		</tr>
 		{/each}
 	</table>
 </div>
 
-<style>
+<style lang=scss>
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -163,17 +175,23 @@
 		font-weight: var(--font-strong);
 
 		border-bottom: var(--border-light) solid var(--color-light);
+
+		&:first-child {
+			text-align: left;
+		}
 	}
 
-	th:first-child {
-		text-align: left;
+	td {
+		&:not(:first-child) {
+			text-align: center;
+		}
+
+		&.invalid {
+			background: var(--color-light);
+		}
 	}
 
-	td:not(:first-child) {
-		text-align: center;
-	}
-
-	.totals{
+	.totals {
 		border-top: var(--border-light) solid var(--color-light);
 	}
 
