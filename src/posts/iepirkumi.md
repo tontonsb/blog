@@ -37,6 +37,10 @@ manipulāciju rezultātā, bet arī salīdzinot normālus, godīgus piedāvājum
 
 ## Sistēma nav stabila
 
+<Calculator
+	positionCount={2}
+	participantCount={2} />
+
 ## Sistēma nav monotona
 
 ## Problēmas mērogs

@@ -1,6 +1,5 @@
 <script>
 	import Counter from '$components/Counter.svelte'
-	import { LogIn } from 'lucide-svelte';
 
 	export let editable = false // Changing numbers
 	export let configurable = false // Changing participants and positions
@@ -39,11 +38,11 @@
 	]
 
 	// Allow indefinite extension
-	$: positions.length < positionCount && (positions = [...positions, 'Jauna poz'])
+	$: positions.length < positionCount && (positions = [...positions, 'Pozīcija i'])
 	$: weights.length < positionCount && (weights = [...weights, 20])
 	$: matrix.length < positionCount && (matrix = [...matrix, matrix[matrix.length - 1]])
 
-	$: participants.length < participantCount && (participants = [...participants, 'Jauns dal'])
+	$: participants.length < participantCount && (participants = [...participants, 'Dalībnieks j'])
 	$: matrix[0].length < participantCount && (matrix = matrix.map(row => [...row, 100]))
 
 	// Best offer = minimum in that position (row)
@@ -87,15 +86,32 @@
 	<table>
 		<tr>
 			<th></th>
-			{#each positions.slice(0, positionCount) as position}
-			<th>{position}</th>
-			{/each}
+			{#if configurable}
+				{#each positions.slice(0, positionCount) as position, i}
+				<th
+					contenteditable=true
+					bind:textContent={positions[i]}></th>
+				{/each}
+			{:else}
+				{#each positions.slice(0, positionCount) as position}
+				<th>{position}</th>
+				{/each}
+			{/if}
 		</tr>
 		<tr>
 			<td>Svars (max punkti)</td>
-			{#each weights.slice(0, positionCount) as weight}
-			<td>{weight}</td>
-			{/each}
+			{#if configurable}
+				{#each weights.slice(0, positionCount) as weight, i}
+				<td
+					contenteditable=true
+					class:invalid={!/^\d*(\.\d*)?$/.test(weight.toString())}
+					bind:textContent={weights[i]}></td>
+				{/each}
+			{:else}
+				{#each weights.slice(0, positionCount) as weight}
+				<td>{weight}</td>
+				{/each}
+			{/if}
 		</tr>
 		<tr>
 			<th>Dalībnieks</th>
@@ -103,14 +119,20 @@
 		</tr>
 		{#each participants.slice(0, participantCount) as participant, j}
 		<tr>
-			<td>{participant}</td>
+			{#if configurable}
+				<td
+					contenteditable=true
+					bind:textContent={participants[j]}></td>
+			{:else}
+				<td>{participant}</td>
+			{/if}
 			{#if editable}
 				{#each positions.slice(0, positionCount) as position, i}
 				<!-- using contenteditable because sizing inputs in td is hard -->
 				<td
 					contenteditable=true
 					class:invalid={!/^[1-9]\d*(\.\d+)?$/.test(matrix[i][j].toString())}
-					bind:innerHTML={matrix[i][j]}
+					bind:textContent={matrix[i][j]}
 				></td>
 				{/each}
 			{:else}

@@ -12,6 +12,9 @@
 Šeit vari paeksperimentēt ar kalkulatoru, kurš realizē ļoti sliktu, bet
 pēdējos gados nereti izmantotu konkursantu vērtēšanas modeli.
 
+Šajā kalkulatora versijā vari rediģēt ne tikai piedāvātās cenas, bet arī
+pozīciju skaitu, nosaukumus un svarus, kā arī dalībnieku skaitu un nosaukumus.
+
 <Calculator editable=true configurable=true />
 
 ## Aprēķinu skaidrojums
