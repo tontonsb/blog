@@ -33,6 +33,8 @@
 		"@fontsource/fira-code": "^4.5.12",
 		"@fontsource/fira-sans": "^4.5.10",
 		"@fontsource/montserrat": "^4.5.13",
-		"lucide-svelte": "^0.102.0"
+		"lucide-svelte": "^0.102.0",
+		"rehype-autolink-headings": "^6.1.1",
+		"rehype-slug": "^5.1.0"
 	}
 }
