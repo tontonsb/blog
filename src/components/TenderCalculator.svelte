@@ -182,6 +182,7 @@
 	}
 
 	.container {
+		margin-bottom: var(--space-base);
 		overflow-x: auto;
 	}
 

@@ -24,9 +24,3 @@ piedāvātajām cenām ar šī konkursanta piedāvāto cenu. Rezultātu pareizin
 ar maksimālo punktu skaitu šai pozīcijā X. Tad labākās cenas piedāvātājs
 saņems X punktus, bet pārējo saņemtie punkti būs atkarīgi no labākā
 piedāvājuma šajā pozīcijā.
-
-<style>
-	h2 {
-		margin-top: var(--space-base);
-	}
-</style>
