@@ -21,8 +21,8 @@ const config = {
 		mdsvex({
 			extensions: ['.md'],
 			rehypePlugins: [
-			  rehypeSlug,
-			  rehypeAutolinkHeadings,
+				rehypeSlug,
+				rehypeAutolinkHeadings,
 			],
 		}),
 	],
