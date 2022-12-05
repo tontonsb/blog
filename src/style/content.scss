@@ -65,6 +65,25 @@ p + h2 {
 	margin-top: var(--space-lg);
 }
 
+:where(h2, h3, h4, h5, h6) {
+	.icon-link {
+		position: relative;
+
+		&::before {
+			content: '🔗';
+			position: absolute;
+			left: -2rem;
+			top: 0;
+			opacity: 0;
+			color: var(--color-accent);
+		}
+	}
+
+	&:hover .icon-link::before {
+		opacity: 1;
+	}
+}
+
 p a {
 	font-variant-caps: small-caps;
 	letter-spacing: var(--letter-spacing);
