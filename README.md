@@ -13,6 +13,7 @@ Whenever I was uncertain what to do, I stole ideas from
 - [ ] Introduce hyphenation
 - [ ] Add post pagination
 - [ ] Add tests. Playwright?
+- [ ] Ensure that failed builds are never deployed. How?
 
 ## Development
 
