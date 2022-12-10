@@ -159,13 +159,56 @@ nevienmērīgus piedāvājumus, jo aprēķinos ietvertā nelinearitāte (piedāv
 nokļūst zem daļsvītras) atalgo pazemināt vienu pozīciju uz citas pozīcijas
 rēķina.
 
+## Piemērs no dzīves
+
+Aprakstītie riski nav tikai teorētiski. Piemēram, pirms 4 gadiem potenciālie
+Dziesmu svētku biļešu [tirgotāji cīnījās](https://twitter.com/mairisskuja/status/970194870966071301),
+katrs savā pozīcijā izmēģinot superlētuma triku. Lūk, divas interesantās
+pozīcijas:
+
+<Calculator
+	positionCount={2}
+	positions={['Izbraukumi', 'Sagataves']}
+	weights={[10,5]}
+	participantCount={3}
+	participants={['SIA "Biļešu paradīze"', 'SIA "Mikromaksājumi"', 'SIA "Biļešu serviss"']}
+	matrix={[[0.5, 10, 5],[1, 0.01, 0.19]]}
+	totals={false} />
+
+Viegli pamanīt, ka "Biļešu paradīze" un "Mikromaksājumi" ir katrs vienā
+pozīcijā nocēluši visus punktus. Bet jāpievērš uzmanība arī blakusefektam —
+tā rezultātā konkrētajā pozīcijā pārējo dalībnieku nebūt ne vienādie
+piedāvājumi ir saņēmuši gandrīz vienādu punktu skaitu (tas atšķiras mazāk
+nekā par vienu punktu).
+
+Uzskatīsim šos divus piedāvājumu par nepamatoti lētiem un aizstāsim tos ar otru
+zemāko cenu konkrētajā pozīcijā. Šis vingrinājums ir tīri hipotētisks, likumā
+tāds nav paredzēts un nevajag ar. Bet, lūk kas sanāk:
+
+<Calculator
+	positionCount={2}
+	positions={['Izbraukumi', 'Sagataves']}
+	weights={[10,5]}
+	participantCount={3}
+	participants={['SIA "Biļešu paradīze 2"', 'SIA "Mikromaksājumi 2"', 'SIA "Biļešu serviss"']}
+	matrix={[[5, 10, 5],[1, 0.19, 0.19]]}
+	totals={false} />
+
+Pēkšņi "Biļešu serviss" ir vislabākais un saņem nevis 1.26, bet 15 punktus.
+Izrādās, tam katrā pozīcijā bija otrs labākais piedāvājums. Bet izmantotā
+vērtēšanas sistēma atalgoja nevis sabalansētu piedāvājumu, bet izmaksu
+maksimālu salikšanu vienā pozīcijā. Neapgalvoju, ka dalībnieki to darīja
+ļaunprātīgi, bet šeit skaidri demonstrēts, kā viena konkurenta lētums konkrētā
+pozīcijā padara pārējo dalībnieku punktus nevērtīgus neatkarīgi no tā, vai
+piedāvājums bija patiesi dārgs, vai īstenībā tīri konkurētspējīgs.
+
 ## Problēmas mērogs
 
-Tapinot rakstu, tika pārskatīti 9. decembrī [EISā](https://www.eis.gov.lv/EKEIS/Supplier)
-publicētie iepirkumi.
-
-No 63 šai dienā publicētajiem iepirkumiem 61 bija publicēts ar nolikumu
-un starp tiem problemātiskā vērtēšanas sistēma tikai pamanīta šajos 12:
+Bet cik tad bieži tiek izmantota šeit aprakstītā sistēma? Vai tas nav kas
+ezotērisks no pagātnes? Ne gluži. Tapinot rakstu, tika pārskatīti 9. decembrī
+[EISā](https://www.eis.gov.lv/EKEIS/Supplier) publicētie iepirkumi. No 63 šai
+dienā publicētajiem iepirkumiem 61 bija publicēts ar nolikumu un starp tiem
+problemātiskā vērtēšanas sistēma tika pamanīta šajos 12:
 
 - CSDD [mēbeļu izgatavošana](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92956)
 - Rīgas Brīvostas [darbinieku veselības apdrošināšana](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/93114)
