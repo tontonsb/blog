@@ -93,6 +93,7 @@
 				<th
 					contenteditable=true
 					role=textbox
+					aria-label={(i+1).toString() + '. pozīcijas nosaukums'}
 					bind:textContent={positions[i]}></th>
 				{/each}
 			{:else}
@@ -108,6 +109,7 @@
 				<td
 					contenteditable=true
 					role=textbox
+					aria-label={'Pozīcijas ' + positions[i] + ' svars'}
 					class:invalid={!/^\d*(\.\d*)?$/.test(weight.toString())}
 					bind:textContent={weights[i]}></td>
 				{/each}
@@ -127,6 +129,7 @@
 				<td
 					contenteditable=true
 					role=textbox
+					aria-label={(j+1).toString() + '. dalībnieka nosaukums'}
 					bind:textContent={participants[j]}></td>
 			{:else}
 				<td>{participant}</td>
@@ -136,6 +139,7 @@
 				<td
 					contenteditable=true
 					role=textbox
+					aria-label={'Dalībnieka ' + participants[j] + ' piedāvājums pozīcijā ' + positions[i]}
 					class:invalid={!/^[1-9]\d*(\.\d+)?$/s.test(matrix[i][j].toString())}
 					bind:textContent={matrix[i][j]}
 				></td>
