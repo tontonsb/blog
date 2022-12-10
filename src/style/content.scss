@@ -29,12 +29,14 @@ h2 {
 	font-variant-caps: small-caps;
 }
 
+main {
+    font-size: var(--font-base);
+}
+
 p {
     padding-top: var(--space-sm);
 	// TODO: Introduce hyphenation through mdsvex pipe if possible.
 	// text-align: justify;
-
-    font-size: var(--font-base);
 }
 
 h1 + p {
@@ -84,16 +86,25 @@ p + h2 {
 	}
 }
 
-p a {
+main a {
 	font-variant-caps: small-caps;
 	letter-spacing: var(--letter-spacing);
 	color: var(--color-accent);
 	font-family: var(--font-alt);
-	font-weight: var(--text-normal);
+	font-weight: var(--font-strong);
 
 	&:is(:hover, :focus, :active) {
 		color: var(--color-dim);
 	}
+}
+
+main ul {
+	list-style-type: '—';
+}
+
+main li {
+	margin-left: var(--space-lg);
+	padding-left: var(--space-sm);
 }
 
 pre {
