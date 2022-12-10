@@ -7,11 +7,11 @@ Whenever I was uncertain what to do, I stole ideas from
 
 ## TODO
 
-- Host on GitHub Pages
-- Build with GitHub Actions
-- Add analytics by Fathom
-- Introduce hyphenation
-- Add post pagination
+- [ ] Host on GitHub Pages
+- [ ] Build with GitHub Actions
+- [ ] Add analytics by Fathom or Matomo
+- [ ] Introduce hyphenation
+- [ ] Add post pagination
 
 ## Development
 
@@ -46,5 +46,4 @@ Must update manually.
 - [Svelte](https://svelte.dev/)
 - [SvelteKit](https://kit.svelte.dev/)
 - [mdsvex](https://mdsvex.com/)
-- [Fathom Analytics](https://usefathom.com/)
 - [Katex](https://katex.org/)
