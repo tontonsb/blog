@@ -31,7 +31,7 @@ pārvērsti punktos pēc noteikta algoritma.
 
 Tieši viens no šādiem punktu aprēķina algoritmiem ir šī raksta fokusā. Tas
 ir nelāgs, bet bieži izmantots algoritms, kas ļauj vairāk punktu iegūt 
-dārgākam piedāvājumam. Turklāt tas var notikt ne tikai ļaunprātīgu
+dārgākam piedāvājumam. Turklāt, tas var notikt ne tikai ļaunprātīgu
 manipulāciju rezultātā, bet arī salīdzinot normālus, godīgus piedāvājumus.
 
 ## Kādai jābūt vērtēšanas sistēmai?
@@ -51,7 +51,7 @@ piedāvājumu? Izrādās, birokrātu spējas ir neierobežotas!
 Vispirms katrā izmaksu pozīcijā (piemēram, projektēšanā, piegādē, uzstādīšanā,
 ...) tiek no visiem piedāvājumiem atrasta zemākā cena.
 
-Pēc tam aprēķina katra konkursanta saņemto punktu skaitu šajā pozīcijā,
+Pēc tam katra konkursanta saņemto punktu skaitu šajā pozīcijā aprēķina,
 dalot labāko no piedāvātajām cenām ar šī dalībnieka piedāvāto cenu. Var
 pamanīt, ka iegūtais skaitlis būs robežās starp 0 un 1 un raksturos cenas
 "labumu" — jo tuvāk labākajai cenai ir kandidāta piedāvājums, jo tuvāk
@@ -72,19 +72,21 @@ vērojot, kā tās ietekmē piešķirtos punktus un konkursa rezultātus.
 
 Sīkāk vari padarboties [šeit](/iepirkumu-kalkulators).
 
+Bet kāda tad vaina šādai vērtēšanai?
+
 ## Sistēma nav stabila
 
 Ja konkursā ir saņemti divi piedāvājumi (A un B), tad, manuprāt, ir sekojošas
 iespējas:
 
-- A piedāvājums ir labāks nekā B.
-- B piedāvājums ir labāks nekā A.
+- A piedāvājums ir labāks nekā B piedāvājums.
+- B piedāvājums ir labāks nekā A piedāvājums.
 - Abi piedāvājumi ir vienlīdz labi.
 
 Man tas izklausās loģiski. Tev, lasītāj, es ceru, tas izklausās tik loģiski, ka
 tu pat nesaproti, kāpēc es uzskaitu šos acīmredzamos variantus. Lūk tāpēc, ka
-mūsu iepircēji ir atraduši sistēmu, kura tā nedomā. Šai sistēmā brīžiem
-piedāvājums A ir labāks nekā B un brīžiem otrādi.
+mūsu iepircēji ir atraduši sistēmu, kurā tā nesanāk. Šai sistēmā vienubrīd
+piedāvājums A ir labāks nekā B, bet citubrīd sanāk otrādi.
 
 Lūk, aplūkosim divus šādus piedāvājumus divās vienlīdzīgi svērtās pozīcijās:
 
@@ -111,25 +113,26 @@ dalībnieks:
 
 Lai arī jaunais dalībnieks "Uzmetiens" ir iesniedzis pēc jebkuras metrikas
 švakāko piedāvājumu un par uzvaru necīnās, paskatiet, kā viņa piedāvājums
-ietekmējis pārējo punktus otrajā pozīcijā. Un ne tikai tur, bet arī pavisam
-kopā "Lāga zeļļu" piedāvājums ir pēkšņi kļuvis par labāko, apsteidzot
+ietekmējis pārējo punktus otrajā pozīcijā. Un ne tikai tur. Arī pavisam 
+kopā "Lāga zeļļu" piedāvājums ir pēkšņi kļuvis par labāko, pēkšņi apsteidzot
 konkurentu "Brāķis & co", kaut gan nedz viena, nedz otra piedāvājums nav
 mainījies.
 
 Un jo zemāku cenu "Uzmetiens" otrajā pozīcijā piedāvātu, jo vienādāki kļūtu
 pārējo dalībnieku punkti tajā. Ja vienam kandidātam izdodas kādā pozīcijā
-pamatot (vai komisija pamatojumu) pavisam zemu cenu, tad pārējo konkursantu
+pamatot (vai komisija pamatojumu neprasa) pavisam zemu cenu, tad pārējo konkursantu
 punkti šai pozīcijā kļūs pavisam mazi, vienādi un nevērtīgi. Dažādus šādus
 scenārijus vari modelēt [pilnajā kalkulatora saskarnē](/iepirkumu-kalkulators).
 
 Ja mūsu mērķis patiesi ir noskaidrot labāko, ranžēšanas sistēma nedrīkst būt
-tāda, kurā dalībnieku izkārtojumu var izkārtot kāda trešā puse, kas šajā
-izkārtojumā nemaz neiesaistās!
+tāda, kurā dalībnieku secību var izkārtot kāda trešā puse, kas šajā
+izkārtojumā nemaz īsti neiesaistās!
 
 ## Sistēma nav monotona
 
 Arī situācijās, kad kandidāti ir tikai divi, var notikt tīšas vai netīšas
-manipulācijas. Aplūkosim šādu konkursu:
+manipulācijas. Aplūkosim šādu konkursu, kur mazliet labāks piedāvājums ir
+Lāga zeļļiem:
 
 <Calculator
 	positionCount={3}
@@ -168,7 +171,7 @@ pozīcijas:
 
 <Calculator
 	positionCount={2}
-	positions={['Izbraukumi', 'Sagataves']}
+	positions={['Izbraukuma tirdzniecība', 'Sagataves']}
 	weights={[10,5]}
 	participantCount={3}
 	participants={['SIA "Biļešu paradīze"', 'SIA "Mikromaksājumi"', 'SIA "Biļešu serviss"']}
@@ -176,18 +179,18 @@ pozīcijas:
 	totals={false} />
 
 Viegli pamanīt, ka "Biļešu paradīze" un "Mikromaksājumi" ir katrs vienā
-pozīcijā nocēluši visus punktus. Bet jāpievērš uzmanība arī blakusefektam —
-tā rezultātā konkrētajā pozīcijā pārējo dalībnieku nebūt ne vienādie
-piedāvājumi ir saņēmuši gandrīz vienādu punktu skaitu (tas atšķiras mazāk
-nekā par vienu punktu).
+pozīcijā nocēluši gandrīz visus punktus. Bet jāpievērš uzmanība arī
+blakusefektam — tā rezultātā konkrētajā pozīcijā pārējo divu dalībnieku nebūt
+ne vienādie piedāvājumi ir saņēmuši gandrīz vienādu punktu skaitu (tas atšķiras
+mazāk nekā par vienu punktu).
 
 Uzskatīsim šos divus piedāvājumu par nepamatoti lētiem un aizstāsim tos ar otru
 zemāko cenu konkrētajā pozīcijā. Šis vingrinājums ir tīri hipotētisks, likumā
-tāds nav paredzēts un nevajag ar. Bet, lūk kas sanāk:
+tādi pigori nav paredzēti un nevajag ar. Bet, lūk kas sanāk:
 
 <Calculator
 	positionCount={2}
-	positions={['Izbraukumi', 'Sagataves']}
+	positions={['Izbraukuma tirdzniecība', 'Sagataves']}
 	weights={[10,5]}
 	participantCount={3}
 	participants={['SIA "Biļešu paradīze 2"', 'SIA "Mikromaksājumi 2"', 'SIA "Biļešu serviss"']}
@@ -227,7 +230,7 @@ Negarantēju, ka šis saraksts ir izsmeļošs, jo lejuplādējot, atverot un
 manuāli pārlasot 63 nolikumus kāds gadījums varēja arī paslīdēt garām.
 Izsaku pateicību tiem dažiem, kas publicēja iepirkumus PDF formātā.
 
-Lai arī vienas dienas konkursi nav liels iztvērums, to novērotais skaits ļauj
+Lai arī vienas dienas konkursi nav liels iztvērums, novērotais skaits ļauj
 pieņemt, ka vismaz daži šādi iepirkumi tiek publicēti gandrīz katru dienu.
 
 Dažos gadījumos labāka sistēma nav acīmredzama. Piemēram, Rīgas Brīvostas
@@ -235,9 +238,9 @@ gadījumā var jautāt, kā vispār labi salīdzināt apdrošināšanas prēmija
 pretim gūstamajiem segumiem. Toties citos iepirkumos kā LVM
 [dampera piegāde](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92976)
 tam vajadzētu būt pavisam triviāli — cik izmaksā, tik izmaksā, ne? Ko tur gudri
-dalīt pa punktiem un iegūt nelineārus fokusus ar šo haotisko sistēmu? Taču
-novērtējiet, cik kilometru attālumā būs jāpiegādā un attiecīgi ņemiet vērā
-konkrēto pozīciju nevis padariet tās manipulējamas!
+dalīt pa punktiem un iegūt nelineārus fokusus ar šo haotisko sistēmu? Pielēsiet
+taču, cik kilometru attālumā būs jāpiegādā un attiecīgi ņemiet vērā konkrēto
+pozīciju nevis padariet tās manipulējamas!
 
 Protams, vairums iepirkumu, par laimi, šo sistēmu neizmanto. Lielā daļā tā
 nemaz nav iespējama, bet dažos gadījumos to varētu izmantot, bet neizmanto.
@@ -259,13 +262,15 @@ vienkāršu likuma papildinājumu: kandidāta vērtējums konkursā nedrīkst b�
 atkarīgs no citu kandidātu piedāvājumiem. Lai arī tas neļaus konkursu
 veidotājiem ieviest elegantus 100 punktu griestus, labāk šo skaitlisko
 apaļumu nomainīsim pret garantiju, ka 107 punktus vērtais piedāvājums paliks
-107 punktus vērts neatkarīgi no tā, ko piedāvās citi.
+107 punktus vērts neatkarīgi no tā, kādu akrobātiku vienā vai citā pozīcijā
+izmēģinās konkurents.
 
-Savukārt Iepirkumu uzraudzības birojam neatkarīgi no likumu izmaiņām vajadzētu
+Savukārt Iepirkumu uzraudzības birojam neatkarīgi no likumu izmaiņām derētu
 ķerties pie iepirkumu uzraudzības un pārbaudīt nolikumos iekļautās ranžēšanas
 sistēmas. Jau tagad likums paģēr izvēlēties saimnieciski izdevīgāko
-piedāvājumu, tāpēc jau šodien IUB varētu izbrāķēt jebkuru nolikumu ar šādu vai
-citu sistēmu, kas ļauj izvēlēties piedāvājumu, kurš nav izdevīgākais.
+piedāvājumu, tāpēc jau šodien IUB varētu izbrāķēt jebkuru nolikumu ar šādu
+sistēmu. Un arī ar jebkuru citu sistēmu, kas ļauj izvēlēties piedāvājumu, kurš
+nav izdevīgākais.
 
 Iepirkumu rakstītājiem aicinu likt aiz auss: tas, ka cits ierēdnis ir
 uzrakstījis iepirkumu pirms tevis, nenozīmē, ka viņš ir gudrāks un turams par
@@ -277,14 +282,15 @@ pareizi un jēdzīgi. Galu galā arī paši IUB
 [4](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/50768),
 [5](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/34870),
 [6](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/26084)) nekautrējas rādīt
-piemēru ar šādiem pat aprēķiniem...
+piemēru ar šādiem pat aprēķiniem un vismaz pirmajā gadījumā šādi iegūtie punkti
+par cenām ir savstarpēji summēti...
 
 Pavisam ideāli būtu, ja kāds kantoris sagatavotu labas vadlīnijas, pēc kurām
 sagatavot vērtēšanas sistēmas. Kuram kantorim tas piedien es nezinu. Vai tas ir
 IUB, vai Valsts kanceleja, vai kāda ministrija. Bet iepirkumā to rakstīšanu
-pirkt nevajadzētu.
+pirkt nevajadzētu :)
 
 Jebkurā gadījumā saprotams, ka konkursu rakstītāji šo sistēmu lieto nevis aiz
-ļaunprātības, bet tāpēc, ka noraksta nolikumus no citiem nolikumiem un šī
-sistēma virspusēji izskatās gudra un uzticama. Jo sarežģīta. Bet pasakiet
+ļaunprātības, bet tāpēc, ka noraksta idejas no citiem nolikumiem. Un virspusēji
+šī sistēma nudien izskatās gudra un uzticama. Jo sarežģīta. Bet pasakiet
 cilvēkiem, kā darīt labāk, un viņi (atskaitot pāris ļaunprāšus) tā arī darīs!
