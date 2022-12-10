@@ -161,7 +161,7 @@ rēķina.
 
 ## Problēmas mērogs
 
-Tapinot rakstu, tika pārskatīti 9. decembrī EISā](https://www.eis.gov.lv/EKEIS/Supplier)
+Tapinot rakstu, tika pārskatīti 9. decembrī [EISā](https://www.eis.gov.lv/EKEIS/Supplier)
 publicētie iepirkumi.
 
 No 63 šai dienā publicētajiem iepirkumiem 61 bija publicēts ar nolikumu
