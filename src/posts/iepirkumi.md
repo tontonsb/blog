@@ -1,6 +1,6 @@
 ---
 title: Valsts iepirkumi
-date: "2022-11-28"
+date: "2022-12-12"
 intro: Nereti valsts iepirkumos vērtēšanas sistēma ļauj uzvarēt piedāvājumam, kurš nav izdevīgākais. Izskatīsim šo vērtēšanas modeli un veidus, kādā rezultāti ir manipulējami.
 ---
 
@@ -8,8 +8,10 @@ intro: Nereti valsts iepirkumos vērtēšanas sistēma ļauj uzvarēt piedāvāj
 import Calculator from '$components/TenderCalculator.svelte'
 import Katex from '$components/Katex.svelte'
 
-const equation = String.raw`\text{Kandidāta punkti} = \text{Max punkti pozīcijā} \cdot 
-	\frac{\text{Zemākā cena}}{\text{Kandidāta piedāvātā cena}}`
+const equation = String.raw`
+	\text{Kandidāta punkti} 
+	= \text{Max punkti pozīcijā} \cdot 
+		\frac{\text{Zemākā cena}}{\text{Kandidāta piedāvātā cena}}`
 </script>
 
 # Valsts iepirkumi
@@ -66,19 +68,180 @@ iegūstamais punktu skaits būtu 100. Kopā iegūstam šādu formulu:
 Vari pataustīt sistēmu praktiski, šajā kalkulatorā mainot piedāvātās cenas un
 vērojot, kā tās ietekmē piešķirtos punktus un konkursa rezultātus.
 
-<Calculator
-	editable={true}
-	positionCount={3}
-	participantCount={3} />
+<Calculator	editable={true} />
+
+Sīkāk vari padarboties [šeit](/iepirkumu-kalkulators).
 
 ## Sistēma nav stabila
 
+Ja konkursā ir saņemti divi piedāvājumi (A un B), tad, manuprāt, ir sekojošas
+iespējas:
+
+- A piedāvājums ir labāks nekā B.
+- B piedāvājums ir labāks nekā A.
+- Abi piedāvājumi ir vienlīdz labi.
+
+Man tas izklausās loģiski. Tev, lasītāj, es ceru, tas izklausās tik loģiski, ka
+tu pat nesaproti, kāpēc es uzskaitu šos acīmredzamos variantus. Lūk tāpēc, ka
+mūsu iepircēji ir atraduši sistēmu, kura tā nedomā. Šai sistēmā brīžiem
+piedāvājums A ir labāks nekā B un brīžiem otrādi.
+
+Lūk, aplūkosim divus šādus piedāvājumus divās vienlīdzīgi svērtās pozīcijās:
+
 <Calculator
 	positionCount={2}
-	participantCount={2} />
+	participantCount={2}
+	weights={[50,50]}
+	matrix={[[120,150],[180,140]]} />
+
+Ja rēķināsim vienkārši saskaitot izmaksas, redzēsim, ka "Lāga zeļļu"
+piedāvājums kopā izmaksātu 300 naudiņas, bet "Brāķis & co" piedāvājums būtu
+mazliet izdevīgāks — izmaksātu 290. Kalkulators parāda, ka arī šeit pētītā
+vērtēšanas sistēma par mazliet labāku atzīst "Brāķis & co" piedāvājumu, kaut
+gan atšķirība ir tikai ap 1%, nevis 3% kā rādīja elementārāks salīdzinājums.
+
+Bet lūk kā izmainās situācija, ja konkursā izlemj pieteikties vēl viens
+dalībnieks:
+
+<Calculator
+	positionCount={2}
+	participantCount={3}
+	weights={[50,50]}
+	matrix={[[120,150,180],[180,140,125]]} />
+
+Lai arī jaunais dalībnieks "Uzmetiens" ir iesniedzis pēc jebkuras metrikas
+švakāko piedāvājumu un par uzvaru necīnās, paskatiet, kā viņa piedāvājums
+ietekmējis pārējo punktus otrajā pozīcijā. Un ne tikai tur, bet arī pavisam
+kopā "Lāga zeļļu" piedāvājums ir pēkšņi kļuvis par labāko, apsteidzot
+konkurentu "Brāķis & co", kaut gan nedz viena, nedz otra piedāvājums nav
+mainījies.
+
+Un jo zemāku cenu "Uzmetiens" otrajā pozīcijā piedāvātu, jo vienādāki kļūtu
+pārējo dalībnieku punkti tajā. Ja vienam kandidātam izdodas kādā pozīcijā
+pamatot (vai komisija pamatojumu) pavisam zemu cenu, tad pārējo konkursantu
+punkti šai pozīcijā kļūs pavisam mazi, vienādi un nevērtīgi. Dažādus šādus
+scenārijus vari modelēt [pilnajā kalkulatora saskarnē](/iepirkumu-kalkulators).
+
+Ja mūsu mērķis patiesi ir noskaidrot labāko, ranžēšanas sistēma nedrīkst būt
+tāda, kurā dalībnieku izkārtojumu var izkārtot kāda trešā puse, kas šajā
+izkārtojumā nemaz neiesaistās!
 
 ## Sistēma nav monotona
 
+Arī situācijās, kad kandidāti ir tikai divi, var notikt tīšas vai netīšas
+manipulācijas. Aplūkosim šādu konkursu:
+
+<Calculator
+	positionCount={3}
+	participantCount={2}
+	weights={[30,30,30]}
+	matrix={[[120,120],[180,180],[140,150]]} />
+
+Protams, "Brāķis & co" gribētu uzvarēt šo konkursu. Taču viņiem skaidrs, ka
+finansiāla jēga pildīt šo pasūtījumu būs tikai tad, ja kopā par darbu tiks
+saņemtas vismaz 450 naudiņas. Nekas! Pateicoties šīs sistēmas īpatnībām, šis
+konkursants var pārlikt 21 naudiņu no pirmās pozīcijas uz otro un kļūt par
+uzvarētāju!
+
+<Calculator
+	positionCount={3}
+	participantCount={2}
+	weights={[30,30,30]}
+	matrix={[[120,99],[180,201],[140,150]]} />
+
+Protams, ideālā gadījumā konkursants nezina par citu piedāvājumu. Bet normālā
+gadījumā arī konkurentu piedāvājuma uzzināšana ļautu to pārspēt tikai ar
+mazliet labāku piedāvājumu. Savukārt šeit mēs redzam, kā, zinot piedāvājumu, to
+var apspēlēt nevis ar lētāku cenu, bet speciāli piemērotu sadalījumu pa pozīcijām.
+
+Arī nezinot konkurentu piedāvājumus, dalībniekus šī sistēma motivē iesniegt
+nevienmērīgus piedāvājumus, jo aprēķinos ietvertā nelinearitāte (piedāvājums
+nokļūst zem daļsvītras) atalgo pazemināt vienu pozīciju uz citas pozīcijas
+rēķina.
+
 ## Problēmas mērogs
 
-## Ko darīt?
+Tapinot rakstu, tika pārskatīti 9. decembrī EISā](https://www.eis.gov.lv/EKEIS/Supplier)
+publicētie iepirkumi.
+
+No 63 šai dienā publicētajiem iepirkumiem 61 bija publicēts ar nolikumu
+un starp tiem problemātiskā vērtēšanas sistēma tikai pamanīta šajos 12:
+
+- CSDD [Mēbeļu izgatavošana](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92956)
+- Rīgas Brīvostas [darbinieku veselības apdrošināšanas](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/93114)
+- LVM [dampera piegāde](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92976)
+- LVM [buldozera piegāde](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92972)
+- Jēkabils novads [pārtikas piegāde skolai](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92942)
+- LTV [satura vadības sistēma](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92849)
+- RD [dzīvokļu atjaunošana](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/93009)
+- CSDD [dīzeļdegvielas piegāde](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/93089)
+- AADSO [darbinieku veselības apdrošināšana](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/93086)
+- Cēsu Līgatnes pārvaldes [degvielas piegāde](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/93079)
+- Liepājas [rotaļu laukuma izveide](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92239)
+- NVA [tulkošanas pakalpojumi](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92439)
+
+Negarantēju, ka šis saraksts ir izsmeļošs, jo lejuplādējot, atverot un
+manuāli pārlasot 63 nolikumus kāds gadījums varēja arī paslīdēt garām.
+Izsaku pateicību tiem dažiem, kas publicēja iepirkumus PDF formātā.
+
+Lai arī vienas dienas konkursi nav liels iztvērums, to novērotais skaits ļauj
+pieņemt, ka vismaz daži šādi iepirkumi tiek publicēti gandrīz katru dienu.
+
+Dažos gadījumos labāka sistēma nav acīmredzama. Piemēram, Rīgas Brīvostas
+gadījumā var jautāt, kā vispār labi salīdzināt apdrošināšanas prēmijas ar
+pretim gūstamajiem segumiem. Toties citos iepirkumos kā LVM
+[dampera piegāde](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92976)
+tam vajadzētu būt pavisam triviāli — cik izmaksā, tik izmaksā, ne? Ko tur gudri
+dalīt pa punktiem un iegūt nelineārus fokusus ar šo haotisko sistēmu? Taču
+novērtējiet, cik kilometru attālumā būs jāpiegādā un attiecīgi ņemiet vērā
+konkrēto pozīciju nevis padariet tās manipulējamas!
+
+Protams, vairums iepirkumu, par laimi, šo sistēmu neizmanto. Lielā daļā tā
+nemaz nav iespējama, bet dažos gadījumos to varētu izmantot, bet neizmanto.
+Labs piemērs ir RSMT [frizieru piederumu](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/93072)
+iepirkums, kur tiek iegādāts lērums preču padsmit pozīcijās. Taču nolikums ir
+gudrs un vienkāršs — cik nu tas kopā izmaksās, to arī vērtēs. Malači! Un tādu
+labu piemēru īstenībā ir daudz.
+
+## Kopsavilkums un nepieciešamā rīcība
+
+Katru dienu tiek publicēti iepirkumi ar pārlieku sarežģītu vērtēšanas sistēmu,
+kura nenodrošina izdevīgākā piedāvājuma izvēli. Tā ne tikai pieļauj
+ļaunprātīgas manipulācijas (un mudina uz tādām), bet arī starp godīgiem
+piedāvājumiem var piekārtot tādus punktus, ka tiks izvēlēts mazāk izdevīgais.
+Šādai vērtēšanas sistēmai nav jātiek izmantotai nemaz.
+
+Likumdevējs var pilnībā liegt šeit aprakstīto sistēmu un manipulācijas ar vienu
+vienkāršu likuma papildinājumu: kandidāta vērtējums konkursā nedrīkst būt
+atkarīgs no citu kandidātu piedāvājumiem. Lai arī tas neļaus konkursu
+veidotājiem ieviest elegantus 100 punktu griestus, labāk šo skaitlisko
+apaļumu nomainīsim pret garantiju, ka 107 punktus vērtais piedāvājums paliks
+107 punktus vērts neatkarīgi no tā, ko piedāvās citi.
+
+Savukārt Iepirkumu uzraudzības birojam neatkarīgi no likumu izmaiņām vajadzētu
+ķerties pie iepirkumu uzraudzības un pārbaudīt nolikumos iekļautās ranžēšanas
+sistēmas. Jau tagad likums paģēr izvēlēties saimnieciski izdevīgāko
+piedāvājumu, tāpēc jau šodien IUB varētu izbrāķēt jebkuru nolikumu ar šādu vai
+citu sistēmu, kas ļauj izvēlēties piedāvājumu, kurš nav izdevīgākais.
+
+Iepirkumu rakstītājiem aicinu likt aiz auss: tas, ka cits ierēdnis ir
+uzrakstījis iepirkumu pirms tevis, nenozīmē, ka viņš ir gudrāks un turams par
+paraugu. Tas, ka viņa iepirkumu IUB neizbrāķēja, negarantē, ka tur viss bijis
+pareizi un jēdzīgi. Galu galā arī paši IUB 
+([1](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/90161),
+[2](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/90102),
+[3](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/72126),
+[4](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/50768),
+[5](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/34870),
+[6](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/26084)) nekautrējas rādīt
+piemēru ar šādiem pat aprēķiniem...
+
+Pavisam ideāli būtu, ja kāds kantoris sagatavotu labas vadlīnijas, pēc kurām
+sagatavot vērtēšanas sistēmas. Kuram kantorim tas piedien es nezinu. Vai tas ir
+IUB, vai Valsts kanceleja, vai kāda ministrija. Bet iepirkumā to rakstīšanu
+pirkt nevajadzētu.
+
+Jebkurā gadījumā saprotams, ka konkursu rakstītāji šo sistēmu lieto nevis aiz
+ļaunprātības, bet tāpēc, ka noraksta nolikumus no citiem nolikumiem un šī
+sistēma virspusēji izskatās gudra un uzticama. Jo sarežģīta. Bet pasakiet
+cilvēkiem, kā darīt labāk, un viņi (atskaitot pāris ļaunprāšus) tā arī darīs!
