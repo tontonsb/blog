@@ -3,6 +3,7 @@
 
 	export let editable = false // Changing numbers
 	export let configurable = false // Changing participants and positions
+	export let totals = true // showing totals and ranks
 
 	export let positionCount = 3
 	export let participantCount = 3
@@ -156,8 +157,10 @@
 		<tr>
 			<th></th>
 			<th colspan={positionCount}>Saņemtie punkti</th>
+			{#if totals}
 			<th>Kopā</th>
 			<th>Vieta</th>
+			{/if}
 		</tr>
 		{#each participants.slice(0, participantCount) as participant, j}
 		<tr>
@@ -165,8 +168,10 @@
 			{#each pointMatrix.slice(0, positionCount) as points}
 			<td>{points[j].toFixed(2)}</td>
 			{/each}
+			{#if totals}
 			<td>{results[j].toFixed(2)}</td>
 			<td class:winner={1 === ranks[j]}>{ranks[j]}</td>
+			{/if}
 		</tr>
 		{/each}
 	</table>
