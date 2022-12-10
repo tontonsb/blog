@@ -167,8 +167,8 @@ publicētie iepirkumi.
 No 63 šai dienā publicētajiem iepirkumiem 61 bija publicēts ar nolikumu
 un starp tiem problemātiskā vērtēšanas sistēma tikai pamanīta šajos 12:
 
-- CSDD [Mēbeļu izgatavošana](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92956)
-- Rīgas Brīvostas [darbinieku veselības apdrošināšanas](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/93114)
+- CSDD [mēbeļu izgatavošana](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92956)
+- Rīgas Brīvostas [darbinieku veselības apdrošināšana](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/93114)
 - LVM [dampera piegāde](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92976)
 - LVM [buldozera piegāde](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92972)
 - Jēkabils novads [pārtikas piegāde skolai](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92942)
