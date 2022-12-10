@@ -117,3 +117,8 @@ pre {
 	overflow-x: auto;
 	color: var(--color-main);
 }
+
+.katex-display {
+	// https://katex.org/docs/issues.html#css-customization
+	overflow: auto hidden;
+}
