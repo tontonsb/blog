@@ -36,11 +36,6 @@ npm run build
 npm run preview
 ```
 
-### Notes
-
-Katex component includes fixed CSS version, so the package version is fixed.
-Must update manually.
-
 ## Resources
 
 - [Svelte](https://svelte.dev/)
