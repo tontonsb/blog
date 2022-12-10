@@ -6,6 +6,10 @@ intro: Nereti valsts iepirkumos vērtēšanas sistēma ļauj uzvarēt piedāvāj
 
 <script>
 import Calculator from '$components/TenderCalculator.svelte'
+import Katex from '$components/Katex.svelte'
+
+const equation = String.raw`\text{Kandidāta punkti} = \text{Max punkti pozīcijā} \cdot 
+	\frac{\text{Zemākā cena}}{\text{Kandidāta piedāvātā cena}}`
 </script>
 
 # Valsts iepirkumi
@@ -55,14 +59,9 @@ Izklausās feini. Vai vismaz loģiski.
 Protams, ne visas pozīcijas ir vienlīdz lielas vai vienlīdz būtiskas, tāpēc
 šo iegūto skaitli vēl pareizina ar pozīcijā iegūstamo punktu skaitu. Vienā
 pozīcijā tas būs 5, citā 40. Bieži nolikumos tēmēts uz to, lai maksimāli
-iegūstamais punktu skaits būtu 100.
+iegūstamais punktu skaits būtu 100. Kopā iegūstam šādu formulu:
 
-Kopā iegūstam šādu formulu kandidāta punktu aprēķinam pozīcijā:
-
-$$
-\text{Kandidāta punkti} = \text{Max. punkti pozīcijā} \cdot 
-	\frac{\text{Zemākā cena}}{\text{Kandidāta piedāvātā cena}}
-$$
+<Katex math={equation} displayMode />
 
 Vari pataustīt sistēmu praktiski, šajā kalkulatorā mainot piedāvātās cenas un
 vērojot, kā tās ietekmē piešķirtos punktus un konkursa rezultātus.
