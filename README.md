@@ -12,6 +12,7 @@ Whenever I was uncertain what to do, I stole ideas from
 - [ ] Add analytics by Fathom or Matomo
 - [ ] Introduce hyphenation
 - [ ] Add post pagination
+- [ ] Add tests. Playwright?
 
 ## Development
 
