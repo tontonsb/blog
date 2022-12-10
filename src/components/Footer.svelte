@@ -4,12 +4,12 @@
 
 <footer>
 	<div>
-		<a href="https://github.com/tontonsb" target="_blank" rel="noreferrer" title="Github profile">
+		<a href="https://github.com/tontonsb" title="Github profile">
 			<Github size="{24}" />
 			tontonsb
 		</a>
 
-		<a href="https://twitter.com/tontonsb" target="_blank" rel="noreferrer" title="Twitter profile">
+		<a href="https://twitter.com/tontonsb" title="Twitter profile">
 			<Twitter size="{24}" />
 			tontonsb
 		</a>
@@ -18,7 +18,7 @@
 	<div>
 		<a href="/privacy">Datu politika</a>
 
-		<a href="https://github.com/tontonsb/blog" target="_blank" rel="noreferrer">
+		<a href="https://github.com/tontonsb/blog">
 			Izejas kods
 		</a>
 	</div>
