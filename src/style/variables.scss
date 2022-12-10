@@ -1,5 +1,6 @@
 @import '@fontsource/fira-sans/300.css';
 @import '@fontsource/montserrat/300.css';
+@import '@fontsource/montserrat/400.css';
 @import '@fontsource/montserrat/500.css';
 @import '@fontsource/fira-mono';
 
@@ -9,6 +10,7 @@
 	--font-mono: Fira Mono, monospace;
 
 	--font-light: 300;
+	--font-normal: 400; // Only available for --font-alt
 	--font-strong: 500; // Only available for --font-alt
 
 	--font-sm: 1rem;
