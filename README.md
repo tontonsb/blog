@@ -7,8 +7,8 @@ Whenever I was uncertain what to do, I stole ideas from
 
 ## TODO
 
-- [ ] Host on GitHub Pages
-- [ ] Build with GitHub Actions
+- [x] Host on GitHub Pages
+- [x] Build with GitHub Actions
 - [ ] Add analytics by Fathom or Matomo
 - [ ] Introduce hyphenation
 - [ ] Add post pagination
