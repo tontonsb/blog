@@ -113,6 +113,9 @@
 					class:invalid={!/^\d*(\.\d*)?$/.test(weight.toString())}
 					bind:textContent={weights[i]}></td>
 				{/each}
+				<td colspan=2 class=hint>
+					← skaitļi un nosaukumi ir labojami
+				</td>
 			{:else}
 				{#each weights.slice(0, positionCount) as weight}
 				<td>{weight}</td>
@@ -144,6 +147,11 @@
 					bind:textContent={matrix[i][j]}
 				></td>
 				{/each}
+				{#if !j && !configurable}
+				<td colspan=2 class=hint>
+					← skaitļi tabulā ir labojami
+				</td>
+				{/if}
 			{:else}
 				{#each positions.slice(0, positionCount) as position, i}
 				<td>{matrix[i][j]}</td>
@@ -226,6 +234,15 @@
 		&.invalid {
 			background: var(--color-light);
 		}
+	}
+
+	:where(th, td)[contenteditable] {
+		box-shadow: inset 0 0 3px grey;
+	}
+
+	td.hint {
+		background: var(--color-accent);
+		color: white;
 	}
 
 	.totals {
