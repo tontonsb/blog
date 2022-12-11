@@ -22,7 +22,7 @@ izvēlēties tādu uzvarētāju, kura piedāvājums nebūt nav labākais. Iztirz
 šo problemātisko sistēmu un tās trūkumus. Pameklēsim piemērus un padomāsim,
 ko varētu darīt lietas labā.
 
-Iepirkuma process paredzēts, lai valsts uzņēmumi godīgā konkurencē varētu
+Iepirkuma process paredzēts, lai valsts iestādes un uzņēmumi godīgā konkurencē varētu
 izvēlēties komersantu, kas sniegs valstij nepieciešamo pakalpojumu pēc iespējas
 izdevīgāk. Izdevīgumu [drīkst mērīt](https://likumi.lv/ta/id/287760#p51)
 dažādi: pēc cenas, kvalitātes, termiņiem... Dažos gadījumos tiek izmantoti
@@ -33,6 +33,10 @@ Tieši viens no šādiem punktu aprēķina algoritmiem ir šī raksta fokusā. T
 ir nelāgs, bet bieži izmantots algoritms, kas ļauj vairāk punktu iegūt 
 dārgākam piedāvājumam. Turklāt, tas var notikt ne tikai ļaunprātīgu
 manipulāciju rezultātā, bet arī salīdzinot normālus, godīgus piedāvājumus.
+
+Šādu vērtēšanas sistēmu nepaģēr nekādi normatīvie akti, bet iepirkumu autori
+bieži tai pieturas, jo izdomāt vērtēšanas sistēmu ir grūti un virspusēji šī
+izskatās uzticama.
 
 ## Kādai jābūt vērtēšanas sistēmai?
 
@@ -295,7 +299,9 @@ atkarīgs no citu kandidātu piedāvājumiem. Lai arī tas neļaus konkursu
 veidotājiem ieviest elegantus 100 punktu griestus, labāk šo skaitlisko
 apaļumu nomainīsim pret garantiju, ka 107 punktus vērtais piedāvājums paliks
 107 punktus vērts neatkarīgi no tā, kādu akrobātiku vienā vai citā pozīcijā
-izmēģinās konkurents.
+izmēģinās konkurents. Protams, viss ir relatīvs, arī piedāvājumi. Taču šobrīd
+jauna kandidāta pievienošanās var izmainīt secību starp pārējiem un šāds
+likuma nosacījums šo risku likvidētu.
 
 Savukārt Iepirkumu uzraudzības birojam neatkarīgi no likumu izmaiņām derētu
 ķerties pie iepirkumu uzraudzības un pārbaudīt nolikumos iekļautās ranžēšanas
@@ -317,7 +323,11 @@ pareizi un jēdzīgi. Galu galā arī paši IUB
 piemēru ar šādiem pat aprēķiniem un vismaz pirmajā gadījumā šādi iegūtie punkti
 par cenām ir savstarpēji summēti...
 
-Pavisam ideāli būtu, ja kāds kantoris sagatavotu labas vadlīnijas, pēc kurām
+Protams, uzrakstīt labu iepirkumu ir grūti. Ir grūti izdomāt pareizu, godīgu,
+neapspēlējamu vērtēšanas sistēmu, kas tiešām ņems vērā gan cenu, gan kvalitāti,
+gan termiņus, gan potenciālo atdevi (kā tas ir, piemēram, apdrošināšanām). Ir
+grūti uzrakstīt visu tā, lai nepaliktu nepamanīti kādi zemūdens akmeņi.
+Tāpēc ideāli būtu, ja kāds kantoris sagatavotu labas vadlīnijas, pēc kurām
 sagatavot vērtēšanas sistēmas. Kuram kantorim tas piedien es nezinu. Vai tas ir
 IUB, vai Valsts kanceleja, vai kāda ministrija. Bet iepirkumā to rakstīšanu
 pirkt nevajadzētu :)
