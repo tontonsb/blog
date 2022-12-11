@@ -178,6 +178,17 @@ pozīcijas:
 	matrix={[[0.5, 10, 5],[1, 0.01, 0.19]]}
 	totals={false} />
 
+Par sagatavēm viena kompānija nolēmusi prasīt eiriku, otra 19 centus (varam
+iztēloties, ka šis skaitlis atbilst pašizmaksai), bet trešā nolēmusi par
+sagatavēm atsevišķi neko neprasīt un ielikusi vienu centu. Lai nu tā būtu,
+varbūt viņiem tiešām grāmatvedībā tā neveidojas kā atsevišķa pozīcija, bet ir
+iekļauta kopā ar ko citu.
+
+Bet izbraukuma tirdzniecības pakalpojumos, kur bija jānorāda stundas darba
+cena, situācja ir pavisam dīvaina, jo viens no kandidātiem piedāvājis veikt
+šos darbus par 50 centiem stundā. Tad jau laikam automātiski, jo arī 2018. gadā
+minimālā stundas alga bija lielāka par puseiri.
+
 Viegli pamanīt, ka "Biļešu paradīze" un "Mikromaksājumi" ir katrs vienā
 pozīcijā nocēluši gandrīz visus punktus. Bet jāpievērš uzmanība arī
 blakusefektam — tā rezultātā konkrētajā pozīcijā pārējo divu dalībnieku nebūt
