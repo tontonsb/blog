@@ -35,6 +35,7 @@
 		"@fontsource/fira-mono": "^4.5.10",
 		"@fontsource/fira-sans": "^4.5.10",
 		"@fontsource/montserrat": "^4.5.13",
+		"fathom-client": "^3.5.0",
 		"katex": "0.16.4",
 		"lucide-svelte": "^0.102.0"
 	}
