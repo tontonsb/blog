@@ -9,7 +9,7 @@ Whenever I was uncertain what to do, I stole ideas from
 
 - [x] Host on GitHub Pages
 - [x] Build with GitHub Actions
-- [ ] Add analytics by Fathom or Matomo
+- [x] Add analytics by Fathom and Matomo
 - [ ] Introduce hyphenation
 - [ ] Add post pagination
 - [ ] Add tests. Playwright?
