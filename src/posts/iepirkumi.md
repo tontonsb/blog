@@ -178,8 +178,8 @@ pozīcijas:
 	matrix={[[0.5, 10, 5],[1, 0.01, 0.19]]}
 	totals={false} />
 
-Par sagatavēm viena kompānija nolēmusi prasīt eiriku, otra 19 centus (varam
-iztēloties, ka šis skaitlis atbilst pašizmaksai), bet trešā nolēmusi par
+Par biļešu sagatavēm viena kompānija nolēmusi prasīt eiriku, otra 19 centus
+(varam iztēloties, ka šis skaitlis atbilst pašizmaksai), bet trešā nolēmusi par
 sagatavēm atsevišķi neko neprasīt un ielikusi vienu centu. Lai nu tā būtu,
 varbūt viņiem tiešām grāmatvedībā tā neveidojas kā atsevišķa pozīcija, bet ir
 iekļauta kopā ar ko citu.
