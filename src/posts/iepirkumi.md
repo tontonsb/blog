@@ -124,6 +124,14 @@ pamatot (vai komisija pamatojumu neprasa) pavisam zemu cenu, tad pārējo konkur
 punkti šai pozīcijā kļūs pavisam mazi, vienādi un nevērtīgi. Dažādus šādus
 scenārijus vari modelēt [pilnajā kalkulatora saskarnē](/iepirkumu-kalkulators).
 
+Sanāk, ka konkursa dalībnieks var sadārdzināt kādu pozīciju un palūgt citam
+uzņēmumam, lai piesakās konkursam ar fiktīvu piedāvājumu, kur attiecīgā
+pozīcija ir īpaši lēta un padara visu punktus šai pozīcijā nebūtiskus. Pārāk
+trakus šādus gadījumus vajadzētu novērst publisko iepirkumu likuma nosacījumam
+par [nepamatoti lētu piedāvājumu](https://likumi.lv/ta/id/287760#p53)
+diskvalificēšanu, bet, ja nu komersants spēj pamatot, kāpēc viņiem šī pozīcija
+ir "pamatoti" lēta?
+
 Ja mūsu mērķis patiesi ir noskaidrot labāko, ranžēšanas sistēma nedrīkst būt
 tāda, kurā dalībnieku secību var izkārtot kāda trešā puse, kas šajā
 izkārtojumā nemaz īsti neiesaistās!
@@ -151,6 +159,9 @@ uzvarētāju!
 	participantCount={2}
 	weights={[30,30,30]}
 	matrix={[[120,99],[180,201],[140,150]]} />
+
+Un šādā, nedaudz pārkārtotā piedāvājumā pat nerastos aizdomas par nepamatotu
+lētumu, ko likums ļautu diskvalificēt.
 
 Protams, ideālā gadījumā konkursants nezina par citu piedāvājumu. Bet normālā
 gadījumā arī konkurentu piedāvājuma uzzināšana ļautu to pārspēt tikai ar
@@ -187,7 +198,9 @@ iekļauta kopā ar ko citu.
 Bet izbraukuma tirdzniecības pakalpojumos, kur bija jānorāda stundas darba
 cena, situācja ir pavisam dīvaina, jo viens no kandidātiem piedāvājis veikt
 šos darbus par 50 centiem stundā. Tad jau laikam automātiski, jo arī 2018. gadā
-minimālā stundas alga bija lielāka par puseiri.
+minimālā stundas alga bija lielāka par puseiri. Grūti spriest, kāpēc
+piedāvājums šajā pozīcijā netika atzīts par [nepamatoti lētu](https://likumi.lv/ta/id/287760#p53),
+jo visus iepirkuma dokumentus vairs neizdodas atrast publiski pieejamus.
 
 Viegli pamanīt, ka "Biļešu paradīze" un "Mikromaksājumi" ir katrs vienā
 pozīcijā nocēluši gandrīz visus punktus. Bet jāpievērš uzmanība arī
@@ -215,6 +228,11 @@ maksimālu salikšanu vienā pozīcijā. Neapgalvoju, ka dalībnieki to darīja
 ļaunprātīgi, bet šeit skaidri demonstrēts, kā viena konkurenta lētums konkrētā
 pozīcijā padara pārējo dalībnieku punktus nevērtīgus neatkarīgi no tā, vai
 piedāvājums bija patiesi dārgs, vai īstenībā tīri konkurētspējīgs.
+
+Starp citu, līdz uzvarai šai [konkursā](https://twitter.com/mairisskuja/status/970194870966071301/photo/1)
+"Biļešu servisam" pietrūka tikai nedaudz vairāk par 12 punktiem, tāpēc šo
+varam uzskatīt par piemēru, kur konkursa rezultātu ir izšķīrušas vērtēšanas
+sistēmas īpatnības.
 
 ## Problēmas mērogs
 
@@ -259,6 +277,9 @@ Labs piemērs ir RSMT [frizieru piederumu](https://www.eis.gov.lv/EKEIS/Supplier
 iepirkums, kur tiek iegādāts lērums preču padsmit pozīcijās. Taču nolikums ir
 gudrs un vienkāršs — cik nu tas kopā izmaksās, to arī vērtēs. Malači! Un tādu
 labu piemēru īstenībā ir daudz.
+
+Cik daudz gadījumos vērtēšanas sistēmai ir bijusi būtiska loma rezultātu
+izšķiršanā, šī raksta ietvaros netika pētīts. Taču [iepriekšējās nodaļas](https://juris.glaive.pro/blog/iepirkumi#piem%C4%93rs-no-dz%C4%ABves) gadījums liecina, ka tādi eksistē.
 
 ## Kopsavilkums un nepieciešamā rīcība
 
