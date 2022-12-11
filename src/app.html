@@ -14,6 +14,46 @@
 			data-site="PYECSWWP"
 			defer></script>
 
+		<script>
+			var _paq = window._paq = window._paq || []
+
+			_paq.push(['setTrackerUrl', 'https://matomo.glaive.pro/matomo.php'])
+			_paq.push(['setSiteId', '1'])
+
+			_paq.push(['disableCookies'])
+			_paq.push(['trackPageView'])
+			_paq.push(['enableLinkTracking'])
+
+			{
+				// https://developer.matomo.org/guides/spa-tracking
+				let currentUrl = location.pathname
+
+				// Need to wait for the next tick so that the title is updated
+				const trackMatomoView = () => setTimeout(() => {
+					_paq.push(['setReferrerUrl', currentUrl])
+					currentUrl = location.pathname
+					_paq.push(['setCustomUrl', currentUrl])
+					_paq.push(['setDocumentTitle', document.title])
+
+					// remove all previously assigned custom variables
+					// _paq.push(['deleteCustomVariables', 'page'])
+
+					_paq.push(['trackPageView'])
+
+					// make Matomo aware of newly added content
+					// var content = document.getElementById('content')
+					// _paq.push(['MediaAnalytics::scanForMedia', content])
+					// _paq.push(['FormAnalytics::scanForForms', content])
+					// _paq.push(['trackContentImpressionsWithinNode', content])
+					_paq.push(['enableLinkTracking'])
+				}, 0)
+
+				// Abuse the proxy made by Fathom :)
+				window.addEventListener('locationchangefathom', trackMatomoView)
+			}
+		</script>
+		<script defer async src="https://matomo.glaive.pro/matomo.js"></script>
+
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-prefetch>
