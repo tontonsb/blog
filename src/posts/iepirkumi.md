@@ -34,9 +34,11 @@ ir nelāgs, bet bieži izmantots algoritms, kas ļauj vairāk punktu iegūt
 dārgākam piedāvājumam. Turklāt, tas var notikt ne tikai ļaunprātīgu
 manipulāciju rezultātā, bet arī salīdzinot normālus, godīgus piedāvājumus.
 
-Šādu vērtēšanas sistēmu nepaģēr nekādi normatīvie akti, bet iepirkumu autori
-bieži tai pieturas, jo izdomāt vērtēšanas sistēmu ir grūti un virspusēji šī
-izskatās uzticama.
+Izdomāt vērtēšanas sistēmu ir grūti. Īpaši tad, kad cenas nav vienkārši 
+summējamas, bet jāņem vērā gan fiksētās izmaksas, gan stundu darbs, gan varbūt
+pat gūstamie ieņēmumi, izpildes termiņi un kvalitāte. Un tādā gadījumā
+iepirkumu autori aizņemas vērtēšanas sistēmu no citiem iepirkumiem. Bet ne
+vienmēr tas paraugs ir tiešām bijis etalona vērts.
 
 ## Kādai jābūt vērtēšanas sistēmai?
 
@@ -76,7 +78,9 @@ vērojot, kā tās ietekmē piešķirtos punktus un konkursa rezultātus.
 
 Sīkāk vari padarboties [šeit](/iepirkumu-kalkulators).
 
-Bet kāda tad vaina šādai vērtēšanai?
+Precizēšu, ka šo sistēmu neliek lietot nekādi normatīvie akti. Iepirkumu autori
+to izvēlas, jo nevar atrast labāku variantu, ko izvēlēties. Bet kāda tad īsti
+vaina šādai vērtēšanai?
 
 ## Sistēma nav stabila
 
