@@ -44,3 +44,5 @@ npm run preview
 - [SvelteKit](https://kit.svelte.dev/)
 - [mdsvex](https://mdsvex.com/)
 - [Katex](https://katex.org/)
+- [Matomo](https://matomo.org/)
+- [Fathom](https://usefathom.com/)
