@@ -87,8 +87,11 @@ p + h2 {
 }
 
 main a {
+	// small-caps variant does not work on iOS
 	// font-variant-caps: small-caps;
-	letter-spacing: var(--letter-spacing);
+	// letter-spacing: var(--letter-spacing);
+	// TODO: try using variable font instead
+
 	color: var(--color-accent);
 	font-family: var(--font-alt);
 	font-weight: var(--font-normal);
