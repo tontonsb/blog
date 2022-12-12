@@ -275,7 +275,7 @@ gadījumā var jautāt, kā vispār labi salīdzināt apdrošināšanas prēmija
 pretim gūstamajiem segumiem. Toties citos iepirkumos kā LVM
 [dampera piegāde](https://www.eis.gov.lv/EKEIS/Supplier/Procurement/92976)
 tam vajadzētu būt pavisam triviāli — cik izmaksā, tik izmaksā, ne? Ko tur gudri
-dalīt pa punktiem un iegūt nelineārus fokusus ar šo haotisko sistēmu? Pielēsiet
+dalīt pa punktiem un iegūt nelineārus fokusus ar šo haotisko sistēmu? Pieliesiet
 taču, cik kilometru attālumā būs jāpiegādā un attiecīgi ņemiet vērā konkrēto
 pozīciju nevis padariet tās manipulējamas!
 
