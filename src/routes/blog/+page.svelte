@@ -4,7 +4,7 @@
 
 <svelte:head>
 	<title>Raksti</title>
-	<meta name="description" content="Rakstu sarkasts Džura blogā.">
+	<meta name="description" content="Rakstu saraksts Džura blogā.">
 </svelte:head>
 
 <h1>Raksti</h1>
@@ -28,7 +28,7 @@
 <style lang=scss>
 	a {
 		color: var(--color-accent);
-		font-variant-caps: small-caps;
+		// font-variant-caps: small-caps;
 		letter-spacing: var(--letter-spacing);
 		color: var(--color-accent);
 		font-family: var(--font-alt);

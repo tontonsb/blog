@@ -26,7 +26,7 @@ h1 {
 h2 {
 	font-size: var(--font-lg);
 	font-weight: var(--font-strong);
-	font-variant-caps: small-caps;
+	// font-variant-caps: small-caps;
 }
 
 main {
@@ -87,7 +87,7 @@ p + h2 {
 }
 
 main a {
-	font-variant-caps: small-caps;
+	// font-variant-caps: small-caps;
 	letter-spacing: var(--letter-spacing);
 	color: var(--color-accent);
 	font-family: var(--font-alt);
