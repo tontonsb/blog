@@ -56,6 +56,8 @@
 
 		%sveltekit.head%
 	</head>
+	<!-- TODO: change prefetch to preload-data when sveltekit is updated -->
+	<!-- https://github.com/sveltejs/kit/blob/master/packages/create-svelte/templates/default/src/app.html#L9 -->
 	<body data-sveltekit-prefetch>
 		<div style="display: contents" class="app">%sveltekit.body%</div>
 	</body>

@@ -8,6 +8,7 @@
 	export let positionCount = 3
 	export let participantCount = 3
 
+	/** @type string[] */
 	export let positions = [
 		'Analīze',
 		'Izstrāde',
@@ -19,8 +20,10 @@
 		'Atjaunināšana',
 	]
 
+	/** @type number[] */
 	export let weights = [20,20,20,20,20]
 
+	/** @type string[] */
 	export let participants = [
 		'AS Lāga zeļļi',
 		'SIA Brāķis & co',
