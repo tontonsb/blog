@@ -92,14 +92,14 @@ Izmaksu ziņā Fathom no maziem klientiem prasa 14 eirikus ik mēnesi un par to
 Ieskatoties redzam modernu paneli, kurš fokusēts gandrīz tikai uz datiem un
 informāciju.
 
-![Fathom panelī redzam apmeklējumu skaita grafiku, skatījumu skaitu pa lapām un vietnes, no kurām nākuši apmeklētāji.](/images/analitikas/matomo-visitors.png)
+![Fathom panelī redzam apmeklējumu skaita grafiku, skatījumu skaitu pa lapām un vietnes, no kurām nākuši apmeklētāji.](/images/analitikas/fathom-dashboard.png)
 
 Tādu klasisku sadaļu īsti nav. Protams, ir kaut kādas iestatījumu lapas, bet
 paši dati visi ir vienā skatā, kur ir galvenie rādītāji par apmeklētajām lapām,
 apmeklētāju ierīcēm un operētājsistēmām, kā arī kaut kādi mārketinga (eventu)
 uzskaites rīki, kurus šoreiz neizmēģināju.
 
-![Fathom datos ir arī informācija par ierīču tipiem, operētājsistēmām un apmeklētāju valstīm.](/images/analitikas/matomo-visitors.png)
+![Fathom datos ir arī informācija par ierīču tipiem, operētājsistēmām un apmeklētāju valstīm.](/images/analitikas/fathom-data.png)
 
 Nekā cita tur laikam nav. Ir iespēja pēc visiem šiem parametriem (piem.
 konkrētas valsts un/vai lapas) filtrēt redzamos datus, bet citādi atvērt neko
