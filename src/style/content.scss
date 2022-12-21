@@ -118,6 +118,23 @@ main img {
 				0 8px 8px rgba(0,0,0,0.15);
 }
 
+main table {
+	border-collapse: collapse;
+
+	th {
+		text-align: left;
+
+		border-bottom: var(--border-base) solid var(--color-accent);
+	}
+
+	th, td {
+		padding-top: var(--space-xs);
+		padding-bottom: var(--space-xs);
+		padding-left: var(--space-xs);
+		padding-right: var(--space-base);
+	}
+}
+
 pre {
 	font-size: 16px;
 	font-family: var(--font-code);
