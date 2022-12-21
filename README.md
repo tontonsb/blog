@@ -14,6 +14,7 @@ Whenever I was uncertain what to do, I stole ideas from
 - [ ] Add post pagination
 - [ ] Add tests. Playwright?
 - [ ] Ensure that failed builds are never deployed. How?
+- [ ] Upgrade to SvelteKit 1.0
 
 ## Development
 
