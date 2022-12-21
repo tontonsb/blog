@@ -6,8 +6,8 @@ intro: Aplūkosim divas Google Analytics alternatīvas — Matomo un Fathom un p
 
 # Bezcepumu analītikas
 
-Katrs vēlas uzzināt, cik apmeklējumu un lasījumu viņam ir. Pat es. Daudziem tas
-pat ir svarīgi biznesam. Tomēr neviens nevēlas, ka 2 nedēļas pēc veļasmašīnas
+Katrs vēlas uzzināt, cik apmeklējumu un lasījumu viņam ir. Arī es. Daudziem tas
+pat ir svarīgi biznesam. Tomēr neviens nevēlas, lai 2 nedēļas pēc veļasmašīnas
 katrā ziņu portālā un facebookā tiek piedāvātas vēl un vēl veļasmašīnas. Vispār
 jau mēs nevēlamies, lai facebooks vispār zinātu, ka es nopirku veļasmašīnu. Šo
 problēmas daļu Eiropa ir atrisinājusi ar GDPR. Bet analītikas nozari tas atmeta
@@ -82,12 +82,13 @@ liek cerēt, ka rīks būs vislabāk piemērots precīzai analītikai bez vajadz
 pēc visādiem popupiem.
 
 Šis pakalpojums ir pieejams tikai abonēšanas veidā un tiks mitināts uz
-pakalpojumu sniedzēja serveriem. Tomēr atšķirību no [nelegālajiem](https://noyb.eu/en/austrian-dsb-eu-us-data-transfers-google-analytics-illegal)
+pakalpojumu sniedzēja serveriem. Tomēr atšķirībā no [nelegālajiem](https://noyb.eu/en/austrian-dsb-eu-us-data-transfers-google-analytics-illegal)
 amerikāņu pakalpojumiem, Fathom ir Kanādas kompānija, bet dati ir izolēti
 Vācijas serveros, kas šo datu apstrādi padara ar GDPR saderīgu.
 
-Izmaksu ziņā Fathom no maziem klientiem prasa 14 eirikus ik mēnesi un par to
-ļaus vākt statistiku no 50 vietnēm, līdz 100 tūkstošiem apmeklējumu mēnesī.
+Izmaksu ziņā Fathom no maziem klientiem [prasa](https://usefathom.com/pricing)
+14 eirikus ik mēnesi un par to ļaus vākt statistiku no 50 vietnēm, līdz 100
+tūkstošiem apmeklējumu mēnesī.
 
 Ieskatoties redzam modernu paneli, kurš fokusēts gandrīz tikai uz datiem un
 informāciju.
