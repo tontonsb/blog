@@ -5,8 +5,9 @@
 
 # Nestandarta analīze
 
-Šeit teorētiski varētu būt blogs. Pagaidām izveidots vienas esejas
-publicēšanai. Baudiet!
+Šeit teorētiski varētu būt blogs. Sākotnēji tika izveidots vienas esejas
+publicēšanai. Varbūt brīžiem parādīsies vēl kāds raksts. Varbūt ne. Baudiet
+to, kas ir! :)
 
 Ja vēlies privāti sazināties par kādu jautājumu, atraksti pastu uz
 [juris@glaive.pro](mailto:juris@glaive.pro).
