@@ -29,6 +29,11 @@ Taisot šo blogu, nolēmu izmēģināt divas [Google Analytics](https://analytic
 jaunajā, ceturtajā versijā ir pieejama bezizsekošanas analītika. Varbūt kādreiz
 izmēģināšu arī to. Bet šoreiz [Matomo](https://matomo.org/) un [Fathom](https://usefathom.com/).
 
+> **Labojums 22.12.2022.** Pamēģināju GA uzstādīt bezcepumu režīmā. Daudz
+darba pašam, čakarīga un neskaidra konfigurācija. Faktiski tur nav uz privātumu
+tēmēta šablona. Rodas iespaids, ka bezcepumu iespēja nav mērķis un diez vai būs
+optimizēta kvalitatīvu datu iegūšanai. Šeit netiks ieviests.
+
 ## Matomo Analytics
 
 [Matomo](https://matomo.org/), pēc pašu vārdiem, esot GA alternatīva, kas
