@@ -7,7 +7,7 @@ intro: Aplūkosim divas Google Analytics alternatīvas — Matomo un Fathom un p
 # Bezcepumu analītikas
 
 Katrs vēlas uzzināt, cik apmeklējumu un lasījumu viņam ir. Arī es. Daudziem tas
-pat ir svarīgi biznesam. Tomēr neviens nevēlas, lai 2 nedēļas pēc veļasmašīnas
+pat ir svarīgi biznesam. Tomēr neviens nevēlas, lai 2 nedēļas pēc veļasmašīnas pirkuma
 katrā ziņu portālā un facebookā tiek piedāvātas vēl un vēl veļasmašīnas. Vispār
 jau mēs nevēlamies, lai facebooks vispār zinātu, ka es nopirku veļasmašīnu. Šo
 problēmas daļu Eiropa ir atrisinājusi ar GDPR. Bet analītikas nozari tas atmeta
