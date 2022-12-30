@@ -9,7 +9,7 @@ Whenever I was uncertain what to do, I stole ideas from
 
 - [x] Host on GitHub Pages
 - [x] Build with GitHub Actions
-- [x] Add analytics by Fathom and Matomo
+- [x] Add analytics by ~~Fathom and~~ Matomo
 - [ ] Introduce hyphenation
 - [ ] Add post pagination
 - [ ] Add tests. Playwright?
@@ -46,4 +46,3 @@ npm run preview
 - [mdsvex](https://mdsvex.com/)
 - [Katex](https://katex.org/)
 - [Matomo](https://matomo.org/)
-- [Fathom](https://usefathom.com/)

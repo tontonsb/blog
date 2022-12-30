@@ -8,13 +8,8 @@
 			type="image/svg+xml"
 			rel="shortcut icon" >
 
-		<meta name="viewport" content="width=device-width" />
-		<script src="https://cdn.usefathom.com/script.js"
-			data-spa="auto"
-			data-site="PYECSWWP"
-			defer></script>
-
 		<script>
+			// TODO: Put this in a matomo component
 			var _paq = window._paq = window._paq || []
 
 			_paq.push(['setTrackerUrl', 'https://matomo.glaive.pro/matomo.php'])
@@ -48,8 +43,21 @@
 					_paq.push(['enableLinkTracking'])
 				}, 0)
 
-				// Abuse the proxy made by Fathom :)
-				window.addEventListener('locationchangefathom', trackMatomoView)
+				// Add a proxy to pushstate
+				if (history) {
+					const pushState = history.pushState
+
+					history.pushState = function() {
+						const result = pushState.apply(history, arguments)
+
+						dispatchEvent(new Event('locationchange'))
+
+						return result
+					}
+
+					window.addEventListener('popstate', trackMatomoView)
+					window.addEventListener('locationchange', trackMatomoView)
+				}
 			}
 		</script>
 		<script defer async src="https://matomo.glaive.pro/matomo.js"></script>

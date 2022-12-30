@@ -14,5 +14,4 @@ Vietne izvietota GitHub [Pagēs](https://pages.github.com/).
 Saskaņā ar viņu sniegto [informāciju](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection),
 viņi savos žurnālos reģistrē apmeklētāju IP adreses.
 
-Tiek ievākta anonimizēta apmeklējumu statistika ar [Fathom](https://usefathom.com/)
-un [Matomo](https://matomo.org/).
+Tiek ievākta anonimizēta apmeklējumu statistika ar [Matomo](https://matomo.org/).
