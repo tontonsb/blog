@@ -1,6 +1,7 @@
 <script>
+	/** @type {import('./$types').PageData} */
 	export let data
-	const {meta, Content, slug} = data
+	const {meta, Content} = data
 </script>
 
 <svelte:head>

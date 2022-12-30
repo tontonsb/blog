@@ -1,6 +1,7 @@
 // https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog
 import { error } from '@sveltejs/kit'
 
+/** @type {import('./$types').PageLoad} */
 export const load = async ({params}) => {
 	try {
 		const post = await import(`../../../posts/${params.slug}.md`)

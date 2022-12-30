@@ -91,7 +91,7 @@
 		<tr>
 			<th></th>
 			{#if configurable}
-				{#each positions.slice(0, positionCount) as position, i}
+				{#each positions.slice(0, positionCount) as _, i}
 				<!-- using contenteditable because sizing inputs in td is hard -->
 				<th
 					contenteditable=true
@@ -145,7 +145,7 @@
 				<td
 					contenteditable=true
 					role=textbox
-					aria-label={'Dalībnieka ' + participants[j] + ' piedāvājums pozīcijā ' + positions[i]}
+					aria-label={'Dalībnieka ' + participants[j] + ' piedāvājums pozīcijā ' + position}
 					class:invalid={!/^[1-9]\d*(\.\d+)?$/s.test(matrix[i][j].toString())}
 					bind:textContent={matrix[i][j]}
 				></td>
@@ -156,7 +156,7 @@
 				</td>
 				{/if}
 			{:else}
-				{#each positions.slice(0, positionCount) as position, i}
+				{#each positions.slice(0, positionCount) as _, i}
 				<td>{matrix[i][j]}</td>
 				{/each}
 			{/if}

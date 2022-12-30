@@ -11,7 +11,7 @@
 		if (!('_paq' in window))
 			window._paq = []
 
-		_paq.push(args)
+		window._paq.push(args)
 	}
 </script>
 
