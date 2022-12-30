@@ -39,6 +39,18 @@ npm run build
 npm run preview
 ```
 
+### Testing
+
+```sh
+npm run test:e2e
+```
+
+Also happens on pushes and PRs to the master branch.
+
+### Deploying
+
+Run the GH action at https://github.com/tontonsb/blog/actions/workflows/deploy.yml
+
 ## Resources
 
 - [Svelte](https://svelte.dev/)
