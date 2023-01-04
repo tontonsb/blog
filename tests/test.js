@@ -32,3 +32,12 @@ test('calc page works', async ({ page }) => {
 
 	expect(await page.textContent('h1')).toBe('Iepirkumu kalkulators')
 })
+
+test('karatsuba page works', async ({ page }) => {
+	await page.goto('/karatsuba')
+
+	expect(await page.textContent('h1')).toBe('Karatsuba algorithm')
+
+	// Ensure the calc is rendered
+	await expect(page.locator('main')).toContainText('- z0 - z2')
+})
