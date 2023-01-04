@@ -2,6 +2,7 @@
 	import MatomoKit from '$components/tracking/MatomoKit.svelte'
 	import Header from '$components/header/Header.svelte'
 	import Footer from '$components/Footer.svelte'
+	import { page } from '$app/stores'
 
 	import '$style/main.scss'
 </script>
@@ -12,7 +13,7 @@
 
 <Header />
 
-<main>
+<main lang={$page.data.meta?.lang ?? 'lv'}>
 	<slot />
 </main>
 

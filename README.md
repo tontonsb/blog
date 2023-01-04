@@ -18,7 +18,7 @@ Whenever I was uncertain what to do, I stole ideas from
 - [x] Upgrade to SvelteKit 1.0
 - [ ] Add social tags and other meta stuff
 - [ ] Add post tags
-- [ ] Add lang attributes to posts
+- [x] Add lang attributes to posts
 
 ## Development
 

@@ -7,6 +7,7 @@ export const load = async ({ fetch }) => {
 	 * 			title: string|null,
 	 * 			date: string|null,
 	 * 			intro: string|null,
+	 * 			lang: string|null,
 	 * 		},
 	 * 		path: string,
 	 * }[]}
