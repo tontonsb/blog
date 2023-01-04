@@ -12,9 +12,13 @@ Whenever I was uncertain what to do, I stole ideas from
 - [x] Add analytics by ~~Fathom and~~ Matomo
 - [ ] Introduce hyphenation
 - [ ] Add post pagination
-- [ ] Add tests. Playwright?
+- [x] Add tests. Playwright?
+- [ ] Test more thoroughly
 - [ ] Ensure that failed builds are never deployed. How?
 - [x] Upgrade to SvelteKit 1.0
+- [ ] Add social tags and other meta stuff
+- [ ] Add post tags
+- [ ] Add lang attributes to posts
 
 ## Development
 
