@@ -25,6 +25,10 @@
 Play around with the calculator and see how many steps does it take for the
 [Karatsuba algorithm](/blog/karatsuba) to multiply the selected numbers.
 
+**Note:** for a side to side comparison of classic and Karatsuba algorithms you can
+view [this](/karatsuba/comparison) page. The display length will somewhat
+reflect the overhead in Karatsuba's algorithm.
+
 <label>
 	x = <input bind:value={x} >
 </label>
