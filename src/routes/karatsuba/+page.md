@@ -37,7 +37,13 @@ Play around with the calculator and see how many steps does it take for the
 
 For comparision multiplying these {lengthText} numbers with the classic
 digit-by-digit algorithm would've required {xLength*yLength} single digit
-multiplications. But here's how Karatsuba's algorithm would perform:
+multiplications. But here's how Karatsuba's algorithm would perform. The
+display starts with calculating `z0`, `z1` and `z2` and using them to get the
+final result. The multiplications invloved in `z0`, `z1` and `z2`are detailed
+below. You can click on the orange expressions to highlight their
+multiplication and scroll to it. Depending on values and the selected cutoff it
+will either be computed using the classic multiplication or use another step
+of Karatsuba's algorithm.
 
 <section>
 <Karatsuba {x} {y} {cutoff} />

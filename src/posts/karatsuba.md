@@ -80,24 +80,26 @@ const equations = {
 # Karatsuba's algorithm
 
 What's the fastest way to multiply two n-digit numbers? Well, that depends
-on n, but maybe I'll show you something that you didn't know was possible.
+on n, but maybe I'll show you something that you didn't know was possible. To
+multiply them with less operations that you would do in the digit-by-digit
+multiplication.
 
 To multiply two n-digit numbers, you have to do n^2 single digit
 multiplications. That's obvious — you have to multiply each digit of one
 numba to each digit of the other one. There's no way around it. When this
-factoid was mentioned by Andrei Kolomogorov in a seminar in 1960, it set off a
-mental avalanche in one of the students.
+factoid was mentioned by Andrei Kolomogorov in a seminar in 1960, one of his
+students was audacious enough to not take it for granted.
 
 This student was named [Anatoly Karatsuba](https://en.wikipedia.org/wiki/Anatoly_Karatsuba)
-and he managed to find a way to multiply numbers faster than it is possible.
-Well, that's exaggeration. But he found the first algorithm to multiply numbers
-faster then multiplying them digit-by-digit thus opening the gates for 
-algorithm development and improvements in an area that everyone until then had
-considered done and solved.
+and he managed to find a way to multiply numbers faster than it was assumed
+possible. He found the first algorithm to multiply numbers faster then 
+multiplying them classicly thus opening the gates for algorithm development
+and improvements in an area that everyone until then had considered done and
+solved.
 
 ## The breakthrough
 
-So what did Karatsuba noticed that no one else had?
+So what did Karatsuba notice that no one else had?
 
 Consider 26 and 43. To multiply them *classically* you would do the following:
 
@@ -106,7 +108,7 @@ Consider 26 and 43. To multiply them *classically* you would do the following:
 </section>
 
 That's four single-digit multiplications as the counter on the left shows.
-This reduction can be expressed via the following formula where <Katex math="b=10" />:
+This distribution can be expressed via the following formula where <Katex math="b=10" />:
 
 <Katex math={equations.classicNumerical} displayMode />
 
@@ -116,7 +118,7 @@ second number will be represented by <Katex math="y" /> and we obtain this:
 
 <Katex math={equations.classic} displayMode />
 
-What Karatsuba noticed about this simple expression was that coefficients with
+What Karatsuba noticed about this simple expression was that coefficients by
 the term <Katex math="b" /> can be expressed using one multiplication and the
 other coefficients:
 
@@ -150,8 +152,7 @@ And obtain the result:
 
 But wait! I forgot to mention that this algorithm should be used recursively.
 If the numbers involved to calculate those z's above are large, you should
-multiply them using the Karatsuba algorithm. That's where the real speedup
-comes in play!
+do the involved multiplications using the Karatsuba algorithm.
 
 ## Example
 
@@ -163,6 +164,9 @@ We split {x} into {xSplit.upper} and {xSplit.lower}; and {y} into
 away turning {xSplit.lower} and {ySplit.lower} into {parseInt(xSplit.lower)}
 and {parseInt(ySplit.lower)} respectively.
 
+The display starts by calculating the z0, z1 and z2 and putting them together
+to calculate the result. The values of involved multiplications are calculated
+below, you can use the orange links to highlight a calculation.
 You can see the counter for individual multiplications on the left hand side.
 
 <section>
@@ -177,16 +181,16 @@ multiplications in total. In the worst case we might've also gotten two 4-digit
 numbers in the `z1` calculation which would've required 16 instead of 9
 multiplications, bringing the total 34.
 
-Thus, even with these simplifications taken away, we can observe a slight edge
+But even with these simplifications taken away, we still have a slight edge
 as the classic digit-by-digit multiplication would've required to do 36
 multiplications.
 
-You can try out the same visualization with different numbers [here](/karatsuba).
+You can try out the same visualization with different (larger!) numbers [here](/karatsuba).
 
 ## Other algos
 
 The classic digit-by-digit algorithm requires <Katex math="n^2" />
-multiplications. And some additions as well, but it be estimated to run
+multiplications. And some additions as well, but it can be estimated to run
 in <Katex math={equations.O_n2} />.
 
 The number of operations (time complexity) of Karatsuba's algorithm can be
@@ -212,7 +216,7 @@ They conjectured that multiplication can be done in <Katex math={equations.O_nlo
 This bound was reached in 2019 by David Harvey and Joris van der Hoeven who
 used multi-dimensional (1729-dimensional to be precise, what a taxicab
 coincidence) FFTs. But it is still unknown whether <Katex math={equations.O_nlogn} />
-is the best we can do.
+is truly the best we can do.
 
 It must also be noted that all of these algorithms have significant overhead
 and the more complex algorithms are faster only for very large numbers. The
