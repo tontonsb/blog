@@ -1,6 +1,6 @@
 ---
 title: Karatsuba's algorithm
-date: 
+date: "2023-01-08"
 intro: Let's take a look at an algorithm that multiplies two numbers faster than you could by mutiplying them digit by digit
 lang: en
 ---
