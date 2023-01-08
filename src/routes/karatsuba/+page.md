@@ -49,7 +49,20 @@ label {
 }
 
 section {
-	counter-reset: karatsuba-line;
+	:global(pre) {
+		// Fixes line number clipping
+		overflow-x: visible;
+	}
+
+	:global(a) {
+		// To bring it in line with the other content of <pre>
+		font-family: unset;
+		font-weight: unset;
+	}
+
+	:global(:target) {
+		background: var(--color-light);
+	}
 
 	:global(.comment) {
 		color: #767676;

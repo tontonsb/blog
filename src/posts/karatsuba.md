@@ -79,7 +79,8 @@ const equations = {
 
 # Karatsuba's algorithm
 
-This is how you multiply faster than possible.
+What's the fastest way to multiply two n-digit numbers? Well, that depends
+on n, but maybe I'll show you something that you didn't know was possible.
 
 To multiply two n-digit numbers, you have to do n^2 single digit
 multiplications. That's obvious — you have to multiply each digit of one
@@ -224,8 +225,22 @@ used in any software, at least until futher polishing.
 
 <style lang="scss">
 section {
-	counter-reset: karatsuba-line;
 	background: #f8f8fc;
+
+	:global(pre) {
+		// Fixes line number clipping
+		overflow-x: visible;
+	}
+
+	:global(a) {
+		// To bring it in line with the other content of <pre>
+		font-family: unset;
+		font-weight: unset;
+	}
+
+	:global(:target) {
+		background: var(--color-light);
+	}
 
 	:global(.comment) {
 		color: #727272;
