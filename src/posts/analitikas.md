@@ -1,6 +1,7 @@
 ---
 title: Bezcepumu analītikas
 date: "2022-12-21"
+updated: "2022-12-22"
 intro: Aplūkosim divas Google Analytics alternatīvas — Matomo un Fathom un pieredzi ar tām šajā prodžektā.
 ---
 
