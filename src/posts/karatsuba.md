@@ -33,6 +33,9 @@ function split(str, position) {
 }
 
 const equations = {
+	n2: String.raw`
+		n^2
+	`,
 	classicNumerical: String.raw`
 		26 \cdot 43 = (2b+6)(4b+3) = 2b \cdot 4b + 2b \cdot 3 + 6 \cdot 4b + 6 \cdot 3
 	`,
@@ -84,7 +87,7 @@ on n, but maybe I'll show you something that you didn't know was possible. To
 multiply them with less operations that you would do in the digit-by-digit
 multiplication.
 
-To multiply two n-digit numbers, you have to do n^2 single digit
+To multiply two n-digit numbers, you have to do <Katex math={equations.n2} /> single digit
 multiplications. That's obvious — you have to multiply each digit of one
 numba to each digit of the other one. There's no way around it. When this
 factoid was mentioned by Andrei Kolomogorov in a seminar in 1960, one of his
