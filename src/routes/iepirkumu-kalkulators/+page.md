@@ -1,11 +1,9 @@
 <script>
+	import Meta from '$components/meta/Meta.svelte'
 	import Calculator from '$components/TenderCalculator.svelte'
 </script>
 
-<svelte:head>
-	<title>Iepirkumu kalkulators</title>
-	<meta name="description" content="Kalkulators, kas realizē sliktu iepirkumu vērtēšanas modeli.">
-</svelte:head>
+<Meta title="Iepirkumu kalkulators" description="Kalkulators, kas realizē sliktu iepirkumu vērtēšanas modeli." />
 
 # Iepirkumu kalkulators
 

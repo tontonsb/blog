@@ -1,13 +1,12 @@
 <script>
+	import Meta from '$components/meta/Meta.svelte'
+
 	// TODO: define Post type somewhere
 	/** @type {import('./$types').PageData} */
 	export let data
 </script>
 
-<svelte:head>
-	<title>Raksti</title>
-	<meta name="description" content="Rakstu saraksts Džura blogā.">
-</svelte:head>
+<Meta title="Raksti" description="Rakstu saraksts Džura blogā." />
 
 <h1>Raksti</h1>
 

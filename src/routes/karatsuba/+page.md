@@ -1,4 +1,5 @@
 <script>
+	import Meta from '$components/meta/Meta.svelte'
 	import {Karatsuba} from '@tontonsb/karatsuba-display'
 	import {randomInteger} from '$lib/helpers'
 
@@ -15,10 +16,7 @@
 	let cutoff = 10000000
 </script>
 
-<svelte:head>
-	<title>Karatsuba algorithm</title>
-	<meta name="description" content="Karatsuba algorithm visualized.">
-</svelte:head>
+<Meta title="Karatsuba algorithm" description="Karatsuba algorithm visualized." />
 
 # Karatsuba algorithm
 

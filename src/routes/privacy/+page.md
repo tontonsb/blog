@@ -1,7 +1,8 @@
-<svelte:head>
-	<title>Datu politika</title>
-	<meta name="description" content="Džura datu apstrādes politika.">
-</svelte:head>
+<script>
+	import Meta from '$components/meta/Meta.svelte'
+</script>
+
+<Meta title="Datu politika" description="Džura datu apstrādes politika." />
 
 # Datu politika
 

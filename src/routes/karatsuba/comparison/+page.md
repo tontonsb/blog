@@ -1,4 +1,5 @@
 <script>
+	import Meta from '$components/meta/Meta.svelte'
 	import {Karatsuba, Classic} from '@tontonsb/karatsuba-display'
 	import {randomInteger} from '$lib/helpers'
 
@@ -15,10 +16,7 @@
 	let cutoff = 10000000
 </script>
 
-<svelte:head>
-	<title>Karatsuba vs classic</title>
-	<meta name="description" content="Karatsuba algorithm compared to the classic multiplication.">
-</svelte:head>
+<Meta title="Karatsuba  vs classic" description="Karatsuba algorithm compared to the classic multiplication." />
 
 # Karatsuba vs classic
 

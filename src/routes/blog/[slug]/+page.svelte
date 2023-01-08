@@ -1,13 +1,12 @@
 <script>
+	import Meta from '$components/meta/Meta.svelte'
+
 	/** @type {import('./$types').PageData} */
 	export let data
 	const {meta, Content} = data
 </script>
 
-<svelte:head>
-	<title>{ meta.title ?? 'Blog' }</title>
-	<meta name="description" content="{meta.intro}">
-</svelte:head>
+<Meta title={meta.title} description={meta.intro} article={true} />
 
 <Content />
 

@@ -1,7 +1,8 @@
-<svelte:head>
-	<title>Par mani</title>
-	<meta name="description" content="Par autoru">
-</svelte:head>
+<script>
+	import Meta from '$components/meta/Meta.svelte'
+</script>
+
+<Meta title="Par mani" description="Par autoru" />
 
 # Par mani
 

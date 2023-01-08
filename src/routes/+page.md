@@ -1,7 +1,8 @@
-<svelte:head>
-	<title>Nestandarta analīze</title>
-	<meta name="description" content="Šeit mēs runāsim par bezgalīgi maziem un bezgalīgi lieliem lielumiem. Kā pie īstiem vīriem. Kā Leibnics nevis Veierštrāss.">
-</svelte:head>
+<script>
+	import Meta from '$components/meta/Meta.svelte'
+</script>
+
+<Meta />
 
 # Nestandarta analīze
 
