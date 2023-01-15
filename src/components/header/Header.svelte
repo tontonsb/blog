@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores'
+	import { lang } from '$lib/lang.js'
 	import Hamburger from './Hamburger.svelte'
 
 	let open = false
@@ -13,7 +14,7 @@
 	</div>
 
 	<nav class:open>
-		<ul>
+		<ul class="menu">
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/" on:click={() => open = false}>Sākums</a>
 			</li>
@@ -25,6 +26,31 @@
 				<a href="/about" on:click={() => open = false}>Par</a>
 			</li>
 			-->
+		</ul>
+
+		<ul class="lang">
+			<li class:current-lang={'lv' === $lang}>
+				<a
+					href="#"
+					hreflang="lv"
+					title="Ieslēgt latviešu valodu"
+					on:click={() => open = false}
+					on:click={() => $lang = 'lv'}
+					>
+						LV
+				</a>
+			</li>
+			<li class:current-lang={'en' === $lang}>
+				<a
+					href="#"
+					hreflang="en"
+					title="Switch to English"
+					on:click={() => open = false}
+					on:click={() => $lang = 'en'}
+					>
+						EN
+				</a>
+			</li>
 		</ul>
 	</nav>
 
@@ -77,12 +103,12 @@
 			transition: max-height .1s cubic-bezier(.77, 0, .175, 1);
 
 			&.open {
-				max-height: 200px;
+				max-height: 190px;
 				transition: max-height .25s cubic-bezier(.77, 0, .175, 1);
 			}
 		}
 
-		ul {
+		.menu {
 			flex-direction: column;
 			align-items: center;
 			gap: var(--space-sm);
@@ -97,6 +123,7 @@
 		position: relative;
 		height: 100%;
 
+		padding: 0 var(--space-base);
 		display: flex;
 
 		list-style: none;
@@ -120,27 +147,33 @@
 		transition: color 0.2s linear;
 	}
 
-	li::before {
-		--size: 9px;
+	.menu {
+		li::before {
+			--size: 9px;
 
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		width: 0;
-		height: 0;
+			position: absolute;
+			top: 0;
+			left: calc(50% - var(--size));
+			width: 0;
+			height: 0;
 
-		content: '';
+			content: '';
 
-		border: var(--size) solid transparent;
-		transition: border-color 0.2s linear;
-		border-top: var(--size) solid transparent;
+			border: var(--size) solid transparent;
+			transition: border-color 0.2s linear;
+			border-top: var(--size) solid transparent;
+		}
+
+		:is(li[aria-current='page'])::before {
+			border-top: var(--size) solid var(--color-accent);
+		}
+
+		li:not([aria-current='page']):is(:hover, :focus-within)::before {
+			border-top: var(--size) solid var(--color-light);
+		}
 	}
 
-	li[aria-current='page']::before {
-		border-top: var(--size) solid var(--color-accent);
-	}
-
-	li:not([aria-current='page']):is(:hover, :focus-within)::before {
-		border-top: var(--size) solid var(--color-light);
+	.current-lang {
+		color: var(--color-accent);
 	}
 </style>
