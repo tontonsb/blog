@@ -20,10 +20,10 @@
 
 # Karatsuba vs classic
 
-Compare the [Karatsuba algorithm](/blog/karatsuba) to the classic digit-by-digit
+Compare the [Karatsuba algorithm](blog/karatsuba) to the classic digit-by-digit
 multiplication. This page is intended to compare the lengths of both approaches.
 If you are only interested in investigating the Karatsuba algorithm, head to a
-more responsive page [here](/karatsuba).
+more responsive page [here](karatsuba).
 
 **Note:** The responsivity on this page is not that polished, you might want to
 zoom out in some cases.

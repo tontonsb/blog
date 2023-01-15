@@ -63,7 +63,7 @@ Aplūkojot projektu, redzam, ka funkcionāli produkts cenšas atdarināt GA, ska
 ir nedaudz vecmodīgs, tādā tipiskā PHP projektu stilā. Acīs duras ielāpiem
 veidotais latviskojums — daži nosaukumi ir iztulkoti, daži palikuši angliski.
 
-![Matomo panelis ar klasisku izvēlni kreisajā pusē un vairākiem blokiem galvenajā daļā. Starp blokiem reālā laika pārskats un pēdējā mēneša apmeklējumu grafiks, bet ir arī reklāmas bloki, kas mudina pāriet uz Matomo *premium* versiju.](/images/analitikas/matomo-dashboard.png)
+![Matomo panelis ar klasisku izvēlni kreisajā pusē un vairākiem blokiem galvenajā daļā. Starp blokiem reālā laika pārskats un pēdējā mēneša apmeklējumu grafiks, bet ir arī reklāmas bloki, kas mudina pāriet uz Matomo *premium* versiju.](images/analitikas/matomo-dashboard.png)
 
 Ir pieejami visi pierastie dati — apmeklētāju ierīces, operētājsistēmas, ekrāna
 izmēri. Avots no kura apmeklētāji nākuši, lapas pa kurām staigājuši, saite ar
@@ -71,14 +71,14 @@ kuru izgājuši. Ir arī komerciālās sadaļas par mērķiem, kur var uzskaitī
 konkrētas aktivitātes (piem lietotājs uzspieda uz baniera vai ielika preci
 grozā), taču man šis šoreiz nebija aktuāli.
 
-![Matomo parāda apmeklētāju sadalījumu pa ierīču tipiem, operētājsistēmām un ekrāna izmēriem.](/images/analitikas/matomo-data.png)
+![Matomo parāda apmeklētāju sadalījumu pa ierīču tipiem, operētājsistēmām un ekrāna izmēriem.](images/analitikas/matomo-data.png)
 
 Kopumā Matomo pret apmeklētāju privātumu izturas cienīgi. Cik nu mūsu vēlmes to
 ļauj, ievāktie dati nav pārāk personalizēti, IP adreses ir anonomizitētas (tas
 laikam izskaidro ģeolokācijas neprecizitāti). Arī datubāzē pārbaudot es
 pārliecinājos, ka nekas vairāk kā attēlā redzams, par apmeklētājiem saglabāts nav.
 
-![Matomo saglabā apmeklējuma laiku, anonimizētu IP adresi, vispārīgus datus par ierīci un apmeklēto lapu sarakstu](/images/analitikas/matomo-visitors.png)
+![Matomo saglabā apmeklējuma laiku, anonimizētu IP adresi, vispārīgus datus par ierīci un apmeklēto lapu sarakstu](images/analitikas/matomo-visitors.png)
 
 ## Fathom
 
@@ -99,14 +99,14 @@ tūkstošiem apmeklējumu mēnesī.
 Ieskatoties redzam modernu paneli, kurš fokusēts gandrīz tikai uz datiem un
 informāciju.
 
-![Fathom panelī redzam apmeklējumu skaita grafiku, skatījumu skaitu pa lapām un vietnes, no kurām nākuši apmeklētāji.](/images/analitikas/fathom-dashboard.png)
+![Fathom panelī redzam apmeklējumu skaita grafiku, skatījumu skaitu pa lapām un vietnes, no kurām nākuši apmeklētāji.](images/analitikas/fathom-dashboard.png)
 
 Tādu klasisku sadaļu īsti nav. Protams, ir kaut kādas iestatījumu lapas, bet
 paši dati visi ir vienā skatā, kur ir galvenie rādītāji par apmeklētajām lapām,
 apmeklētāju ierīcēm un operētājsistēmām, kā arī kaut kādi mārketinga (eventu)
 uzskaites rīki, kurus šoreiz neizmēģināju.
 
-![Fathom datos ir arī informācija par ierīču tipiem, operētājsistēmām un apmeklētāju valstīm.](/images/analitikas/fathom-data.png)
+![Fathom datos ir arī informācija par ierīču tipiem, operētājsistēmām un apmeklētāju valstīm.](images/analitikas/fathom-data.png)
 
 Nekā cita tur laikam nav. Ir iespēja pēc visiem šiem parametriem (piem.
 konkrētas valsts un/vai lapas) filtrēt redzamos datus, bet citādi atvērt neko

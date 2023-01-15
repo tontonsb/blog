@@ -188,7 +188,7 @@ But even with these simplifications taken away, we still have a slight edge
 as the classic digit-by-digit multiplication would've required to do 36
 multiplications.
 
-You can try out the same visualization with different (larger!) numbers [here](/karatsuba).
+You can try out the same visualization with different (larger!) numbers [here](karatsuba).
 
 ## Other algos
 

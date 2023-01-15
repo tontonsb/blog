@@ -16,7 +16,7 @@
 	</div>
 
 	<div>
-		<a href="/privacy">Datu politika</a>
+		<a href="privacy">Datu politika</a>
 
 		<a href="https://github.com/tontonsb/blog">
 			Izejas kods

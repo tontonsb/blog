@@ -18,7 +18,7 @@
 				<a href="/" on:click={() => open = false}>Sākums</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined}>
-				<a href="/blog" on:click={() => open = false}>Raksti</a>
+				<a href="blog" on:click={() => open = false}>Raksti</a>
 			</li>
 			<!--
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>

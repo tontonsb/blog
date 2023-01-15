@@ -76,7 +76,7 @@ vērojot, kā tās ietekmē piešķirtos punktus un konkursa rezultātus.
 
 <Calculator	editable={true} />
 
-Sīkāk vari padarboties [šeit](/iepirkumu-kalkulators).
+Sīkāk vari padarboties [šeit](iepirkumu-kalkulators).
 
 Precizēšu, ka šo sistēmu neliek lietot nekādi normatīvie akti. Iepirkumu autori
 to izvēlas, jo nevar atrast labāku variantu, ko izvēlēties. Bet kāda tad īsti
@@ -130,7 +130,7 @@ Un jo zemāku cenu "Uzmetiens" otrajā pozīcijā piedāvātu, jo vienādāki k�
 pārējo dalībnieku punkti tajā. Ja vienam kandidātam izdodas kādā pozīcijā
 pamatot (vai komisija pamatojumu neprasa) pavisam zemu cenu, tad pārējo konkursantu
 punkti šai pozīcijā kļūs pavisam mazi, vienādi un nevērtīgi. Dažādus šādus
-scenārijus vari modelēt [pilnajā kalkulatora saskarnē](/iepirkumu-kalkulators).
+scenārijus vari modelēt [pilnajā kalkulatora saskarnē](iepirkumu-kalkulators).
 
 Sanāk, ka konkursa dalībnieks var sadārdzināt kādu pozīciju un palūgt citam
 uzņēmumam, lai piesakās konkursam ar fiktīvu piedāvājumu, kur attiecīgā
