@@ -6,5 +6,5 @@
 </script>
 
 <svelte:head>
-	<base href="/{''}">
+	<base href="/{$lang ?? ''}/">
 </svelte:head>

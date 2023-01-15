@@ -16,7 +16,7 @@
 	<nav class:open>
 		<ul class="menu">
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/" on:click={() => open = false}>Sākums</a>
+				<a href="/{$lang ?? ''}" on:click={() => open = false}>Sākums</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined}>
 				<a href="blog" on:click={() => open = false}>Raksti</a>
@@ -31,7 +31,7 @@
 		<ul class="lang">
 			<li class:current-lang={'lv' === $lang}>
 				<a
-					href="#"
+					href="/lv"
 					hreflang="lv"
 					title="Ieslēgt latviešu valodu"
 					on:click={() => open = false}
@@ -42,7 +42,7 @@
 			</li>
 			<li class:current-lang={'en' === $lang}>
 				<a
-					href="#"
+					href="/en"
 					hreflang="en"
 					title="Switch to English"
 					on:click={() => open = false}

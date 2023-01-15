@@ -8,5 +8,5 @@ export const lang = writable(undefined)
  * @param {import('@sveltejs/kit').Page} page
  */
 export function init(page) {
-	lang.set(localisation.default)
+	lang.set(page.params?.lang ?? localisation.default)
 }
