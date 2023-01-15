@@ -8,7 +8,7 @@ export default async () => {
 			return {
 				meta: metadata,
 				// /something/something/posts/mypost.md => /blog/mypost
-				path: '/blog/' + path.split('/posts/')[1].slice(0, -3),
+				path: 'blog/' + path.split('/posts/')[1].slice(0, -3),
 			}
 		})
 	)
