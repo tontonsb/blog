@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores'
 	import { lang } from '$lib/lang.js'
+	import { current, localized } from '$lib/url.js'
 	import Hamburger from './Hamburger.svelte'
 
 	let open = false
@@ -31,7 +32,7 @@
 		<ul class="lang">
 			<li class:current-lang={'lv' === $lang}>
 				<a
-					href="/lv"
+					href={localized($current, 'lv')}
 					hreflang="lv"
 					title="Ieslēgt latviešu valodu"
 					on:click={() => open = false}
@@ -42,7 +43,7 @@
 			</li>
 			<li class:current-lang={'en' === $lang}>
 				<a
-					href="/en"
+					href={localized($current, 'en')}
 					hreflang="en"
 					title="Switch to English"
 					on:click={() => open = false}
