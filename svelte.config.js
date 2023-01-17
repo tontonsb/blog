@@ -14,6 +14,15 @@ const config = {
 			'$posts': 'src/posts',
 			'$style': 'src/style',
 		},
+		prerender: {
+			entries: [
+				'*',
+				'/en',
+				'/lv',
+				'/lv/about',
+			],
+			handleHttpError: 'warn',
+		},
 	},
 	extensions: ['.svelte', '.md'],
 	preprocess: [
