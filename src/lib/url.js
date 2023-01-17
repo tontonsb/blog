@@ -3,7 +3,7 @@ import { lang } from '$lib/lang.js'
 import { page } from '$app/stores'
 import { derived, get } from 'svelte/store'
 
-export const current = derived(page, p => p.href)
+export const current = derived(page, p => p.url.href)
 
 const localize = (origin, lang, path = null) => {
 	let url = origin + '/' + lang
@@ -15,11 +15,12 @@ const localize = (origin, lang, path = null) => {
 }
 
 export const localized = (url, lang) => {
+	// console.log(url,lang)
 	if (!url)
 		return ''
 
-	const origin = get(page).origin
-	console.log({origin})
+	const origin = get(page).url.origin
+	// console.log({origin})
 
 	const path = url?.substring(origin.length)
 
@@ -44,4 +45,4 @@ export const localized = (url, lang) => {
 	return localize(origin, lang, path.substring(1))
 }
 
-export const canonical = derived([current, lang], ([c, l]) => localized(c, lang))
+export const canonical = derived([current, lang], ([c, l]) => localized(c, l))
