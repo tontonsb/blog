@@ -5,6 +5,7 @@
 	import Twitter from './Twitter.svelte'
 	import config from '$lib/config.js'
 	import { page } from '$app/stores'
+	import { onDestroy } from 'svelte'
 
 	export let title = config.title
 	export let description = config.description
@@ -12,12 +13,17 @@
 	/** @type boolean */
 	export let article = false
 
-	// TODO: consider taking more data directly from $page.data.meta
 	$: lang = $page.data.meta?.lang ?? 'lv'
+
+	// Manual cleanup, see https://github.com/sveltejs/svelte/issues/8202
+	let enabled = true
+	onDestroy(() => enabled = false)
 </script>
 
 <svelte:head>
+{#if enabled}
 	<Native {title} {description} />
 	<OpenGraph {title} {description} {article} {lang} />
 	<Twitter />
+{/if}
 </svelte:head>
