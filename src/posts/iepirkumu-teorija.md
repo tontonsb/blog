@@ -120,7 +120,7 @@ Salīdzinājumu raksts analīzē izmanto arī izolīnijas. Vērtīgs un uzskatā
 analīzes instruments, par kuru, ja saņemšos, pastāstīšu jums atsevišķā reizē.
 
 [Šeit](https://www.sciencedirect.com/science/article/abs/pii/S1478409213000198)
-interesanti atstāsta, kā zemākās cenas kritērijs ir ASVā piesipedis uzņēmumus
+interesanti atstāsta, kā zemākās cenas kritērijs ir ASVā piespiedis uzņēmumus
 pārdot valstij iespējami švakākos produktus, kam sekojusi pretreakcija radīt
 komiski detalizētas specifikācijas, kas savukārt rada tālākas problēmas ar
 sašaurinātu izvēli, formālām atbilstībām utt. Šai rakstā rekomendēts, ka labāk
