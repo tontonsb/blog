@@ -17,8 +17,9 @@ Whenever I was uncertain what to do, I stole ideas from
 - [ ] Ensure that failed builds are never deployed. How?
 - [x] Upgrade to SvelteKit 1.0
 - [ ] Add social tags and other meta stuff
-- [ ] Add post tags
+- [ ] Add post tags and category list in /blog
 - [x] Add lang attributes to posts
+- [ ] Add links to tool pages to index
 
 ## Development
 
