@@ -20,6 +20,7 @@ Whenever I was uncertain what to do, I stole ideas from
 - [ ] Add post tags and category list in /blog
 - [x] Add lang attributes to posts
 - [ ] Add links to tool pages to index
+- [ ] Get small caps working for link typography. iOS fails on non-ASCII chars.
 
 ## Development
 
