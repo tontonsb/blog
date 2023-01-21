@@ -1,6 +1,6 @@
 ---
-title: Iepirkumu vērtēšana
-date: ""
+title: Iepirkumu teorija
+date: "2023-01-21"
 intro: "Kā tad īsti jāvērtē iepirkumi? Palūkosimies, ko par šo tēmu jau zina pasaulē."
 ---
 
@@ -9,10 +9,10 @@ import Calculator from '$components/TenderCalculator.svelte'
 import Katex from '$components/Katex.svelte'
 
 const chen2008 = String.raw`
-	\text{Kandidāta punkti} 
+	\text{Kandidāta pti} 
 	= \left(
-		1 - 0.5 \log_2 {\frac{\text{Kandidāta piedāvātā cena}}{\text{Zemākā cena}}}
-	\right) \cdot \text{Max punkti pozīcijā}`
+		a - b \log {\frac{\text{Piedāvātā cena}}{\text{Zemākā cena}}}
+	\right) \cdot \text{Max pti pozīcijā}`
 </script>
 
 # Iepirkumu vērtēšanas teorija
@@ -53,7 +53,11 @@ nevaru noliegt, ka uzzināju daudz ko jaunu, ko nebiju iedomājies. Diemžēl,
 vairums pētījumu tomēr tēmēti privātā sektora iepirkumiem, kur lēmumu
 pieņemšanas principi var būt mazliet citādi, sadarbība var būt ar neierobežotu
 termiņu. Arī caurredzamība un paredzamība privātos iepirkumos nav tik
-fundamentāli nepieciešama kā publiskajos iepirkumos. 
+fundamentāli nepieciešama kā publiskajos iepirkumos. Galu galā, ja A pēc
+punktiem sanāk labāks nekā B, bet mēs visi komisijā redzam, ka formula
+nogļukojusi un B īstenībā būtu izdevīgāks, tad privāts uzņēmējs var slēgt
+līgumu ar B. Bet valstij ir jāpieturas pie sākotnēji izvirzītajiem kritērijiem
+un jāslēdz līgums ar A.
 
 Un tomēr literatūra ir. Brīnumainā kārtā eksistē ne tikai dažādas
 (zinātniskākas un politiskākās) iepirkumu nozares konferences, bet pat
@@ -84,6 +88,20 @@ dažreiz izveidojas tāda situācija, ka otrajā vietā palikušais var pēkšņ
 kļūt par uzvarētāju, ja sekmīgi apstrīd trešās vietas piedāvājumu un panāk tā
 diskvalificēšanu. Vai nav absurdi?
 
+Šis autors arī izceļ, ka eksistē arī vismaz viena relatīva formula, kurai rangu
+maiņas paradokss nav spēkā:
+
+<Katex math={chen2008} displayMode />
+
+Lai arī šis rezultāts ir atkarīgs no atskaites (zemākās) cenas, atšķirība starp
+diviem piedāvājumiem tāda nav. Ja atškirība starp A un B sanāk 12 punkti, tad
+tas tā paliks neatkarīgi no labākās cenas. Izmainīsies tikai tas, vai tie būs
+30 un 18 punkti vai 37 un 25.
+
+Tomēr, kā visas relatīvās metodes, arī neļauj uzņēmējam saprast, kāds tieši būs
+faktiskais dažādu pozīciju svars pirms visi piedāvājumi ir atvērti. Neļauj
+saprast, cik ļoti pasūtītāja acīs tiek vērtēta cena, bet cik — citas prasības.
+
 [Baumo](https://www.researchgate.net/publication/324135433_A_New_Multi-Criterion_Decision_Making_MCDM_Method_Based_on_Proximity_Indexed_Value_for_Minimizing_Rank_Reversals),
 ka zināmi kādi 70 kandidātu salīdzināšanas piegājieni, bet
 [šajā](http://www.ippa.org/images/JOPP/vol17/issue-1/Article_4_Stilger-et-al.pdf)
@@ -93,49 +111,77 @@ lielām cenām — izvērtēts, cik bieži ar vienu vai otru formulu gadās situ
 kurā uzvarētājs varētu uzvarēt arī tad, ja iesniegtu 50 reizes lielāku cenu.
 Pie mums (un visur citur) populārajai sistēmai šis risks ir 10%. Traģiski.
 
-Taisnības labad, jāpiebilst, ka [eksistē](https://www.emerald.com/insight/content/doi/10.1108/JOPP-08-03-2008-B006/full/html)
-arī vismaz viena relatīva formula, kurai rangu maiņas paradokss nav spēkā:
+Šis raksts analīzē izmanto arī izolīnijas. Vērtīgs un uzskatāms analīzes
+instruments, par kuru, ja saņemšos, pastāstīšu jums atsevišķā reizē.
 
-<Katex math={chen2008} displayMode />
-
-https://www.sciencedirect.com/science/article/abs/pii/S1478409213000198 
-labāk pārrēķināt visu cenā
-
-Jāizvērtē izokvalitātes līknes - nevar derēt, ka 10 un 40 nedēļas vērtējas vienādi
-
-Absolūtās formulas prasa autoriem domāt - references cenas, izteikt kvalitāti naudā etc
+[Šeit](https://www.sciencedirect.com/science/article/abs/pii/S1478409213000198)
+interesanti atstāsta, kā zemākās cenas kritērijs ir ASVā piesipedis uzņēmumus
+pārdot valstij iespējami švakākos produktus, kam sekojusi pretreakcija radīt
+komiski detalizētas specifikācijas, kas savukārt rada tālākas problēmas ar
+sašaurinātu izvēli, formālām atbilstībām utt. Šai rakstā rekomendēts, ka labāk
+izmantot nevis vērtēšanas sistēmu ar cenas pārvēršanu punktos, bet visu 
+parametru pielīdzināšanu cenai.
 
 Noskaidroju, ka iemesli neizmantot labākas metodes parasti ir tādi, ka labās
-metodes šķiet pārāk sarežģītas, savukārt manis iepriekš aprakstītās problēmas
-tiek uzskatītas par teorētiskām. Šādu nostāju apgāž pagājušā gada marta
-[pētījums](https://www.sciencedirect.com/science/article/pii/S1478409221000832)
-kurā izvērtējot vairākus simtus Nīderlandes publisko iepirkmu, autori
-noskaidrojuši, ka viens no katriem četrdesmit iepirkumiem būtu beidzies ar citu
-iznākumu, ja kāds no neuzvarējušajiem pieteikumiem nebūtu konkursā piedalījies
-nemaz. Bet tāda iespēja, ka fiktīvs vājākais kandidāts varētu izmainīt secību
-starp esošajiem kandidātiem, tika atklāta katrā piektajā iepirkumā.
+metodes šķiet pārāk sarežģītas. Vai konkursu rīkotāji gluži vienkārši nezina,
+ka eksistē alternatīvas. Galu galā, manis iepriekš aprakstītās problēmas daudzi
+iepircēji uzskata par tikai hipotētiskām.
 
+Nevaru apstrīdēt, ka citas pieejas ir sarežģītākas. Tās kā minimums prasa
+konkursa rīkotājam izvēlēties atskaites cenas vai precīzi definēt, kā
+pārrēķināt naudiņas punktos vai kvalitātes kritērijus naudiņās. Tas prasa
+būtiski vairāk iedziļināšanās un zināšanu nekā uzrīkot konkursu un ļaut, lai
+dalībnieku piedāvājumi paši nosaka "tirgus cenas" jeb atskaites sistēmu.
+
+Toties nostāju, ka problēmas ir teorētiskas, apgāž pagājušā gada marta
+[pētījums](https://www.sciencedirect.com/science/article/pii/S1478409221000832),
+kurā, izvērtējot vairākus simtus Nīderlandes publisko iepirkmu, autori
+noskaidrojuši: viens no katriem četrdesmit iepirkumiem būtu beidzies ar citu
+iznākumu, ja kāds no neuzvarējušajiem pieteikumiem nebūtu konkursā piedalījies
+nemaz. Bet tāda iespēja, ka fiktīvs papildus kandidāts varētu izmainīt secību
+starp esošajiem kandidātiem, tika atklāta katrā piektajā iepirkumā.
 
 ## Kāda ir citu pieredze?
 
-Savukārt, [pētot](http://www.ippa.org/images/PROCEEDINGS/IPPC3/Chapter38.pdf)
-itāļu uzņēmumu uzvedību publiskajos iepirkumos, ticis lēsts, ka savstarpēji
+Diemžēl, visvairāk ir slikto piemēru. Līdzīga sistēma mūsējai, ar
+identiskām problēmām, ir daudzās valstīs. Tāda ir [Zviedrijā](https://www.academia.edu/download/41673070/Tender_evaluation_and_supplier_selection20160127-6460-1ypzthf.pdf),
+tāda ir [Nīderlandē](http://www.ippa.org/jopp/download/vol8/issue-3/IPPC_Ar5_Economics_Chen.pdf)
+un komiskākais — relatīva vērtēšana ar likumu esot noteikta par obligātu
+[Dienvidāfrikā](http://ippa.org/images/PROCEEDINGS/IPPC4/10LegalIssueInPublicProcurement/Paper10-7.pdf).
+
+Un nē, iepriekšējā rakstā aplūkotais dziesmusvētku iepirkums, protams,
+nav vienīgais gadījums, kad šī sistēma novedusi ķezā. Nīderlandē Utrehtas
+pašvadībai bijis drukas štruntiņu iepirkums, kurā uzvarēja Océ, otrajā vietā
+atstājot Xerox un trešajā Ricoh. Izrādījās, ka Océ piedāvājumā tomēr kaut kas
+nav labi, tāpēc Utrehta lēma līgumu slēgt ar otr... Nē, nē, nē, LOL.
+
+Utrehta atkārtoti Piemēroja ~~pigorus~~ formulas un pēkšņi izrādījās, ka par
+labāko kļūst Ricoh piedāvājums, kurš iepriekš bija trešajā vietā. Un par visu šo
+cirku, protams, mēs varam lasīt tāpēc, ka Xerox šo noveda 
+[tiesā](https://uitspraken.rechtspraak.nl/#!/details?id=ECLI:NL:RBUTR:2011:BT1835), 
+kur zaudēja, bet uzvarēja [pārsūdzējienu](https://uitspraken.rechtspraak.nl/#!/details?id=ECLI:NL:GHARN:2012:BX9806)
+un [pārpārsūdzējienu](https://uitspraken.rechtspraak.nl/#!/details?id=ECLI:NL:HR:2014:1078).
+Vai mums arī tā gribas?
+
+Atgriežoties mierīgākā garā, daži autori, [pētot](http://www.ippa.org/images/PROCEEDINGS/IPPC3/Chapter38.pdf)
+itāļu uzņēmumu uzvedību publiskajos iepirkumos, novērtējuši, ka savstarpēji
 neatkarīgas vērtēšanas sistēmas nodrošina par 30% labāku cenas un kvalitātes
 attiecību.
 
-Tomēr pēdējā laikā esmu pētījis arī specifiskāku literatūru tieši par
-iepirkumiem. Ja iepriekšējā rakstā es [piedāvāju](/blog/iepirkumi#kopsavilkums-un-nepiecie%C5%A1am%C4%81-r%C4%ABc%C4%ABba)
+Atcerieties, iepriekšējā rakstā es [piedāvāju](/blog/iepirkumi#kopsavilkums-un-nepiecie%C5%A1am%C4%81-r%C4%ABc%C4%ABba)
 ieviest nosacījumu "*kandidāta vērtējums konkursā nedrīkst būt atkarīgs no citu 
-kandidātu piedāvājumiem*", tad tagad es zinu, ka [Portugāles sabiedrisko līgumu
+kandidātu piedāvājumiem*"? Tas ir reāli. Izrādās — [Portugāles sabiedrisko līgumu
 kodeksā](https://dre.pt/dre/detalhe/decreto-lei/18-2008-248178) šāds punkts jau
 [ir iekļauts](https://twitter.com/TontonsB/status/1616562955839209472).
 
 ## Secinājumi
 
-Kopumā mana izpēte apstiprina to, ka aizliegumam veidot relatīvus (no
+Literatūras izpēte apstiprina to, ka aizliegumam veidot relatīvus (no
 konkurentiem atkarīgus) vērtējumus ir vieta. Un noteikti ir nepieciešamas arī
-vadlīnijas. Bet papildus esmu sapratis, ka vadlīnijām, piedāvātajam
-risinājumam ir jābūt vienkāršam. Citādi neviens to negribēs un nepratīs lietot.
+vadlīnijas. Procesam jābūt iespējami vienkāršam — tādam, ko grūti salaist
+grīstē. Tādam, ko viegli saprast gan organizatoriem, gan dalībniekiem. Tādam,
+kurā dalībnieki var paši modelēt, vai vērts darīt ātrāk un sadabūt papildus
+speciālistu, vai tomēr tas pasūtītājam šķiet vēlami, bet ne ļoti vērtīgi.
 
 Protams, šis pārskats nav zinātnisks. Es neizvērtēju visu rakstu ticamību un
 neveidoju svērtu apkopojumu. Uztveriet šo tikai kā ieskatu literatūrā.
