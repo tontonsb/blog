@@ -3,12 +3,14 @@
 
 	/** @type {import('./$types').PageData} */
 	export let data
-	const {meta, Content} = data
+
+	$: meta = data.meta
+	$: Content = data.Content
 </script>
 
 <Meta title={meta.title} description={meta.intro} article={true} />
 
-<Content />
+<svelte:component this={Content} />
 
 {#if meta.date}
 <p class=date>
