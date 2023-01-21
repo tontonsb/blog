@@ -39,6 +39,10 @@ p {
 	// text-align: justify;
 }
 
+p + p {
+	margin-top: var(--space-sm);
+}
+
 h1 + p {
 	display: block;
 	margin-bottom: var(--space-lg);
