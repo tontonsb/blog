@@ -1,15 +1,15 @@
 ---
 title: Iepirkumu vērtēšana
 date: ""
-intro: "Kā tad īsti jāvērtē iepirkumi? Pamēģināsim papētīt vienu iespējamo vērtēšanas modeli un tā piemērotību dažādu iepirkumu vajadzībām."
+intro: "Kā tad īsti jāvērtē iepirkumi? Palūkosimies, ko par šo tēmu jau zina pasaulē."
 ---
 
-# Iepirkumu vērtēšana
+# Iepirkumu vērtēšanas teorija
 
 Iepriekš [kritizēju](/blog/iepirkumi) plaši izmantotu iepirkumu vērtēšanas
-sistēmu. Kā tad īsti jāvērtē iepirkumi? Nezinu. Bet te pamēģināsim papētīt
-vienu iespējamo vērtēšanas modeli un tā piemērojamību dažādu iepirkumu
-vajadzībām.
+sistēmu. Par laimi mums, arī citās valstīs šādu sistēmu izmanto. Tā rezultātā
+ir tapis lērums zinātnisku rakstu par šo tēmu un ir pieredze un secinājumi,
+ko ņemt vērā.
 
 Galvenais izaicinājums slēpjas tajā, ka kandidāti vienlaicīgi jāsalīdzina
 vairākās kategorijās. Protams, ja jāizvēlas tikai lētākais ēkas uzbūvētājs
