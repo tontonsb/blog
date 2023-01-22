@@ -28,6 +28,7 @@
 <main
 	lang={$page.data.meta?.lang ?? 'lv'}
 	aria-busy={loading ? 'true' : null}
+	style:opacity={'prerendering' === fontsReady ? '0' : null}
 	>
 	<slot />
 	{#if !fontsReady || 'prerendering' === fontsReady}
@@ -49,7 +50,7 @@ main {
 	width: 100%;
 	height: 100%;
 	left: 0;
-	top: 0;
+	top: .6rem;
 
 	display: grid;
 	place-items: center;
