@@ -12,6 +12,8 @@
 
 	$: loading = $navigating && $navigating.to
 
+	$: console.log(fontsReady)
+
 	import '$style/main.scss'
 </script>
 
@@ -29,6 +31,7 @@
 <main
 	lang={$page.data.meta?.lang ?? 'lv'}
 	aria-busy={loading ? 'true' : null}
+	style:opacity={'prerendering' === fontsReady ? '0' : null }
 	>
 	<slot />
 </main>
