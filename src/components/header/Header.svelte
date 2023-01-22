@@ -9,11 +9,9 @@
 
 <header>
 	<div class="brand">
-		{#if true}
 		<a href="/">
 			∂²𝑧
 		</a>
-		{/if}
 	</div>
 
 	{#if $montserrat300Loaded}
