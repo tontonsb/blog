@@ -12,8 +12,6 @@
 
 	$: loading = $navigating && $navigating.to
 
-	$: console.log(fontsReady)
-
 	import '$style/main.scss'
 </script>
 
