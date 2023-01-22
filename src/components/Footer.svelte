@@ -6,7 +6,10 @@
 </script>
 
 {#if $montserrat300Loaded}
-<footer in:slide={{ delay: 400, duration: 300, easing: quartIn }} >
+<footer
+	in:slide={{ delay: 400, duration: 300, easing: quartIn }}
+	style:opacity={'prerendering' == $montserrat300Loaded ? '0' : null }
+>
 	<div>
 		<a href="https://github.com/tontonsb" title="Github profile">
 			<Github size="{24}" />

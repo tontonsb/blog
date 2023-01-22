@@ -15,20 +15,24 @@
 	</div>
 
 	{#if $montserrat300Loaded}
-	<nav class:open in:fade={{duration: 100}} >
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/" on:click={() => open = false}>Sākums</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined}>
-				<a href="/blog" on:click={() => open = false}>Raksti</a>
-			</li>
-			<!--
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about" on:click={() => open = false}>Par</a>
-			</li>
-			-->
-		</ul>
+	<nav
+		class:open
+		in:fade={{duration: 100}}
+		style:opacity={'prerendering' === $montserrat300Loaded ? '0' : null }
+	>
+			<ul>
+				<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+					<a href="/" on:click={() => open = false}>Sākums</a>
+				</li>
+				<li aria-current={$page.url.pathname.startsWith('/blog') ? 'page' : undefined}>
+					<a href="/blog" on:click={() => open = false}>Raksti</a>
+				</li>
+				<!--
+				<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
+					<a href="/about" on:click={() => open = false}>Par</a>
+				</li>
+				-->
+			</ul>
 	</nav>
 	{/if}
 

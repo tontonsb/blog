@@ -13,8 +13,8 @@ const key = 'BESbwyāžŠ'
 function loadFont(name, weight, setter) {
 	// FontFaceObserver relies on window being present
 	if (!browser) {
-		// During prerendering just pretend everything is fine
-		setter(true)
+		// During prerendering we have to show the contents to the crawler
+		setter('prerendering')
 
 		return
 	}
