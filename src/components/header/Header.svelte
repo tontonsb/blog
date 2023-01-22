@@ -1,4 +1,6 @@
 <script>
+	import { fade } from 'svelte/transition'
+	import { montserrat300Loaded } from '$lib/fonts'
 	import { page } from '$app/stores'
 	import Hamburger from './Hamburger.svelte'
 
@@ -7,12 +9,15 @@
 
 <header>
 	<div class="brand">
+		{#if true}
 		<a href="/">
 			∂²𝑧
 		</a>
+		{/if}
 	</div>
 
-	<nav class:open>
+	{#if $montserrat300Loaded}
+	<nav class:open in:fade={{duration: 100}} >
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/" on:click={() => open = false}>Sākums</a>
@@ -27,6 +32,7 @@
 			-->
 		</ul>
 	</nav>
+	{/if}
 
 	<Hamburger bind:open />
 </header>

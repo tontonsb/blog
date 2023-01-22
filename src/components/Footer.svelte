@@ -1,8 +1,12 @@
 <script>
 	import { Github, Twitter } from 'lucide-svelte'
+	import { montserrat300Loaded } from '$lib/fonts'
+	import { slide } from 'svelte/transition'
+	import { quartIn } from 'svelte/easing'
 </script>
 
-<footer>
+{#if $montserrat300Loaded}
+<footer in:slide={{ delay: 400, duration: 300, easing: quartIn }} >
 	<div>
 		<a href="https://github.com/tontonsb" title="Github profile">
 			<Github size="{24}" />
@@ -23,6 +27,7 @@
 		</a>
 	</div>
 </footer>
+{/if}
 
 <style lang="scss">
 	footer {

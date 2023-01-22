@@ -1,9 +1,14 @@
 <script>
-	import MatomoKit from '$components/tracking/MatomoKit.svelte'
-	import Header from '$components/header/Header.svelte'
-	import Footer from '$components/Footer.svelte'
-	import LoadingBar from '$components/LoadingBar.svelte'
 	import { page, navigating } from '$app/stores'
+	import Footer from '$components/Footer.svelte'
+	import Header from '$components/header/Header.svelte'
+	import LoadingBar from '$components/LoadingBar.svelte'
+	import MatomoKit from '$components/tracking/MatomoKit.svelte'
+	import { RingLoader } from 'svelte-loading-spinners'
+
+	import { firaSans300Loaded, montserrat400Loaded, montserrat500Loaded } from '$lib/fonts.js'
+
+	$: fontsReady = $firaSans300Loaded && $montserrat400Loaded && $montserrat500Loaded
 
 	$: loading = $navigating && $navigating.to
 
@@ -20,11 +25,27 @@
 
 <Header />
 
+{#if fontsReady}
 <main
 	lang={$page.data.meta?.lang ?? 'lv'}
 	aria-busy={loading ? 'true' : null}
 	>
 	<slot />
 </main>
+{:else}
+<div class="spinner">
+	<RingLoader size="90" color="var(--color-accent)" unit="px" duration="2s" />
+</div>
+{/if}
 
 <Footer />
+
+<style>
+.spinner {
+	width: 100%;
+	height: 100%;
+
+	display: grid;
+	place-items: center;
+}
+</style>

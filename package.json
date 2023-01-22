@@ -35,7 +35,9 @@
 		"@fontsource/fira-sans": "^4.5.10",
 		"@fontsource/montserrat": "^4.5.13",
 		"@tontonsb/karatsuba-display": "^1.1.1",
+		"fontfaceobserver": "^2.3.0",
 		"katex": "0.16.4",
-		"lucide-svelte": "^0.102.0"
+		"lucide-svelte": "^0.102.0",
+		"svelte-loading-spinners": "^0.3.4"
 	}
 }
