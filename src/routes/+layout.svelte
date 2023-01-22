@@ -25,28 +25,35 @@
 
 <Header />
 
-{#if fontsReady}
 <main
 	lang={$page.data.meta?.lang ?? 'lv'}
 	aria-busy={loading ? 'true' : null}
-	style:opacity={'prerendering' === fontsReady ? '0' : null }
 	>
 	<slot />
+	{#if !fontsReady || 'prerendering' === fontsReady}
+	<div class="spinner">
+		<RingLoader size="90" color="var(--color-accent)" unit="px" duration="2s" />
+	</div>
+	{/if}
 </main>
-{:else}
-<div class="spinner">
-	<RingLoader size="90" color="var(--color-accent)" unit="px" duration="2s" />
-</div>
-{/if}
 
 <Footer />
 
 <style>
+main {
+	position: relative;
+}
+
 .spinner {
+	position: absolute;
 	width: 100%;
 	height: 100%;
+	left: 0;
+	top: 0;
 
 	display: grid;
 	place-items: center;
+
+	background: #ffffffdd;
 }
 </style>
