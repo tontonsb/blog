@@ -68,6 +68,7 @@
 	nav {
 		display: flex;
 		align-items: center;
+		z-index: 2;
 	}
 
 	@media (max-width: 35rem) {
