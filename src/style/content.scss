@@ -2,7 +2,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 
 	font-family: var(--font-alt);
-	font-weight: var(--font-bold);
+	font-weight: var(--font-strong);
 	font-size: var(--font-lg);
 	line-height: 1.2;
 	letter-spacing: var(--letter-spacing);
@@ -17,7 +17,6 @@ h1 {
 	text-align: center;
 
 	font-size: var(--font-xl);
-	font-weight: var(--font-strong);
 	text-transform: uppercase;
 
 	color: var(--color-accent);
@@ -25,8 +24,11 @@ h1 {
 
 h2 {
 	font-size: var(--font-lg);
-	font-weight: var(--font-strong);
 	// font-variant-caps: small-caps;
+}
+
+h3 {
+	font-size: var(--font-base)
 }
 
 main {
@@ -67,8 +69,8 @@ h1 + p {
 	}
 }
 
-p + h2 {
-	margin-top: var(--space-lg);
+p + h2, p + h3 {
+	margin-top: var(--space-base);
 }
 
 :where(h2, h3, h4, h5, h6) {
