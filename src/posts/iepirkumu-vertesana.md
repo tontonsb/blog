@@ -38,8 +38,8 @@ tās arī ir šīs pozīcijas izmaksas.
 
 Dinamiskākas pozīcijas kā uzturēšana darba stundas vai mēnešmaksas var novērtēt
 kopējās prognozētajās izmaksās — jāpareizina vienas vienības cena ar
-prognozējamo vienību skaitu. Bet precīzāk paskatīsimies pie piemēriem. Un tur
-arī padomāsim par sarežģītākiem gadījumiem.
+prognozējamo vienību skaitu. Bet precīzāk paskatīsimies pie [piemēriem](#praktiskie-piemēri).
+Un tur arī padomāsim par sarežģītākiem gadījumiem.
 
 ## Pamatojums
 
@@ -66,24 +66,52 @@ pozīciju piedāvājumus punktos. Bet, ja jau jāvērtē šā vai tā, tad pied�
 ar to arī pietiks — salīdzināsim šīs novērtētās izmaksas.
 
 Vēl varētu jautāt, kāpēc neizvēlēties kādu ordinālu (rangos balstītu) sistēmu,
-kur katrā pozīcijā saranžējam kandidātus, pieliekam pozīcijām svarus un atrodam
-konsensus secību starp šīm secībām. Ir taču zināms, ka [šādas sistēmas](https://en.wikipedia.org/wiki/Kemeny%E2%80%93Young_method)
-varētu novest pie konsensus ranga, kas pēc daudzām aksiomām ir visgodīgākais.
-Arī vēlēšanās parasti izmanto fundamentāli ordinālas sistēmas.
+līdzīgi kā mēs darām vēlēšanās. Visvienkāršākais pretarguments ir apsvērums, ka
+ar ranžējumu pozīcijā nevar atspoguļot kvantitatīvās atšķirības.
+
+<details>
+<summary>Ir arī citas problēmas. Izvērs šo nodaļu, ja interesē matemātika.</summary>
+
+Teorētiski ordinālās sistēmas, kur katrā pozīcijā saranžējam kandidātus,
+pieliekam pozīcijām svarus un atrodam konsensus secību starp šīm secībām ir
+vilinošas. Ir taču zināms, ka šādas sistēmas (piemēram [šī](https://en.wikipedia.org/wiki/Kemeny%E2%80%93Young_method)
+vai [mans absolūtais favorīts](https://arxiv.org/abs/1502.06498) ranžēšanas
+jomā) varētu novest pie konsensus ranga, kas pēc daudzām aksiomām ir
+visgodīgākais. Arī vēlēšanās parasti izmanto fundamentāli ordinālas sistēmas.
 
 Tomēr ir vairākas problēmas:
 
 - Rangos balstītās konsensus metodes ir grūti sarēķināt. Ne tikai tai ziņā, ka
 aprēķini būtu grūti saprotami parastiem cilvēkiem, bet arī datoram grūti veicami.
+- Tajās iegūstamie vērtējumi nav dalībniekiem prognozējami, ir grūti
+piedāvājumu pielāgot pasūtītāja prioritātēm.
 - Tām mēdz izpausties pašām savi [paradoksi](https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem).
 - Kvantitatīvās pozīcijās (piem. cenās) taču ir būtisks ne tikai ranžējums, bet
 arī relatīvā atšķirība.
 
-Tāpēc palikām pie tā, ka jāizmanto [kardinālu sistēmu](https://en.wikipedia.org/wiki/Cardinal_voting),
-kurās tik traku problēmu nav. Ja vēlēšanās ir grūti vienoties par kandidātu
-skaitlisku vērtējumu, tad iepirkumos pozīcijas ne tikai var, bet pat obligāti
-vajag vērtēt skaitliski.
+</details>
 
 ## Praktiskie piemēri
 
-### 
+Šeit aplūkosim dažus hipotētiskus un dažus anonimizētus iepirkumus no EIS.
+Paskatīsimies, kā tad būtu jāpielieto šeit piedāvātā sistēma.
+
+### Finansiālās izmaksu pozīcijas
+
+cena, cena, stundu cena, mēneša cena
+
+### Kvalitātes kritēriji
+
+cena, termiņi, speciālisti, sertifikāti, vides labums?
+
+### Finansiālās ienākumu pozīcijas
+
+apdrošināšana
+
+## Riski
+
+Protams, arī šāda sistēma nebūs ideāla. Jebkurā sistēmā iepircējam nepietiek
+uzskicēt vērtēšanas sistēmu un izsludināt konkursu. Ir jāmēģina arī modelēt
+iespējamie piedāvājumi pa pozīcijām un saprast, vai kādā pozīcijā nevar
+iestāties neparedzēta situācija. Ja tādi riski ir, tad tur būs nepieciešami
+ierobežojumi.
