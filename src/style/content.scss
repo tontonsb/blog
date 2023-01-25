@@ -70,10 +70,12 @@ h1 + p {
 	}
 }
 
-// Is there a better solution? We need spacing before headings if they come
-// after other content, but not after other headings.
-p + h2, p + h3, details + h2, blockquote + h2 {
+* + :is(h1, h2, h3, h4, h5, h6) {
 	margin-top: var(--space-base);
+}
+
+:is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+	margin-top: 0;
 }
 
 :where(h2, h3, h4, h5, h6) {
