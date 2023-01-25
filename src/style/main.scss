@@ -2,3 +2,7 @@
 @import './defaults.scss';
 @import './layout.scss';
 @import './content.scss';
+
+// Components ar for complex and reusable HTML components like blockquote
+// and details. This is unrelated to svelte components.
+@import './components/index.scss';

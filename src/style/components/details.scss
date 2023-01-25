@@ -1,0 +1,11 @@
+details {
+	padding: var(--space-base);
+	font-size: var(--font-sm);
+
+	summary {
+		cursor: pointer;
+		font-size: var(--font-base);
+		border-bottom: var(--border-thick) solid var(--color-accent);
+	}
+
+}
