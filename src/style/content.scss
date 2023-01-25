@@ -45,6 +45,7 @@ p + p {
 	margin-top: var(--space-sm);
 }
 
+// First paragraph deserves a special styling :)
 h1 + p {
 	display: block;
 	margin-bottom: var(--space-lg);
@@ -69,7 +70,9 @@ h1 + p {
 	}
 }
 
-p + h2, p + h3 {
+// Is there a better solution? We need spacing before headings if they come
+// after other content, but not after other headings.
+p + h2, p + h3, details + h2, blockquote + h2 {
 	margin-top: var(--space-base);
 }
 
