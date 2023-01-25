@@ -1,6 +1,6 @@
 ---
 title: Iepirkumu vērtēšana
-date: ""
+date: "2023-01-26"
 intro: "Kā tad īsti jāvērtē iepirkumi? Pamēģināsim papētīt vienu iespējamo vērtēšanas modeli un tā piemērotību dažādu iepirkumu vajadzībām."
 ---
 
@@ -22,87 +22,67 @@ jāsalīdzina termiņi, draudzīgums videi, piesaistīto speciālistu kvalitāte
 pat potenciālie ienākumi kā tas ir, piemēram, apdrošināšanas iepirkumos. Kā
 apvienot šīs pozīcijas, kas atsevišķi ir viegli salīdzināmas?
 
-## Mazliet teorijas
+Iepriekš [iztirzāju](/blog/iepirkumu-teorija), ko par šo tēmu ir sprieduši
+citi. No apspriestajiem modeļiem praksē vispielietojamākais šķiet tas, kurš
+ieteikts [šajā rakstā](https://www.sciencedirect.com/science/article/abs/pii/S1478409213000198).
 
-Esmu ilgstoši interesējies par ranžēšanas teoriju. Tā pamatā centrēta ap
-vēlēšanām, jo tieši uzdevums, kā godīgi apvienot vēlētāju viedokļus vienā
-kopvērtējumā, visbiežāk kādam licies interesants. Mana interese arī daudz
-vērpusies ap ranžēšanas teorijas pielietojumiem sportā, kur sporta spēļu
-maču iznākumiem, tenisa turnīros gūtajām vietām vai F1 sacīkšu ranžējumiem
-tiek pēc kaut kādiem principiem piešķirti punkti un rēķināti kopvērtējumi.
+## Vērtēšana
 
-Protams, daudzi no principiem ir nemainīgi kā vēlēšanaš tā iepirkumos. Mēs
-abos gadījumos par ideālo risinājumu uzskatām tādu, kur eksistē
-[Kondorsē uzvarētājs](https://en.wikipedia.org/wiki/Condorcet_winner_criterion),
-t. i. ja piedāvājums A atzīts par labāko, tad tas nozīmē, ka tas ir labāks par
-visiem citiem kandidātiem B, C un D. Nevis labāks par B un C, bet zaudē pret D,
-kā tas var gadīties sporta spēlēs.
+Piedāvāju izmantot pavisam vienkāršu principu: katra pozīcijas jānovērtē ar
+vienu skaitli, kas atbilst šīs pozīcijas "izmaksām". Šīs izmaksas saskaitot pa
+visām pozīcijām kopā, uzzinām, cik tad dārgs ir konkrētais piedāvājums. To,
+kura kopējās izmaksas ir mazākās, atzīstam par konkursa uzvarētāju.
 
-Tāpat arī manis [iepriekš](/blog/iepirkumi#sist%C4%93ma-nav-stabila)
-izvirzītais iebildums, ka iepirkumā piesakoties trešajam, vissliktākajam
-kandidātam, nedrīkstētu mainīties preference starp pārējiem diviem
-kandidātiem, ir interesants arī vēlēšanu teorijā, kur to sauc par 
-[neatkarības aksiomu](https://en.wikipedia.org/wiki/Independence_of_irrelevant_alternatives).
-Ja A ir labāks nekā B, tad A jāpaliek virs B neatkarīgi no tā, vai konkursā
-piedalās arī C vai nē.
+Ar dažām pozīcijām tas ir triviāli — ja pozīcija sastāv no vienas cenas, tad
+tās arī ir šīs pozīcijas izmaksas.
 
-Tomēr pēdējā laikā esmu pētījis arī specifiskāku literatūru tieši par
-iepirkumiem. Ja iepriekšējā rakstā es [piedāvāju](/blog/iepirkumi#kopsavilkums-un-nepiecie%C5%A1am%C4%81-r%C4%ABc%C4%ABba)
-ieviest nosacījumu "*kandidāta vērtējums konkursā nedrīkst būt atkarīgs no citu 
-kandidātu piedāvājumiem*", tad tagad es zinu, ka [Portugāles sabiedrisko līgumu
-kodeksā](https://dre.pt/dre/detalhe/decreto-lei/18-2008-248178) šāds punkts jau
-[ir iekļauts](https://twitter.com/TontonsB/status/1616562955839209472).
+Dinamiskākas pozīcijas kā uzturēšana darba stundas vai mēnešmaksas var novērtēt
+kopējās prognozētajās izmaksās — jāpareizina vienas vienības cena ar
+prognozējamo vienību skaitu. Bet precīzāk paskatīsimies pie piemēriem. Un tur
+arī padomāsim par sarežģītākiem gadījumiem.
 
-Savukārt, [pētot](http://www.ippa.org/images/PROCEEDINGS/IPPC3/Chapter38.pdf)
-itāļu uzņēmumu uzvedību publiskajos iepirkumos, ticis lēsts, ka savstarpēji
-neatkarīgas vērtēšanas sistēmas nodrošina par 30% labāku cenas un kvalitātes
-attiecību.
+## Pamatojums
 
-Izrādās, ka manis iztirzātās problēmas ir pazīstamas arī citās valstīs. Arī
-citi [ir secinājuši](https://core.ac.uk/download/pdf/11477491.pdf), ka
-relatīva vērtēšanas metode nevar būt godīga un izdevīga godīgām pusēm, jo
-tajā īstās vērtēšanas formulas nav noteiktas nolikumā, bet kļūst zināmas tikai
-pēc piedāvājumu atvēršanas.
+Kāpēc tā? Galvenais arguments ir vienkāršība. Tā man šķiet vienkāršākā no tām
+sistēmām, kurās nav iebūvētu nepilnību un no riskiem ir vieglāk izvairīties.
 
-Noskaidroju, ka iemesli neizmantot labākas metodes parasti ir tādi, ka labās
-metodes šķiet pārāk sarežģītas, savukārt manis iepriekš aprakstītās problēmas
-tiek uzskatītas par teorētiskām. Šādu nostāju apgāž pagājušā gada marta
-[pētījums](https://www.sciencedirect.com/science/article/pii/S1478409221000832)
-kurā izvērtējot vairākus simtus Nīderlandes publisko iepirkmu, autori
-noskaidrojuši, ka viens no katriem četrdesmit iepirkumiem būtu beidzies ar citu
-iznākumu, ja kāds no neuzvarējušajiem pieteikumiem nebūtu konkursā piedalījies
-nemaz. Bet tāda iespēja, ka fiktīvs vājākais kandidāts varētu izmainīt secību
-starp esošajiem kandidātiem, tika atklāta katrā piektajā iepirkumā.
+Protams, novērtēt uzturēšanas stundu sagaidāmo skaitu ir grūtāk nekā to
+nedarīt. Tomēr tas konkursa rīkotājam tāpat ir jāspēj, lai varētu prognozēt
+projekta budžetu.
 
-Kopumā mana izpēte apstiprina to, ka aizliegumam veidot relatīvus (no
-konkurentiem atkarīgus) vērtējumus ir vieta. Un noteikti ir nepieciešamas arī
-vadlīnijas. Bet papildus esmu sapratis, ka vadlīnijām, piedāvātajam
-risinājumam ir jābūt vienkāršam. Citādi neviens to negribēs un nepratīs lietot.
+Tāpat arī izteikt naudā kaut kādus kvalitātes kritērijus var šķist grūti vai
+pat nereāli. Tomēr šeit vienkāršā ceļa nav. Jā, varbūt grūti pateikt, vai
+drošības speciālists ar noteiktu izglītību ir viena tūkstoša vai piecu vērts.
+Bet, ja gribas šo kritēriju iekļaut konkursā, tad jāspēj novērtēt tā vērtību.
+Novērtēšanas nodošana haotiskām, nelineārām funkcijām nav risinājums.
 
-## Kā jāvērtē?
+Par to, kāpēc neder esošā sistēma, kur pozīcijas tiek pārvērstas punktos tā,
+ka labākam piedāvājumam atbilst vairāk punkti, jau [izrunājām](/blog/iepirkumi).
+Jā, [aplūkojām](/blog/iepirkumu-teorija) arī citas tādu punktu sistēmas, kur
+šīs problēmas neizpaužas. Tomēr to sarežģītība ir lielāka. Turklāt tās punktu
+sistēmas, kur problēmu nav, ir absolūtas — tās prasa pasūtītājam pašam izdomāt
+atskaites cenas un citu parametru vērtējumus, ar ko salīdzinot var pārrēķināt
+pozīciju piedāvājumus punktos. Bet, ja jau jāvērtē šā vai tā, tad piedāvāju, ka
+ar to arī pietiks — salīdzināsim šīs novērtētās izmaksas.
 
-Jau no vēlēšanu teorijas zinām, ka daudzas no vēlēšanu problēmam un paradoksiem
-neizpaužas, ja izmanto [kardinālu balsošanas sistēmu](https://en.wikipedia.org/wiki/Cardinal_voting),
-kurā katra pozīcija tiek izteikta ar punktiem un punkti tiek summēti. Lai arī
-vēlēšanām skaitliskas preferences starp kandidātiem nerullē, iepirkumos
-vērtējamās pozīcijas lielākoties ir kvantitatīvi diezgan labi izsakāmas, tāpēc
-šādas sistēmas varētu strādāt labāk nekā ordinālās (rangos balstītās) sistēmas.
+Vēl varētu jautāt, kāpēc neizvēlēties kādu ordinālu (rangos balstītu) sistēmu,
+kur katrā pozīcijā saranžējam kandidātus, pieliekam pozīcijām svarus un atrodam
+konsensus secību starp šīm secībām. Ir taču zināms, ka [šādas sistēmas](https://en.wikipedia.org/wiki/Kemeny%E2%80%93Young_method)
+varētu novest pie konsensus ranga, kas pēc daudzām aksiomām ir visgodīgākais.
+Arī vēlēšanās parasti izmanto fundamentāli ordinālas sistēmas.
 
-Tātad paliksim pie piedāvājumu izvērtēšanas ar "punktiem" katrā pozīcijā
-atsevišķi, ko sauksim par [punktu sistēmu](https://en.wikipedia.org/wiki/Score_voting).
-Vienīgi atceramies, ka mūsu "punkti" vairs nedrīkst būt atkarīgi no citu
-kandidātu piedāvājumiem.
+Tomēr ir vairākas problēmas:
 
-Bet kā gan godīgi piešķirt "punktus" piedāvājuma lētumam? Un kā piešķirt tos
-ātrumam? Vai potenciālajām apdrošināšanas izmaksām? Te nāk galvenais āķis.
-Piešķirsim tādus "punktus", kur labāk ir dabūt mazāk "punktu". Labākais
-piedāvājums būs tas, kuram "punktu" būs vismazāk. Un šos punktus sauksim par
-eiro.
+- Rangos balstītās konsensus metodes ir grūti sarēķināt. Ne tikai tai ziņā, ka
+aprēķini būtu grūti saprotami parastiem cilvēkiem, bet arī datoram grūti veicami.
+- Tām mēdz izpausties pašām savi [paradoksi](https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem).
+- Kvantitatīvās pozīcijās (piem. cenās) taču ir būtisks ne tikai ranžējums, bet
+arī relatīvā atšķirība.
 
-Ko tad īsti es te piedāvāju? To, ka nevis izmaksas ir jāpārrēķina kādos
-mistiskos punktos, bet gan katra pozīcija, arī nefinansiāla, ir jānovērtē
-ekvivalentās izmaksās — cik daudz pircējs ir gatavs maksāt par labumu šajā
-pozīcijā?
+Tāpēc palikām pie tā, ka jāizmanto [kardinālu sistēmu](https://en.wikipedia.org/wiki/Cardinal_voting),
+kurās tik traku problēmu nav. Ja vēlēšanās ir grūti vienoties par kandidātu
+skaitlisku vērtējumu, tad iepirkumos pozīcijas ne tikai var, bet pat obligāti
+vajag vērtēt skaitliski.
 
 ## Praktiskie piemēri
 
