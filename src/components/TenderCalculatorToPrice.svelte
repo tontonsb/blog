@@ -61,11 +61,8 @@
 	$: participants.length < participantCount && (participants = [...participants, 'Dalībnieks j'])
 	$: matrix[0].length < participantCount && (matrix = matrix.map(row => [...row, 100]))
 
-	// Best offer = minimum in that position (row)
-	$: best = matrix.map(row => Math.min(...row.slice(0, participantCount)))
-
 	// Points = weight * price / bestPrice
-	$: priceMatrix = matrix.map((row, i) => row.map(price => Number(price)))
+	$: priceMatrix = matrix.map((row, i) => row.map(price => positionToPrice[i](Number(price))))
 
 	// Total points = sum over that participant (column)
 	// Maybe transpose in the prev step (priceMatrix)?
