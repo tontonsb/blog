@@ -1,6 +1,6 @@
 ---
 title: Iepirkumu vērtēšana
-date: "2023-01-26"
+date: "2023-01-27"
 intro: "Kā tad īsti jāvērtē iepirkumi? Pamēģināsim papētīt vienu iespējamo vērtēšanas modeli un tā piemērotību dažādu iepirkumu vajadzībām."
 ---
 
@@ -146,7 +146,7 @@ kopējās izmaksas varētu izvērtēt, pozīcijas saskaitot, tad šeit tā nevar
 Lūk, varat pārbaudīt, ka pēc cenu saskaitīšanas pieejas tas piedāvājums, kurš
 būs kopā lētāks, dabūs pirmo vietu. Tas arī ir pamatprincips.
 
-Rindā "Aprēķins" redzama funkcija, pēc kuras no pozīcijas piedāvājuma <Katex math='x' />
+Rindā "Aprēķins" redzama funkcija, pēc kuras no pozīcijas piedāvājuma <Katex math='P' />
 sarēķināta šai pozīcijai ekvivalentā izmaksa. Vienreizējiem maksājumiem šī
 izmaksa ir vienāda ar pašu cenu.
 
@@ -173,7 +173,7 @@ papildus darbi varētu prasīt vidēji 20 stundas mēnesī, tad gala vērtējums
 	positions={['Analīze', 'Izstrāde', 'Uzturēšana', 'Darbi']}
 	positionCount={4}
 	positionToPrice={[x => x, x => x, x => 36*x, x => 720*x]}
-	positionToPriceLabel={['x', 'x', '36 x', '720 x']}
+	positionToPriceLabel={['P', 'P', '36 × P', '720 × P']}
 	participantCount={2}
 	matrix={[[2000,2600],[20000,14000],[500,550],[52,60]]} />
 
@@ -200,18 +200,18 @@ priekšroku konkursā!
 Pieņemsim, ka iemesls ir pasūtītāja uzskats, ka šādu izpildītāju mazāk būs
 jāuzrauga un jāatbalsta. Pasūtītājam nāksies projektā gaitā veltīt mazāk savu
 darbinieku darba stundu, kuru kopējais apjoms novērtējams aptuveni 3000 eiro
-izmaksās. Tāpēc uzskatīsim, ka kandidāts ar projvadu, radīs par 3000 eiro
+izmaksās. Tāpēc uzskatīsim, ka kandidāts ar projvadu (PV), radīs par 3000 eiro
 mazākas izmaksas nekā kandidāts bez tāda.
 
 <CalcToPrice
 	positions={['Darbu izpilde', 'Projvads']}
 	positionCount={2}
 	positionToPrice={[x => x, x => -3000 * x]}
-	positionToPriceLabel={['x', '-3000 x']}
+	positionToPriceLabel={['P', '-3000 × P']}
 	participantCount={2}
 	matrix={[[20000,21000],[0,1]]} />
 
-Protams, tik pat labi varējām izmantot funkciju <Katex math="3000(1-x)" />, kas
+Protams, tik pat labi varējām izmantot funkciju <Katex math="3000(1-P)" />, kas
 nevis samazinātu SIA Brāķis & co piedāvājuma ekvivalentās izmaksas, bet
 palielinātu AS Lāga zeļļi piedāvājuma izmaksas par to pašu summu. Matemātiski
 starp šīm pieejām nav atšķirības.
