@@ -6,6 +6,8 @@ intro: "Kā tad īsti jāvērtē iepirkumi? Pamēģināsim papētīt vienu iesp�
 
 <script>
 import Calculator from '$components/TenderCalculator.svelte'
+import CalcToPrice from '$components/TenderCalculatorToPrice.svelte'
+import Katex from '$components/Katex.svelte'
 </script>
 
 # Iepirkumu vērtēšana
@@ -137,9 +139,26 @@ arī relatīvā atšķirība.
 Šeit aplūkosim dažus hipotētiskus un dažus anonimizētus iepirkumus no EIS.
 Paskatīsimies, kā tad būtu jāpielieto šeit piedāvātā sistēma.
 
+### Vienkāršas izmaksu pozīcijas
+
+Ja iepriekšējā sistēmā mēs varējām novērot paradoksus pat piedāvājumos, kur
+kopējās izmaksas varētu izvērtēt, pozīcijas saskaitot, tad šeit tā nevarēs.
+Lūk, varat pārbaudīt, ka pēc cenu saskaitīšanas pieejas tas piedāvājums, kurš
+būs kopā lētāks, dabūs pirmo vietu. Tas arī ir pamatprincips.
+
+Rindā "Aprēķins" redzama funkcija, pēc kuras no pozīcijas piedāvājuma <Katex math='x' />
+sarēķināta šai pozīcijai ekvivalentā izmaksa. Vienreizējiem maksājumiem šī
+izmaksa ir vienāda ar pašu cenu.
+
+<CalcToPrice
+	editable={true}
+	positionCount={3}
+	participantCount={2}
+	matrix={[[200,101],[50,100],[50,100]]} />
+
 ### Finansiālās izmaksu pozīcijas
 
-cena, cena, stundu cena, mēneša cena
+Analīze 
 
 ### Kvalitātes kritēriji
 
