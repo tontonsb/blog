@@ -158,15 +158,85 @@ izmaksa ir vienāda ar pašu cenu.
 
 ### Finansiālās izmaksu pozīcijas
 
-Analīze 
+Pamēģināsim mazliet sarežģītākas funkcijas. Papildus divām vienkāršām cenu
+pozīcijām pieliksim arī uzturēšanu (cenu par mēnesi) un papildus darbus,
+piemēram, izmaiņu pieprasījumus programmatūrai.
+
+Lai spētu novērtēt, cik tad mums tas kopā izmaksās, jāprognozē, cik mēnešus
+un cik stundas mums vajadzēs. Teiksim, ka līgumu slēdzam uz trim gadiem, tad
+mēneši būs 36. Bet stundas? Novērtēt grūti, bet nāksies. Godīgi skatoties nekā
+citādi šīs pozīcijas nozīmīgumu izvērtēt nevarēs. Piemēram, ja novērtējam, ka
+papildus darbi varētu prasīt vidēji 20 stundas mēnesī, tad gala vērtējums būtu
+šāds:
+
+<CalcToPrice
+	positions={['Analīze', 'Izstrāde', 'Uzturēšana', 'Darbi']}
+	positionCount={4}
+	positionToPrice={[x => x, x => x, x => 36*x, x => 720*x]}
+	positionToPriceLabel={['x', 'x', '36 x', '720 x']}
+	participantCount={2}
+	matrix={[[2000,2600],[20000,14000],[500,550],[52,60]]} />
+
+Lūk, lai arī nācās mazliet padomāt, esam ieguvuši sagaidāmo izmaksu
+novērtējumus un konkursa rezultātu, kas dod priekšroku kandidātam ar zemākām
+izmaksām (ja viss noritēs kā plānots).
+
+Rezultātā, atšķirībā no vecās sistēmas, mēs ne tikai redzam, kāds sanāk
+uzvarētājs, bet arī pilnībā saprotam, kā veidojies salīdzināmais skaitlis.
+Nevis tikai brīnāmies par kaut kādiem punktiem.
 
 ### Kvalitātes kritēriji
 
-cena, termiņi, speciālisti, sertifikāti, vides labums?
+Iepirkumos mēdz iekļaut tādus kvalitātes kritērijus kā noteiktas ISO
+sertifikācijas esamība vai kvalificēta projektu vadītāja klātbūtne. Aplūkosim
+gadījumu, kur pasūtītājs uzskata par vēlamu sertificēta projektu vadītāja
+esamību. Vecajā iepirkumu vērtēšanā tas nozīmētu, ka par šādas pozīcijas
+aizpildīšanu var saņemt papildus 5 vai 10 "punktus".
+
+Bet priekš kam tas labais projvads vajadzīgs? Uz to mums jāatbild, lai varētu
+viņu novērtēt naudā. Un uz to atbildēt ir jāspēj pasūtītājam, kas par to dod
+priekšroku konkursā!
+
+Pieņemsim, ka iemesls ir pasūtītāja uzskats, ka šādu izpildītāju mazāk būs
+jāuzrauga un jāatbalsta. Pasūtītājam nāksies projektā gaitā veltīt mazāk savu
+darbinieku darba stundu, kuru kopējais apjoms novērtējams aptuveni 3000 eiro
+izmaksās. Tāpēc uzskatīsim, ka kandidāts ar projvadu, radīs par 3000 eiro
+mazākas izmaksas nekā kandidāts bez tāda.
+
+<CalcToPrice
+	positions={['Darbu izpilde', 'Projvads']}
+	positionCount={2}
+	positionToPrice={[x => x, x => -3000 * x]}
+	positionToPriceLabel={['x', '-3000 x']}
+	participantCount={2}
+	matrix={[[20000,21000],[0,1]]} />
+
+Protams, tik pat labi varējām izmantot funkciju <Katex math="3000(1-x)" />, kas
+nevis samazinātu SIA Brāķis & co piedāvājuma ekvivalentās izmaksas, bet
+palielinātu AS Lāga zeļļi piedāvājuma izmaksas par to pašu summu. Matemātiski
+starp šīm pieejām nav atšķirības.
+
+<details>
+<summary>Ko darīt ar termiņiem?</summary>
+Kā vēl viens kvalitātes kritērijs reizēm tiek iesaistīts piegādes vai darbu
+izpildes termiņš. Šo es ieteiktu vispār neizmantot. Ja nu konkursa uzvarētājs
+nepagūst termiņā? Lauzt līgumu un sākt visu no sākuma, kad darbi gandrīz
+pabeigti būtu pilnīgi nesaimnieciski. Bet atļaut tālāku izpildi (kaut vai ar
+līgumsodu) būs netaisnīgi pret konkurentu, kurš termiņu novērtēja tādu, kādu
+būtu patiesi izpildījis un tāpēc zaudēja konkursu.
+
+Ja pasūtītājam termiņš nav obligāts, bet ir tik vēlams, ka par to varētu
+samaksāt papildus, es iesaku paredzēt šādu punktu nolikumā un līgumā: ja
+piegāde tiks veikta tik un tik ātrāk, tad būs bonusiņš tik un tik naudiņas.
+</details>
 
 ### Finansiālās ienākumu pozīcijas
 
 apdrošināšana
+
+### Citas situācijas
+
+proporcionālie kvalitātes labumi, piem ilgtspēja. funkcijas P(1 - Q) nevis P - Q.
 
 ## Riski
 
