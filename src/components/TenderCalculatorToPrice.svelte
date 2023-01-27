@@ -1,5 +1,6 @@
 <script>
 	import Counter from '$components/Counter.svelte'
+	import Katex from '$components/Katex.svelte'
 
 	export let editable = false // Changing numbers
 	export let configurable = false // Changing participants and positions
@@ -29,9 +30,9 @@
 
 	/** @type {string[]} */
 	export let positionToPriceLabel = [
-		'x',
-		'x',
-		'x',
+		'P',
+		'P',
+		'P',
 	]
 
 	/** @type string[] */
@@ -55,7 +56,7 @@
 	// Allow indefinite extension
 	$: positions.length < positionCount && (positions = [...positions, 'Pozīcija i'])
 	$: positionToPrice.length < positionCount && (positionToPrice = [...positionToPrice, x => x])
-	$: positionToPriceLabel.length < positionCount && (positionToPriceLabel = [...positionToPriceLabel, 'x'])
+	$: positionToPriceLabel.length < positionCount && (positionToPriceLabel = [...positionToPriceLabel, 'P'])
 	$: matrix.length < positionCount && (matrix = [...matrix, matrix[matrix.length - 1]])
 
 	$: participants.length < participantCount && (participants = [...participants, 'Dalībnieks j'])
@@ -130,13 +131,13 @@
 				</td>
 			{:else}
 				{#each positionToPriceLabel.slice(0, positionCount) as label}
-				<td>{label}</td>
+				<td><Katex math={label} /></td>
 				{/each}
 			{/if}
 		</tr>
 		<tr>
 			<th>Dalībnieks</th>
-			<th colspan={positionCount}>Piedāvātās cenas</th>
+			<th colspan={positionCount}>Piedāvājumi</th>
 		</tr>
 		{#each participants.slice(0, participantCount) as participant, j}
 		<tr>
