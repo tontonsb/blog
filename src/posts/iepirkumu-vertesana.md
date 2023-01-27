@@ -8,6 +8,12 @@ intro: "Kā tad īsti jāvērtē iepirkumi? Pamēģināsim papētīt vienu iesp�
 import Calculator from '$components/TenderCalculator.svelte'
 import CalcToPrice from '$components/TenderCalculatorToPrice.svelte'
 import Katex from '$components/Katex.svelte'
+
+const complexFormula = String.raw`
+	a_1 P_1 
+	+ a_2 P_2 (1 - b_2 Q_2) 
+	+ a_3 P_3 (1 - b_{31} Q_{31}) (1 - b_{32} Q_{32}) 
+	+ S_4 + \ldots`
 </script>
 
 # Iepirkumu vērtēšana
@@ -290,7 +296,7 @@ Protams, piemēri ir vienkāršoti, praksē var būt vairāk faktoru un daži no
 var attiekties tikai uz kādu no pozīcijām. Piemēram, kādam gala aprēķins var
 sanākt arī tāds:
 
-<Katex math="a_1 P_1 + a_2 P_2 (1 - b_2 Q_2) + a_3 P_3 (1 - b_{31} Q_{31}) (1 - b_{32} Q_{32}) + S_4 + \ldots," displayMode />
+<Katex math="{complexFormula}," displayMode />
 
 kur <Katex math="a_i" /> un <Katex math="b_i" /> ir attiecīgo vērtību svara
 koeficienti.
