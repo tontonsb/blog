@@ -35,30 +35,38 @@ ieteikts [šajā rakstā](https://www.sciencedirect.com/science/article/abs/pii/
 ## Vērtēšana
 
 Piedāvāju izmantot pavisam vienkāršu principu: katra pozīcijas jānovērtē ar
-vienu skaitli, kas atbilst šīs pozīcijas "izmaksām". Šīs izmaksas saskaitot pa
-visām pozīcijām kopā, uzzinām, cik tad dārgs ir konkrētais piedāvājums. To,
-kura kopējās izmaksas ir mazākās, atzīstam par konkursa uzvarētāju.
+vienu skaitli, kas atbilst šīs pozīcijas "ekvivalentajām izmaksām". Tas ir —
+visas pozīcijas jānovērtē naudā. Šīs izmaksas saskaitot pa visām pozīcijām
+kopā, uzzināsim, cik tad dārgs ir konkrētais piedāvājums. To, kura kopējās
+izmaksas ir mazākās, atzīstam par konkursa uzvarētāju.
 
 Ar dažām pozīcijām tas ir triviāli — ja pozīcija sastāv tikai no vienas cenas,
 tad tās arī ir šīs pozīcijas izmaksas.
 
 Dinamiskākas pozīcijas kā uzturēšana darba stundas vai mēnešmaksas var novērtēt
 kopējās prognozētajās izmaksās — jāpareizina vienas vienības cena ar
-prognozējamo vienību skaitu. Bet precīzāk paskatīsimies pie [piemēriem](#praktiskie-piemēri).
-Un tur arī padomāsim par sarežģītākiem gadījumiem.
+prognozējamo vienību skaitu.
+
+Kvalitatīvās pozīcijas faktiski nozīmē, ka pasūtītājs ir gatavs par kādu
+neobligātu faktoru maksāt vairāk. Vai pieņemt kādu nepilnību, ja ir iespēja
+maksāt mazāk. Šādā gadījumā ekvivalentās izmaksas koriģēsim tām attiecīgi
+pieskaitot vai piereizinot kādu korekciju.
+
+Bet precīzāk paskatīsimies pie [piemēriem](#praktiskie-piemēri). Un tur arī
+padomāsim par sarežģītākiem gadījumiem.
 
 ## Pamatojums
 
 Šādā pieejā cenas pozīcijām būtu lineāra nozīme, līdz ar to daudzi no klupšanas
-akmeņiem pazūd automātiski, saskaitīt šīs pozīcijas kļūst loģiski. Tiesa,
+akmeņiem pazūd automātiski. Saskaitīt šīs pozīcijas kļūst loģiski. Tiesa,
 kvalitātes kritērijos joprojām būs izaicinājumi, pasūtītājs var izvēlēties gan
 lineāras, gan nelineāras funkcijas. Un tas bieži būs arī loģiski, jo auto
 jaudā atšķirība starp 50 un 100 kW taču ir būtiski lielāka nekā atšķirība starp
 250 un 300 kW. Sistēma, kur cenas loma ir lineāra, bet kvalitātes loma var būt
 dažāda, krietni labāk var atspoguļot dažādu iepircēju vajadzības.
 
-Par to, kāpēc neder esošā sistēma, kur pozīcijas tiek pārvērstas punktos tā,
-ka labākam piedāvājumam atbilst vairāk punkti, jau pamatīgi [izrunājām](/blog/iepirkumi).
+Par to, kāpēc neder esošā sistēma, kur pozīcijas tiek nelineāri pārvērstas
+punktos tā, ka labākai cenai atbilst vairāk punkti, jau pamatīgi [izrunājām](/blog/iepirkumi).
 
 <details>
 <summary>Kāpēc nelineāra cenas loma ir slikta? Spied šeit, lai izvērstu īsu
@@ -110,7 +118,7 @@ Novērtēšanas nodošana haotiskām, nelineārām funkcijām nav risinājums.
 
 Vēl varētu jautāt, kāpēc neizvēlēties kādu ordinālu (rangos balstītu) sistēmu,
 līdzīgi kā mēs darām vēlēšanās. Visvienkāršākais pretarguments ir apsvērums, ka
-ar ranžējumu pozīcijā nevar atspoguļot kvantitatīvās atšķirības.
+ar ranžējumu pozīcijā nevar atspoguļot piedāvājumu kvantitatīvās atšķirības.
 
 <details>
 <summary>Ir arī citas problēmas. Izvērs šo nodaļu, ja teorijas tev vēl nav par daudz.</summary>
@@ -126,6 +134,7 @@ Tomēr ir vairākas problēmas:
 
 - Rangos balstītās konsensus metodes ir grūti sarēķināt. Ne tikai tai ziņā, ka
 aprēķini būtu grūti saprotami parastiem cilvēkiem, bet arī datoram grūti veicami.
+Atrast konsensus rangu parasti ir eksponenciāli sarežģīts uzdevums.
 - Tajās iegūstamie vērtējumi nav dalībniekiem prognozējami, ir grūti
 piedāvājumu pielāgot pasūtītāja prioritātēm.
 - Tām mēdz izpausties pašām savi [paradoksi](https://en.wikipedia.org/wiki/Arrow%27s_impossibility_theorem).
@@ -170,6 +179,7 @@ papildus darbi varētu prasīt vidēji 20 stundas mēnesī, tad gala vērtējums
 šāds:
 
 <CalcToPrice
+	editable={true}
 	positions={['Analīze', 'Izstrāde', 'Uzturēšana', 'Darbi']}
 	positionCount={4}
 	positionToPrice={[x => x, x => x, x => 36*x, x => 720*x]}
@@ -232,16 +242,80 @@ piegāde tiks veikta tik un tik ātrāk, tad būs bonusiņš tik un tik naudiņa
 
 ### Finansiālās ienākumu pozīcijas
 
-apdrošināšana
+Tādi iepriekš āķīgi gadījumi kā apdrošināšana ar šo sistēmu kļūst ne tikai
+caurredzamāki, bet pat vienkāršāki. Mums atliek tikai novērtēt, cik daudz
+apdrošināšanas gadījumu mēs varētu sagaidīt. Piemēram, ja mūsu uzņēmuma ir
+100 darbinieki un mēs domājam, ka vidēji viņi izmantos veselības apdrošināšanu
+par 10%, tad vērtēsim, cik mēs saņemam par 10 summām, atņemot sagaidāmo
+atguvumu no izmaksām.
+
+<CalcToPrice
+	editable={true}
+	positions={['Cena', 'Apdr. summa']}
+	positionCount={2}
+	positionToPrice={[x => 100*x, x => -10 * x]}
+	positionToPriceLabel={['100 × P', '-10 × S']}
+	participantCount={2}
+	matrix={[[550,500],[4000,4500]]} />
+
+Šādam aprēķinam parādās labs blakusefekts — mēs redzam, cik daudz apdrošinātājs
+tiek plusos par pakalpojuma nodrošināšanu. Ar šo rezultātu mēs varam kontrolēt,
+vai mūsu pieņēmumi ir saprātīgi. Ja pēķšņi sanāktu, ka izmaksas šeit sanāktu
+negatīvas un apdrošinātājs paliktu mīnusos, tad būtu jāaizdomājas — vai nu mūsu
+vai apdrošinātāja novērtējumi sagaidāmajai apdrošināšanas izmantošanai ir
+bijuši aplami.
+
+Gadījumos, kad apdrošinām retāku gadījumu (piemēram, ēkas apdrošināšana),
+sagaidāmā atmaksa jāreizina ar gadījuma varbūtību, kas būs mazs skaitlis. Jā,
+to novērtēt var būt grūti. Bet iepircējs, kas to nespēj novērtēt, nevar būt
+kompetents salīdzināt apdrošināšanas piedāvājumus ne ar vienu metodi.
 
 ### Citas situācijas
 
-proporcionālie kvalitātes labumi, piem ilgtspēja. funkcijas P(1 - Q) nevis P - Q.
+Var būt arī gadījumi, kuros izmaksu korekcija nebūs pieskaitāma.
+
+Ja jāvērtē vienības ar ierobežotu darba ilgumu, tad var cenu dalīt, vērtējot
+cenu par vienību gadā. Līdzīgi var būt arī citi gadījumi, kuros cenu var
+pārrēķināt uz cenu par "īsto" vienību, lai tas būtu tilpuma vai atmiņas vai vēl
+kāds skaitlis.
+
+Nesen redzēju arī iepirkumu, kurā vērtēta iekārtas putekļu izturības klase.
+Šādā gadījumā iepircējam jāspēj izvērtēt, cik ļoti iekārtas pielietojamību
+un/vai ilgmūžību ietekmē klase un proporcionāli jāpareizina izmaksas (jeb
+jāpalielina vai jāsamazina tās par kaut cik procentiem).
+
+Šajos visos gadījumos ekvivalento izmaksu funkcija no cenas (P) un kvalitātes
+(Q) būs nevis formā <Katex math="P-bQ" />, bet <Katex math="P(1-bQ)" />.
+Protams, piemēri ir vienkāršoti, praksē var būt vairāk faktoru un daži no tiem
+var attiekties tikai uz kādu no pozīcijām. Piemēram, kādam gala aprēķins var
+sanākt arī tāds:
+
+<Katex math="a_1 P_1 + a_2 P_2 (1 - b_2 Q_2) + a_3 P_3 (1 - b_{31} Q_{31}) (1 - b_{32} Q_{32}) + S_4 + \ldots," displayMode />
+
+kur <Katex math="a_i" /> un <Katex math="b_i" /> ir attiecīgo vērtību svara
+koeficienti.
+
+Lai arī sarežģīti iepirkumi joprojām būs sarežģīti vērtējami, man šie aprēķini
+izskatās krietni vienkāršāki, vieglāk izsekojami un pārbaudāmi nekā tagadējās
+zemāko cenu dalīšanas...
+
+> **Atceries!** Relatīvās korekcijas nav aditīvas. Ja tev viena
+pozīcija labo cenu par 10% un cita pozīcija arī par 10%, tad kopējais labojums
+nav 20% ;)
 
 ## Riski
 
-Protams, arī šāda sistēma nebūs ideāla. Jebkurā sistēmā iepircējam nepietiek
-uzskicēt vērtēšanas sistēmu un izsludināt konkursu. Ir jāmēģina arī modelēt
-iespējamie piedāvājumi pa pozīcijām un saprast, vai kādā pozīcijā nevar
-iestāties neparedzēta situācija. Ja tādi riski ir, tad tur būs nepieciešami
-ierobežojumi.
+Izlasīji? Neuzķeries! Arī šāda sistēma nebūs ideāla. Jebkurā sistēmā iepircējam
+nepietiek uzskicēt vērtēšanas sistēmu un izsludināt konkursu. Ir obligāti
+jāmēģina arī modelēt iespējamie piedāvājumi pa pozīcijām un saprast, vai kādā
+pozīcijā nevar iestāties neparedzēta situācija. Pasūtītājam ir skaidri jāzina,
+par kādām piedāvājuma kombinācijām būs vienādi vērtējumi. Un jāsaprot, vai tie
+tiešām ir līdzvērtīgi pasūtītāja acīs.
+
+Piemēram, veselības apdrošināšanas piemērā faktiski būs iesaistītas dažādas
+summas dažādiem pakalpojumiem. Lai tur nenokļūdītos ar vērtējumu kādā pozīcijā,
+būtu vajadzīgs konsultēties pie industrijas pārstāvjiem. Citādi var sanākt, ka
+kāds kandidāts spiedīs lielus skaitļus kļūdaini izsvērtā pozīcijā, bet cits
+nemaz nepieteiksies, jo uzskatīs izraudzītos svarus par pagalam neizdevīgiem.
+
+Bet šai metodei es spēju saskatīt mazāk riskus un problēmas nekā citām. Un tu?
