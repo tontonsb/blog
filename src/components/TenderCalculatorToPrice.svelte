@@ -252,10 +252,6 @@
 		color: white;
 	}
 
-	.totals {
-		border-top: var(--border-light) solid var(--color-light);
-	}
-
 	.winner {
 		color: var(--color-accent);
 	}
