@@ -5,6 +5,6 @@
 
 <Meta title="Wa Points Sheet" description="WA (Hungarian) points playground" />
 
-# WACALC
+# WaSheet
 
 <WaSheet />
