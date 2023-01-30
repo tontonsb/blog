@@ -64,6 +64,19 @@ function brrr() {
 	for (let i = 2; i < rows.length; i++)
 		rows[i] = (Math.round(200 * rows[i-1]) - Math.round(100 * rows[i-2])) / 100
 }
+
+// Guessr
+let r350 = 0
+let r1400 = 0
+function guessTrack() {
+	if (!r350 || !r1400)
+		return alert('Bruh, fill in the 350pt and 1400pt results :@')
+
+	pointShift = 0
+	resultShift = (Math.round(100*r1400) - Math.round(200*r350)) / 100
+
+	conversionFactor = 1400 / Math.pow(r1400 + resultShift, 2)
+}
 </script>
 
 <div class="row">
@@ -120,22 +133,40 @@ function brrr() {
 	<button on:click={reload}>Reset coefs for this discipline</button>
 </div>
 
-<button on:click={brrr}>Brrr the numbers pls</button>
+<div class="row">
+	<div>
+		<button on:click={brrr}>Brrr the numbers pls</button>
 
-<table>
-	<thead>
-		<tr>
-			<th>Performance</th>
-			<th>Points</th>
-		</tr>
-	</thead>
-	{#each rows as row, i}
-		<tr>
-			<td><input bind:value={row} type=number></td>
-			<td><output>{results[i]}</output></td>
-		</tr>
-	{/each}
-</table>
+		<table>
+			<thead>
+				<tr>
+					<th>Performance</th>
+					<th>Points</th>
+				</tr>
+			</thead>
+			{#each rows as row, i}
+				<tr>
+					<td><input bind:value={row} type=number></td>
+					<td><output>{results[i]}</output></td>
+				</tr>
+			{/each}
+		</table>
+	</div>
+	<div>
+		Or for track events...
+		<label class="row">
+			350pt Result
+			<input bind:value={r350} type=number>
+		</label>
+		<label class="row">
+			1400pt Result
+			<input bind:value={r1400} type=number>
+		</label>
+		<label class="row">
+			<button on:click={guessTrack}>Guess track coefs</button>
+		</label>
+	</div>
+</div>
 
 Results in seconds (track), meters (field) or points (combined)!
 
