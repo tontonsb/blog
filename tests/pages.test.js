@@ -54,3 +54,9 @@ test('karatsuba comparison page works', async ({ page }) => {
 	expect(await page.textContent('h1')).toBe('Karatsuba vs classic')
 	await expect(page).toHaveTitle('Karatsuba vs classic')
 })
+
+test('washeet page works', async ({ page }) => {
+	await page.goto('/washeet')
+
+	await expect(page.locator('main')).toContainText('shift')
+})

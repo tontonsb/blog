@@ -1,10 +1,6 @@
 <script>
 import Counter from '$components/Counter.svelte'
-
-// works
-import { WaCalculator } from '../../../node_modules/@glaivepro/wa-calculator'
-// Doesn't work, dunno why
-// import { WaCalculator } from '@glaivepro/wa-calculator'
+import { WaCalculator } from '@glaivepro/wa-calculator'
 
 const calc = new WaCalculator()
 
