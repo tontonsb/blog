@@ -4,10 +4,20 @@
 
 	export let correct = false
 
-	const selected = writable(false)
+	const id = Symbol()
+	let selected = writable(false)
 
+	// Announce that this answer exists
 	const register = getContext('registerAnswer')
-	register(selected, correct)
+	register(id, selected, correct)
+
+	// The `selected` state is manipulated via parent as it has to deselect the otter answos
+	const select = getContext('selectAnswer')
 </script>
 
-<slot />
+<li>
+	<button on:click={() => select(id)} >
+		<slot />
+		{$selected ? 'Y' : 'N'}
+	</button>
+</li>
