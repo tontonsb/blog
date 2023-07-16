@@ -98,8 +98,8 @@ atsauksme par stiprajām un vājajām pusēm, ieteikumi nākamajiem soļiem, pie
 piestrādāt. Bet ideālā gadījumā padariet šo neapmaksāto darbu par apmaksātu.
 Noslēgt līgumu uz dažām stundām būs čakarīgi, bet varbūt iedodiet kādu dāvanu
 karti, kuras summa atbilstu šīm darba stundām? Var dot arī citus labumus.
-Piemēram, SIA "Jāņa sēta" ražo grāmatas un kartes. Ja viņi kandidātiem liktu
-(faktiski neliek) tērēt darba stundas mājasdarbiem, tad piemērot būtu katram,
+Piemēram, ja uzņēmums, kurš ražo grāmatas un kartes, kandidātiem liktu
+(faktiski neliek 🌞) tērēt darba stundas mājasdarbiem, tad piemēroti būtu katram,
 kurš godīgi izgājis procesu, beigās iedot kādu grāmatu un/vai karti.
 
 ## Kodēšanas intervija
