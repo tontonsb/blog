@@ -204,10 +204,12 @@ varētu apgūt pirmajās darba nedēļās vai pat dažos mirkļos noskaidrot int
 ## Kopsavilkums
 
 Ideālo risinājumu industrija vēl nav atradusi. Metodes ir dažādas, katra ar
-saviem mīnusiem. Vislabāk, ja jums inventārā ir vairākas pieejas. Vērtējiet
-vecos projektus, pēc vajadzības uzdodiet ko pakodēt. Pārbaudiet zināšanas, ja
-tās ir būtiskas. Labs intervētājs katrā sarunā pamanīs ko citu, kas jāpārbauda,
-un labi būs, ja azotē būs arī instrumenti, ar ko to veikt.
+saviem mīnusiem. Diemžēl pat īsti objektīvas metodes nav, jo kandidāti mēdz būt
+pārāk dažādi. Vislabāk, ja jums inventārā ir vairākas pieejas. Vērtējiet
+vecos projektus, pēc vajadzības uzdodiet ko pakodēt, labāk uz vietas nekā mājā.
+Pārbaudiet zināšanas, ja tās ir būtiskas. Labs intervētājs katrā sarunā pamanīs
+ko citu, kas jāpārbauda, un labi būs, ja azotē būs arī instrumenti, ar ko to
+veikt.
 
 Nešaubos, ka paši atradīsiet, kā atsijāt sliktos, tam vairāk vai mazāk der
 visas minētās metodes. Bet pievērsiet uzmanību kā izturēties pret kandidātiem
