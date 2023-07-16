@@ -50,9 +50,9 @@ kaut matemātikas CE. Korelācija ar spējām būs krietni uzticamāka.
 
 Darbam nepieciešamās zināšanas reprezentējošs dažu stundu uzdevums, kurš
 patstāvīgi ("mājās") jāizpilda. Pēdējos gados, pieaugot izpratnei par
-tāfeles uzdevumu bezjēdzīgumu, šis ir kļuvis par dominējošo atlases metodi.
+tāfeles uzdevumu bezjēdzīgumu, šī ir kļuvusi par dominējošo atlases metodi.
 
-Tīmekļa izstrādātājiem parasti tā ir kāda *landing page* vai kāds API, ja
+Tīmekļa izstrādātājiem parasti tā ir kāda *landing pāge* vai kāds API, ja
 *backend*. Reizēm kāds CRUD fullstack utt. Šis piegājiens labāk atspoguļo
 ar darbu saistītās prasmes, bet reti kad tas ir tieši atbilstošs reālajam
 darbam. Biežāk jau kāds vienkāršots modelītis.
