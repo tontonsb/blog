@@ -18,4 +18,5 @@
 	$: katexString = katex.renderToString(math, options)
 </script>
 
+<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 {@html katexString}

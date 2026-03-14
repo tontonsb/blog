@@ -3,7 +3,7 @@ export default async () => {
 
 	const posts = await Promise.all(
 		Object.entries(files).map(async ([path, resolver]) => {
-			const { metadata } = await resolver()
+			const { metadata } = /** @type {any} */ (await resolver())
 
 			return {
 				meta: metadata,

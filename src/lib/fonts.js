@@ -2,6 +2,11 @@ import { readable } from 'svelte/store'
 import { browser } from '$app/environment'
 import FontFaceObserver from 'fontfaceobserver'
 
+/**
+ * @template T
+ * @typedef {import('svelte/store').Readable<T>} Readable
+ */
+
 // Make sure that these letters are loaded on the font
 const key = 'BESbwyāžŠ'
 
@@ -28,14 +33,14 @@ function loadFont(name, weight, setter) {
 		).catch(() => setter('failed'))
 }
 
-/** @type {import('svelte/store').Readable<string|boolean>} */
-export const firaSans300Loaded = readable(false, set => loadFont('Fira Sans', 300, set))
+/** @type {Readable<string|boolean>} */
+export const firaSans300Loaded = readable(/** @type {string|boolean} */ (false), set => loadFont('Fira Sans', 300, set))
 
-/** @type {import('svelte/store').Readable<string|boolean>} */
-export const montserrat300Loaded = readable(false, set => loadFont('Montserrat', 300, set))
+/** @type {Readable<string|boolean>} */
+export const montserrat300Loaded = readable(/** @type {string|boolean} */ (false), set => loadFont('Montserrat', 300, set))
 
-/** @type {import('svelte/store').Readable<string|boolean>} */
-export const montserrat400Loaded = readable(false, set => loadFont('Montserrat', 400, set))
+/** @type {Readable<string|boolean>} */
+export const montserrat400Loaded = readable(/** @type {string|boolean} */ (false), set => loadFont('Montserrat', 400, set))
 
-/** @type {import('svelte/store').Readable<string|boolean>} */
-export const montserrat500Loaded = readable(false, set => loadFont('Montserrat', 500, set))
+/** @type {Readable<string|boolean>} */
+export const montserrat500Loaded = readable(/** @type {string|boolean} */ (false), set => loadFont('Montserrat', 500, set))

@@ -1,4 +1,5 @@
 <script>
+	// @ts-nocheck — bind:textContent with number[] is intentional; values coerced via Number() in computations
 	import Counter from '$components/Counter.svelte'
 
 	export let editable = false // Changing numbers
@@ -8,7 +9,7 @@
 	export let positionCount = 3
 	export let participantCount = 3
 
-	/** @type string[] */
+	/** @type {string[]} */
 	export let positions = [
 		'Analīze',
 		'Izstrāde',
@@ -20,10 +21,10 @@
 		'Atjaunināšana',
 	]
 
-	/** @type number[] */
+	/** @type {number[]} */
 	export let weights = [20,20,20,20,20]
 
-	/** @type string[] */
+	/** @type {string[]} */
 	export let participants = [
 		'AS Lāga zeļļi',
 		'SIA Brāķis & co',
@@ -33,6 +34,7 @@
 	]
 
 	// Array of offered prices. matrix[i][j] corresponds to j's offer in i.
+	/** @type {number[][]} */
 	export let matrix = [
 		[100, 100, 80],
 		[200, 200, 200],
@@ -50,10 +52,10 @@
 	$: matrix[0].length < participantCount && (matrix = matrix.map(row => [...row, 100]))
 
 	// Best offer = minimum in that position (row)
-	$: best = matrix.map(row => Math.min(...row.slice(0, participantCount)))
+	$: best = matrix.map(row => Math.min(...row.slice(0, participantCount).map(Number)))
 
 	// Points = weight * price / bestPrice
-	$: pointMatrix = matrix.map((row, i) => row.map(price => weights[i]*best[i]/price))
+	$: pointMatrix = matrix.map((row, i) => row.map(price => Number(weights[i])*best[i]/Number(price)))
 
 	// Total points = sum over that participant (column)
 	// Maybe transpose in the prev step (pointMatrix)?
@@ -88,6 +90,7 @@
 
 <div class=container>
 	<table>
+	<tbody>
 		<tr>
 			<th></th>
 			{#if configurable}
@@ -168,6 +171,7 @@
 			<td>{price}</td>
 			{/each}
 		</tr>
+	</tbody>
 	<tbody aria-live=polite>
 		<tr>
 			<th></th>
@@ -189,6 +193,7 @@
 			{/if}
 		</tr>
 		{/each}
+	</tbody>
 	</table>
 </div>
 

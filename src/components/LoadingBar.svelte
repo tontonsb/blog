@@ -28,12 +28,12 @@
 			class="progress"
 			class:glow={stuck}
 			style:inline-size="{progress * 100}%"
-		/>
+		></div>
 	</div>
 {/if}
 
 {#if progress >= 0.2}
-	<div class="fade" />
+	<div class="fade"></div>
 {/if}
 
 <style>

@@ -62,7 +62,7 @@ function brrr() {
 		return alert('Write something in teh firstest 2 rows lol')
 
 	for (let i = 2; i < rows.length; i++)
-		rows[i] = (Math.round(200 * rows[i-1]) - Math.round(100 * rows[i-2])) / 100
+		rows[i] = (Math.round(200 * (rows[i-1] ?? 0)) - Math.round(100 * (rows[i-2] ?? 0))) / 100
 }
 
 // Guessr
@@ -144,12 +144,14 @@ function guessTrack() {
 					<th>Points</th>
 				</tr>
 			</thead>
+			<tbody>
 			{#each rows as row, i}
 				<tr>
 					<td><input bind:value={row} type=number></td>
 					<td><output>{results[i]}</output></td>
 				</tr>
 			{/each}
+			</tbody>
 		</table>
 	</div>
 	<div>

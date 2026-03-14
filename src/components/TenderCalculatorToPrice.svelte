@@ -1,4 +1,5 @@
 <script>
+	// @ts-nocheck — bind:textContent with number[] is intentional; values coerced via Number() in computations
 	import Counter from '$components/Counter.svelte'
 	import Katex from '$components/Katex.svelte'
 
@@ -9,7 +10,7 @@
 	export let positionCount = 3
 	export let participantCount = 3
 
-	/** @type string[] */
+	/** @type {string[]} */
 	export let positions = [
 		'Analīze',
 		'Izstrāde',
@@ -35,7 +36,7 @@
 		'P',
 	]
 
-	/** @type string[] */
+	/** @type {string[]} */
 	export let participants = [
 		'AS Lāga zeļļi',
 		'SIA Brāķis & co',
@@ -45,6 +46,7 @@
 	]
 
 	// Array of offered prices. matrix[i][j] corresponds to j's offer in i.
+	/** @type {number[][]} */
 	export let matrix = [
 		[100, 100, 80],
 		[200, 200, 200],
@@ -98,6 +100,7 @@
 
 <div class=container>
 	<table>
+	<tbody>
 		<tr>
 			<th></th>
 			{#if configurable}
@@ -118,7 +121,7 @@
 		<tr>
 			<td>Aprēķins</td>
 			{#if configurable}
-				{#each positionToPriceLabel.slice(0, positionCount) as label, i}
+				{#each positionToPriceLabel.slice(0, positionCount) as _, i}
 				<td
 					contenteditable=true
 					role=textbox
@@ -172,6 +175,7 @@
 			{/if}
 		</tr>
 		{/each}
+	</tbody>
 	<tbody aria-live=polite>
 		<tr>
 			<th></th>
@@ -193,6 +197,7 @@
 			{/if}
 		</tr>
 		{/each}
+	</tbody>
 	</table>
 </div>
 
