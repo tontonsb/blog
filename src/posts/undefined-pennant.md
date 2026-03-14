@@ -6,13 +6,14 @@ intro: What happens if you don't define the features in Laravel Pennant? Does it
 
 # Undefined Pennant Features
 
-[Pennant](https://laravel.com/docs/12.x/pennant) is an official (first-party)
+[Pennant](https://laravel.com/docs/12.x/pennant) is a first-party
 Laravel package that helps you with feature flags. Turns out that by not
 registering ("defining") your features you can solve a common annoyance.
 
 ## Documented workflow
 
-According to docs we start by defining a feature. The simplest way is this:
+According to docs we start by defining a feature. Let's give the new forum to
+20% of our users:
 
 ```php
 Feature::define('forum-v2', Lottery::odds(20 / 100));
@@ -60,7 +61,9 @@ What happens is that:
 As a result the table of features will not only contain those three or eight
 `true` entries, but also thousands or more `false` entries.
 
-That's just noise and mess. In your database and in your feature management panel.
+That's just noise and mess. In your database and in your feature management
+panel. We just wanted to have eight entries for the selected users, no point to
+store negatives. Is Pennant even the right tool for feature flags like that?
 
 ## Undefined features
 
@@ -88,15 +91,22 @@ That's it. How it works is:
 And that's exactly what we need. Only the enabled ones are listed in the
 database and otherwise you just don't have an entry and don't have the feature.
 
-The code responsible for this behaviour is [this](https://github.com/laravel/pennant/blob/2d4a58c9923d3d2fffcaba7c066d9c82ca53b25f/src/Drivers/DatabaseDriver.php#L166-L168).
-Despite this behaviour not being in the docs, it appears intentional since
-there is [a test](https://github.com/laravel/pennant/blob/2d4a58c9923d3d2fffcaba7c066d9c82ca53b25f/tests/Feature/DatabaseDriverTest.php#L638-L646)
-that ensures it works like that. So it should be reasonably safe to rely on this.
+## Are we supposed to rely on an undocumented feature??
+
+Yeah, I was thinking about the same. In fact I made up the question before you
+asked. You probably didn't even ask it, right?
+
+Although this behaviour is not described in the docs, there is
+[a test](https://github.com/laravel/pennant/blob/2d4a58c9923d3d2fffcaba7c066d9c82ca53b25f/tests/Feature/DatabaseDriverTest.php#L638-L646)
+that ensures it works like that. So it is an intentional behaviour and the test
+makes it safe to rely on this behaviour.
+
+Btw [here](https://github.com/laravel/pennant/blob/2d4a58c9923d3d2fffcaba7c066d9c82ca53b25f/src/Drivers/DatabaseDriver.php#L166-L168) is the code responsible for this.
 
 ## But shouldn't I define my features???
 
 In fact you can. The trick is just that you shouldn't define the resolver
-function. It's very doable by defining your features as classes.
+function. It's very doable by defining your features [as classes](https://laravel.com/docs/12.x/pennant#class-based-features).
 
 ```php
 class ForumV2
@@ -106,11 +116,17 @@ class ForumV2
 		if (app()->environment('local'))
 			return true;
 
+		if ($user->doesntDeserveNewThings())
+			return false;
+
 		if ($user->isBetaTester())
+			return true;
+
+		if (now()->isAfter(config('forum.v2_released_at')))
 			return true;
 	}
     
-	// Just don't add a `resolve()` method
+	// Just don't add a `resolve()` method here.
 }
 ```
 
