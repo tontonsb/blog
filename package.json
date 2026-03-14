@@ -21,7 +21,7 @@
 		"mdsvex": "^0.12.0",
 		"rehype-autolink-headings": "^6.1.1",
 		"rehype-slug": "^5.1.0",
-		"sass": "^1.56.1",
+		"sass-embedded": "^1.98.0",
 		"svelte": "^5.0.0",
 		"svelte-check": "^3.0.0",
 		"svelte-preprocess": "^5.0.0",
