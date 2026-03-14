@@ -9,7 +9,7 @@ test('default metadata works', async ({ page }) => {
 	const title = 'Nestandarta analīze'
 	const description = 'Šeit mēs runāsim par bezgalīgi maziem un bezgalīgi lieliem lielumiem. Kā pie īstiem vīriem. Kā Leibnics nevis Veierštrāss.'
 
-	await expect(page.locator('title')).toHaveText(title)
+	await expect(page).toHaveTitle(title)
 	await expect(page.locator('meta[name=description]')).toHaveAttribute('content', description)
 
 	await expect(page.locator('meta[property="og:type"]')).toHaveAttribute('content', 'website')
@@ -29,7 +29,7 @@ test('metadata is correct on blog', async ({ page }) => {
 	const title = 'Bezcepumu analītikas'
 	const description = 'Aplūkosim divas Google Analytics alternatīvas — Matomo un Fathom un pieredzi ar tām šajā prodžektā.'
 
-	await expect(page.locator('title')).toHaveText(title)
+	await expect(page).toHaveTitle(title)
 	await expect(page.locator('meta[name=description]')).toHaveAttribute('content', description)
 
 	await expect(page.locator('meta[property="og:site_name"]')).toHaveAttribute('content', 'Nestandarta analīze')
