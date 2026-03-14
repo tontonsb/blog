@@ -1,8 +1,8 @@
-@import './variables.scss';
-@import './defaults.scss';
-@import './layout.scss';
-@import './content.scss';
+@use './variables.scss';
+@use './defaults.scss';
+@use './layout.scss';
+@use './content.scss';
 
 // Components ar for complex and reusable HTML components like blockquote
 // and details. This is unrelated to svelte components.
-@import './components/index.scss';
+@use './components/index.scss';
