@@ -1,5 +1,6 @@
 <script>
-	import { Github, Twitter } from 'lucide-svelte'
+	import Github from '@lucide/svelte/icons/github'
+	import Twitter from '@lucide/svelte/icons/twitter'
 	import { montserrat300Loaded } from '$lib/fonts'
 	import { slide } from 'svelte/transition'
 	import { quartIn } from 'svelte/easing'

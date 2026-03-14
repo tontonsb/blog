@@ -1,6 +1,6 @@
 {
 	"name": "blog",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -34,11 +34,11 @@
 		"@fontsource/fira-mono": "^4.5.10",
 		"@fontsource/fira-sans": "^4.5.10",
 		"@fontsource/montserrat": "^4.5.13",
-		"@glaivepro/wa-calculator": "^0.3.1",
+		"@glaivepro/wa-calculator": "^0.3.2",
+		"@lucide/svelte": "^0.577.0",
 		"@tontonsb/karatsuba-display": "^2.0.0",
 		"fontfaceobserver": "^2.3.0",
 		"katex": "0.16.4",
-		"lucide-svelte": "^0.577.0",
 		"svelte-loading-spinners": "^0.3.4"
 	}
 }
