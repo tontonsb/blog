@@ -8,7 +8,7 @@ intro: What happens if you don't define the features in Laravel Pennant? Does it
 
 [Pennant](https://laravel.com/docs/12.x/pennant) is a first-party
 Laravel package that helps you with feature flags. Turns out that by not
-registering ("defining") your features you can solve a common annoyance.
+registering (*defining*) your features you can solve a common annoyance.
 
 ## Documented workflow
 
@@ -35,14 +35,14 @@ subsequent checks will always return the same `true` or `false` for that user.
 
 A common use case for feature flags is when you want to release a feature for
 some selected group of users instead of a random portion. Personally I've never
-needed the random one. In that case you'd define the feature like this:
+needed the random one. So you'd actually define the feature like this:
 
 ```php
 // deny by default
 Feature::define('forum-v2', false);
 ```
 
-So any user without a stored value will get the feature denied. And for your
+Any user without a stored value will get the feature denied. And for your
 selected users you do explicit
 
 ```php
@@ -63,7 +63,8 @@ As a result the table of features will not only contain those three or eight
 
 That's just noise and mess. In your database and in your feature management
 panel. We just wanted to have eight entries for the selected users, no point to
-store negatives. Is Pennant even the right tool for feature flags like that?
+store negatives. You might start having doubts whether Pennant is fit for such
+feature flags at all.
 
 ## Undefined features
 
