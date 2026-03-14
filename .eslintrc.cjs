@@ -1,11 +1,12 @@
 module.exports = {
 	root: true,
-	extends: ['eslint:recommended'],
-	plugins: ['svelte3'],
-	overrides: [{ files: ['*.svelte'], processor: 'svelte3/svelte3' }],
+	extends: ['eslint:recommended', 'plugin:svelte/recommended'],
 	parserOptions: {
 		sourceType: 'module',
-		ecmaVersion: 2020
+		ecmaVersion: 2021
+	},
+	rules: {
+		'no-unused-vars': ['error', { varsIgnorePattern: '^_', argsIgnorePattern: '^_' }],
 	},
 	env: {
 		browser: true,
