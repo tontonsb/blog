@@ -5,5 +5,9 @@ const initial = browser ? (localStorage.getItem('lang') ?? 'lv') : 'lv'
 export const lang = writable(initial)
 
 if (browser) {
-	lang.subscribe(v => localStorage.setItem('lang', v))
+	let initialized = false
+	lang.subscribe(v => {
+		if (initialized) localStorage.setItem('lang', v)
+		else initialized = true
+	})
 }
