@@ -123,8 +123,8 @@
 		const layout = {
 			paper_bgcolor: 'transparent',
 			plot_bgcolor: '#f5f4f0',
-			xaxis: { title: 'Area (km²)', type: 'log', gridcolor: '#e0deda' },
-			yaxis: { title: 'Highest elevation (m)', type: yScale, gridcolor: '#e0deda' },
+			xaxis: { title: { text: 'Area (km²)' }, type: 'log', gridcolor: '#e0deda' },
+			yaxis: { title: { text: 'Highest elevation (m)' }, type: yScale, gridcolor: '#e0deda' },
 			margin: { t: 20, r: 20, b: 60, l: 70 },
 			legend: { orientation: 'h', y: -0.2 },
 			hovermode: 'closest',
