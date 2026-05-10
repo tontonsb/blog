@@ -1,6 +1,7 @@
 ---
-title: Izstrādātāju atlase 
+title: Izstrādātāju atlase
 date: "2023-07-17"
+lang: lv
 intro: Mazliet patirzāsim labās un sliktās prakses izstrādātāju atlases procesos.
 ---
 

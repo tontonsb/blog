@@ -7,6 +7,11 @@
 	import { RingLoader } from 'svelte-loading-spinners'
 
 	import { firaSans300Loaded, montserrat400Loaded, montserrat500Loaded } from '$lib/fonts.js'
+	import { lang } from '$lib/lang.js'
+	import { browser } from '$app/environment'
+
+	$: if (browser && $page.data.meta?.lang && !localStorage.getItem('lang')) lang.set($page.data.meta.lang)
+	$: if (browser) document.documentElement.lang = $lang
 
 	$: fontsReady = $firaSans300Loaded && $montserrat400Loaded && $montserrat500Loaded
 

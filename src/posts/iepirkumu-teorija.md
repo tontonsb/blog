@@ -1,6 +1,7 @@
 ---
 title: Iepirkumu teorija
 date: "2023-01-21"
+lang: lv
 intro: "Kā tad īsti jāvērtē iepirkumi? Palūkosimies, ko par šo tēmu jau zina pasaulē."
 ---
 

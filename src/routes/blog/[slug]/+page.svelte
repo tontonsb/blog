@@ -2,6 +2,8 @@
 	import Meta from '$components/meta/Meta.svelte'
 
 	/** @type {import('./$types').PageData} */
+	import { t } from '$lib/translations.js'
+
 	export let data
 
 	$: meta = data.meta
@@ -14,7 +16,7 @@
 
 {#if meta.date}
 <p class=date>
-	Publicēts {meta.date}
+	{$t.blog.published} {meta.date}
 </p>
 {/if}
 

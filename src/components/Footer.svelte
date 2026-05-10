@@ -4,6 +4,7 @@
 	import { montserrat300Loaded } from '$lib/fonts'
 	import { slide } from 'svelte/transition'
 	import { quartIn } from 'svelte/easing'
+	import { t } from '$lib/translations.js'
 </script>
 
 {#if $montserrat300Loaded}
@@ -35,10 +36,10 @@
 	</div>
 
 	<div>
-		<a href="/privacy">Datu politika</a>
+		<a href="/privacy">{$t.footer.privacy}</a>
 
 		<a href="https://github.com/tontonsb/blog">
-			Izejas kods
+			{$t.footer.source}
 		</a>
 	</div>
 </footer>

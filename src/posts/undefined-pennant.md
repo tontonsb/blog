@@ -1,6 +1,7 @@
 ---
 title: Undefined Pennant Features
 date: "2026-03-14"
+lang: en
 intro: What happens if you don't define the features in Laravel Pennant? Does it still work? Is it better or worse?
 ---
 

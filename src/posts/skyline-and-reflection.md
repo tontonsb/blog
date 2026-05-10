@@ -1,6 +1,7 @@
 ---
 title: Skyline and Reflection countries
 date: "2026-05-10"
+lang: en
 intro: Outlier countries on the area–highest elevation plot.
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Iepirkumu vērtēšana
 date: "2023-01-27"
+lang: lv
 intro: "Kā tad īsti jāvērtē iepirkumi? Pamēģināsim papētīt vienu iespējamo vērtēšanas modeli un tā piemērotību dažādu iepirkumu vajadzībām."
 ---
 

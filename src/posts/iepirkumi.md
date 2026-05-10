@@ -1,6 +1,7 @@
 ---
 title: Valsts iepirkumi
 date: "2022-12-12"
+lang: lv
 intro: Nereti valsts iepirkumos vērtēšanas sistēma ļauj uzvarēt piedāvājumam, kurš nav izdevīgākais. Izskatīsim šo vērtēšanas modeli un veidus, kādā rezultāti ir manipulējami.
 ---
 
