@@ -7,7 +7,7 @@
 # Par mani
 
 Sveiks! Esmu Juris, vismaz tādu vārdu man laikam piešķīra vecāki. Pats
-pēdējos gados lietoju vārdu Džuris, internetos arī tontonsb un Chazz.
+pēdējos gados lietoju vārdu Džuris, internetos arī tontonsb.
 Droši drīksti arī izvēlēties jebkādu citu vārdu ar kādu mani apzīmēt,
 vienīgi patīkamāk jūtos, ja mani uzrunā vienskaitlī.
 
