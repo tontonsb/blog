@@ -17,6 +17,9 @@
 	/** @type string */
 	export let lang
 
+	/** @type {string|null} */
+	export let image = null
+
 	/** @type Record<string, string> */
 	const locales = {
 		lv: 'lv_LV',
@@ -46,9 +49,7 @@
 	{/if}
 {/if}
 
-<!--
 {#if image}
-<meta property="og:image" content={image.url} />
-<meta property="og:image:alt" content={image.alt} />
+	<meta property="og:image" content={config.siteUrl + image} />
+	<meta property="og:image:alt" content={description} />
 {/if}
--->

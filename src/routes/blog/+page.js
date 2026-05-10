@@ -8,6 +8,7 @@ export const load = async ({ fetch }) => {
 	 * 			date: string|null,
 	 * 			intro: string|null,
 	 * 			lang: string|null,
+	 * 			image: string|null,
 	 * 		},
 	 * 		path: string,
 	 * }[]}

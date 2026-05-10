@@ -13,6 +13,9 @@
 	/** @type boolean */
 	export let article = false
 
+	/** @type {string|null} */
+	export let image = null
+
 	$: lang = $page.data.meta?.lang ?? 'lv'
 
 	// Manual cleanup, see https://github.com/sveltejs/svelte/issues/8202
@@ -23,7 +26,7 @@
 <svelte:head>
 {#if enabled}
 	<Native {title} {description} />
-	<OpenGraph {title} {description} {article} {lang} />
-	<Twitter />
+	<OpenGraph {title} {description} {article} {lang} {image} />
+	<Twitter hasImage={!!image} />
 {/if}
 </svelte:head>

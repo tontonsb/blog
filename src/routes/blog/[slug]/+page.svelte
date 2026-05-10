@@ -10,7 +10,7 @@
 	$: Content = data.Content
 </script>
 
-<Meta title={meta.title} description={meta.intro} article={true} />
+<Meta title={meta.title} description={meta.intro} article={true} image={meta.image ?? null} />
 
 <svelte:component this={Content} />
 
