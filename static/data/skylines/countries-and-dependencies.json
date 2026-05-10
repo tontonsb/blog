@@ -1,0 +1,2903 @@
+[
+	{
+		"name": "Afghanistan",
+		"area": 652230,
+		"highest": {
+			"name": "Noshaq",
+			"elevation": 7492
+		},
+		"lowest": {
+			"name": "Amu Darya",
+			"elevation": 29
+		}
+	},
+	{
+		"name": "Åland",
+		"area": 1582.93,
+		"highest": {
+			"name": "Orrdalsklint",
+			"elevation": 129
+		},
+		"lowest": null
+	},
+	{
+		"name": "Albania",
+		"area": 28748,
+		"highest": {
+			"name": "Korab",
+			"elevation": 2764
+		},
+		"lowest": {
+			"name": "Adriatic Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Algeria",
+		"area": 2381741,
+		"highest": {
+			"name": "Mount Tahat",
+			"elevation": 2908
+		},
+		"lowest": {
+			"name": "Chott Melrhir",
+			"elevation": -35
+		}
+	},
+	{
+		"name": "American Samoa",
+		"area": 199,
+		"highest": {
+			"name": "Lata Mountain",
+			"elevation": 963
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Andorra",
+		"area": 468,
+		"highest": {
+			"name": "Coma Pedrosa",
+			"elevation": 2942
+		},
+		"lowest": {
+			"name": "Gran Valira",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Angola",
+		"area": 1246700,
+		"highest": {
+			"name": "Mount Moco",
+			"elevation": 2619
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Anguilla",
+		"area": 91,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Antarctic Treaty area",
+		"area": 14000000,
+		"highest": {
+			"name": "Vinson Massif",
+			"elevation": 4892
+		},
+		"lowest": null
+	},
+	{
+		"name": "Antarctica",
+		"area": 13720000,
+		"highest": {
+			"name": "Vinson Massif",
+			"elevation": 4892
+		},
+		"lowest": null
+	},
+	{
+		"name": "Antigua and Barbuda",
+		"area": 440.29,
+		"highest": {
+			"name": "Mount Obama",
+			"elevation": 402
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Argentina",
+		"area": 2780400,
+		"highest": {
+			"name": "Aconcagua",
+			"elevation": 6962
+		},
+		"lowest": {
+			"name": "Laguna del Carbón",
+			"elevation": -105
+		}
+	},
+	{
+		"name": "Armenia",
+		"area": 29743.423459,
+		"highest": {
+			"name": "Mount Aragats",
+			"elevation": 4090
+		},
+		"lowest": {
+			"name": "Debed",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Aruba",
+		"area": 178.916378,
+		"highest": {
+			"name": "Mount Jamanota",
+			"elevation": 188
+		},
+		"lowest": null
+	},
+	{
+		"name": "Ascension",
+		"area": null,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Australia",
+		"area": 7692024,
+		"highest": {
+			"name": "Mawson Peak",
+			"elevation": 2745
+		},
+		"lowest": {
+			"name": "Kati Thanda–Lake Eyre",
+			"elevation": -15
+		}
+	},
+	{
+		"name": "Austria",
+		"area": 83878.99,
+		"highest": {
+			"name": "Grossglockner",
+			"elevation": 3798
+		},
+		"lowest": {
+			"name": "Neusiedl Lake",
+			"elevation": 115
+		}
+	},
+	{
+		"name": "Azerbaijan",
+		"area": 86600,
+		"highest": {
+			"name": "Mount Bazardüzü",
+			"elevation": 4466
+		},
+		"lowest": {
+			"name": "Caspian Sea",
+			"elevation": -28
+		}
+	},
+	{
+		"name": "Bahrain",
+		"area": 786.5,
+		"highest": {
+			"name": "Mountain of Smoke",
+			"elevation": 134
+		},
+		"lowest": {
+			"name": "Persian Gulf",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Bangladesh",
+		"area": 147570,
+		"highest": {
+			"name": "Mowdok tiang",
+			"elevation": 1054
+		},
+		"lowest": {
+			"name": "Bay of Bengal",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Barbados",
+		"area": 439,
+		"highest": {
+			"name": "Mount Hillaby",
+			"elevation": 340
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Belarus",
+		"area": 207596.76,
+		"highest": {
+			"name": "Dzyarzhynskaya Hara",
+			"elevation": 345
+		},
+		"lowest": {
+			"name": "Neman",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Belgium",
+		"area": 30688,
+		"highest": {
+			"name": "Signal de Botrange",
+			"elevation": 694
+		},
+		"lowest": {
+			"name": "De Moeren",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Belize",
+		"area": 22966,
+		"highest": {
+			"name": "Doyle's Delight",
+			"elevation": 1124
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Benin",
+		"area": 114763,
+		"highest": {
+			"name": "Mont Sokbaro",
+			"elevation": 658
+		},
+		"lowest": {
+			"name": "Bight of Benin",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Bermuda",
+		"area": 53,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Bhutan",
+		"area": 38394,
+		"highest": {
+			"name": "Gangkhar Puensum",
+			"elevation": 7570
+		},
+		"lowest": {
+			"name": "Drangme Chhu",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Bolivia",
+		"area": 1098581,
+		"highest": {
+			"name": "Nevado Sajama",
+			"elevation": 6542
+		},
+		"lowest": {
+			"name": "Paraguay River",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Bosnia and Herzegovina",
+		"area": 51197,
+		"highest": {
+			"name": "Maglić",
+			"elevation": 2386
+		},
+		"lowest": {
+			"name": "Adriatic Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Botswana",
+		"area": 581737,
+		"highest": {
+			"name": "Otse Hill",
+			"elevation": 1491
+		},
+		"lowest": {
+			"name": "Limpopo River",
+			"elevation": 513
+		}
+	},
+	{
+		"name": "Bouvet Island",
+		"area": 49,
+		"highest": {
+			"name": "Olavtoppen",
+			"elevation": 780
+		},
+		"lowest": {
+			"name": "South Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Brazil",
+		"area": 8515767,
+		"highest": {
+			"name": "Pico da Neblina",
+			"elevation": 2994
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "British Indian Ocean Territory",
+		"area": 60,
+		"highest": null,
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "British Virgin Islands",
+		"area": 151,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Brunei",
+		"area": 5765.313533,
+		"highest": {
+			"name": "Bukit Pagon",
+			"elevation": 1850
+		},
+		"lowest": {
+			"name": "South China Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Bulgaria",
+		"area": 110993.6,
+		"highest": {
+			"name": "Musala",
+			"elevation": 2925
+		},
+		"lowest": {
+			"name": "Black Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Burkina Faso",
+		"area": 274200,
+		"highest": {
+			"name": "Mount Tenakourou",
+			"elevation": 749
+		},
+		"lowest": {
+			"name": "Black Volta",
+			"elevation": 75
+		}
+	},
+	{
+		"name": "Burundi",
+		"area": 27834,
+		"highest": {
+			"name": "Mount Heha",
+			"elevation": 2684
+		},
+		"lowest": {
+			"name": "Lake Tanganyika",
+			"elevation": 773
+		}
+	},
+	{
+		"name": "Cayman Islands",
+		"area": 264,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Cambodia",
+		"area": 181035,
+		"highest": {
+			"name": "Phnom Aural",
+			"elevation": 1813
+		},
+		"lowest": {
+			"name": "Gulf of Thailand",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Cameroon",
+		"area": 475442,
+		"highest": {
+			"name": "Mount Cameroon",
+			"elevation": 4095
+		},
+		"lowest": {
+			"name": "Bight of Biafra",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Canada",
+		"area": 9984670,
+		"highest": {
+			"name": "Mount Logan",
+			"elevation": 5959
+		},
+		"lowest": {
+			"name": "Arctic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Cape Verde",
+		"area": 4033,
+		"highest": {
+			"name": "Pico do Fogo",
+			"elevation": 2829
+		},
+		"lowest": {
+			"name": "Pedra de Lume salt ponds",
+			"elevation": -30
+		}
+	},
+	{
+		"name": "Caribbean Netherlands",
+		"area": 322,
+		"highest": {
+			"name": "Mount Scenery",
+			"elevation": 870
+		},
+		"lowest": null
+	},
+	{
+		"name": "Central African Republic",
+		"area": 622984,
+		"highest": {
+			"name": "Mont Ngaoui",
+			"elevation": 1410
+		},
+		"lowest": {
+			"name": "Ubangi River",
+			"elevation": 335
+		}
+	},
+	{
+		"name": "Chad",
+		"area": 1284000,
+		"highest": {
+			"name": "Emi Koussi",
+			"elevation": 3445
+		},
+		"lowest": {
+			"name": "Bodélé Depression",
+			"elevation": 155
+		}
+	},
+	{
+		"name": "Chile",
+		"area": 756102,
+		"highest": {
+			"name": "Ojos del Salado",
+			"elevation": 6893
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Christmas Island",
+		"area": 135,
+		"highest": {
+			"name": "Murray Hill, Christmas Island",
+			"elevation": 361
+		},
+		"lowest": null
+	},
+	{
+		"name": "Cyprus",
+		"area": 9242.45,
+		"highest": {
+			"name": "Mount Olympus",
+			"elevation": 1952
+		},
+		"lowest": {
+			"name": "Mediterranean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Cyprus",
+		"area": 9234,
+		"highest": {
+			"name": "Mount Olympus",
+			"elevation": 1952
+		},
+		"lowest": null
+	},
+	{
+		"name": "Clipperton Island",
+		"area": 6,
+		"highest": {
+			"name": "Clipperton Rock",
+			"elevation": 29
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Cocos (Keeling) Islands",
+		"area": 14,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Colombia",
+		"area": 1141748,
+		"highest": {
+			"name": "Pico Cristóbal Colón",
+			"elevation": 5775
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Comoros",
+		"area": 2034,
+		"highest": {
+			"name": "Mount Karthala",
+			"elevation": 2361
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Cook Islands",
+		"area": 240,
+		"highest": {
+			"name": "Te Manga",
+			"elevation": 652
+		},
+		"lowest": null
+	},
+	{
+		"name": "Costa Rica",
+		"area": 51179.92,
+		"highest": {
+			"name": "Cerro Chirripó",
+			"elevation": 3820
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Croatia",
+		"area": 56594,
+		"highest": {
+			"name": "Dinara",
+			"elevation": 1831
+		},
+		"lowest": {
+			"name": "Adriatic Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Cuba",
+		"area": 109884,
+		"highest": {
+			"name": "Pico Turquino",
+			"elevation": 1974
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Curaçao",
+		"area": 444,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Czech Republic",
+		"area": 78871,
+		"highest": {
+			"name": "Sněžka",
+			"elevation": 1603
+		},
+		"lowest": {
+			"name": "Elbe",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Democratic Republic of the Congo",
+		"area": 2344858,
+		"highest": {
+			"name": "Mount Stanley",
+			"elevation": 5109
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Denmark",
+		"area": 42925.46,
+		"highest": {
+			"name": "Møllehøj",
+			"elevation": 171
+		},
+		"lowest": {
+			"name": "Lammefjord",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Diego Garcia",
+		"area": 30,
+		"highest": null,
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Djibouti",
+		"area": 23200,
+		"highest": {
+			"name": "Mousa Ali",
+			"elevation": 2028
+		},
+		"lowest": {
+			"name": "Lake Assal",
+			"elevation": -153
+		}
+	},
+	{
+		"name": "Dominica",
+		"area": 751.096551,
+		"highest": {
+			"name": "Morne Diablotins",
+			"elevation": 1447
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Dominican Republic",
+		"area": 48670.82,
+		"highest": {
+			"name": "Pico Duarte",
+			"elevation": 3101
+		},
+		"lowest": {
+			"name": "Lake Enriquillo",
+			"elevation": -46
+		}
+	},
+	{
+		"name": "Ecuador",
+		"area": 257204.27,
+		"highest": {
+			"name": "Chimborazo",
+			"elevation": 6263
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Egypt",
+		"area": 1010407.87,
+		"highest": {
+			"name": "Mount Catherine",
+			"elevation": 2637
+		},
+		"lowest": {
+			"name": "Qattara Depression",
+			"elevation": -134
+		}
+	},
+	{
+		"name": "El Salvador",
+		"area": 21041,
+		"highest": {
+			"name": "Cerro El Pital",
+			"elevation": 2730
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Equatorial Guinea",
+		"area": 28051,
+		"highest": {
+			"name": "Pico Basilé",
+			"elevation": 3011
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Eritrea",
+		"area": 117600,
+		"highest": {
+			"name": "Emba Soira",
+			"elevation": 3018
+		},
+		"lowest": {
+			"name": "Lake Kulul",
+			"elevation": -75
+		}
+	},
+	{
+		"name": "Estonia",
+		"area": 45335,
+		"highest": {
+			"name": "Suur Munamägi",
+			"elevation": 317
+		},
+		"lowest": {
+			"name": "Baltic Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Eswatini",
+		"area": 17364,
+		"highest": {
+			"name": "Emlembe",
+			"elevation": 1862
+		},
+		"lowest": {
+			"name": "Maputo River",
+			"elevation": 21
+		}
+	},
+	{
+		"name": "Ethiopia",
+		"area": 1104300,
+		"highest": {
+			"name": "Ras Dashen",
+			"elevation": 4533
+		},
+		"lowest": {
+			"name": "Danakil Depression",
+			"elevation": -125
+		}
+	},
+	{
+		"name": "Falkland Islands",
+		"area": 12200,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Faroe Islands",
+		"area": 1399,
+		"highest": {
+			"name": "Slættaratindur",
+			"elevation": 880
+		},
+		"lowest": null
+	},
+	{
+		"name": "Federated States of Micronesia",
+		"area": 702,
+		"highest": {
+			"name": "Dolohmwar",
+			"elevation": 791
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Fiji",
+		"area": 18274,
+		"highest": {
+			"name": "Mount Tomanivi",
+			"elevation": 1324
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Finland",
+		"area": 338478.34,
+		"highest": {
+			"name": "Halti",
+			"elevation": 1361
+		},
+		"lowest": {
+			"name": "Baltic Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "France",
+		"area": 643801,
+		"highest": {
+			"name": "Mont Blanc",
+			"elevation": 4806
+		},
+		"lowest": {
+			"name": "Étang de Lavalduc",
+			"elevation": -10
+		}
+	},
+	{
+		"name": "French Guiana",
+		"area": 83534,
+		"highest": {
+			"name": "Bellevue de l'Inini",
+			"elevation": 831
+		},
+		"lowest": null
+	},
+	{
+		"name": "French Polynesia",
+		"area": 4167,
+		"highest": {
+			"name": "Mont Orohena",
+			"elevation": 2241
+		},
+		"lowest": null
+	},
+	{
+		"name": "French Southern and Antarctic Lands",
+		"area": 7829,
+		"highest": {
+			"name": "Mont Ross",
+			"elevation": 1850
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Gabon",
+		"area": 267667,
+		"highest": {
+			"name": "Mont Bengoué",
+			"elevation": 1070
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Georgia",
+		"area": 69700,
+		"highest": {
+			"name": "Shkhara",
+			"elevation": 5193
+		},
+		"lowest": {
+			"name": "Black Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "German Democratic Republic",
+		"area": 108179,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Germany",
+		"area": 357587.77,
+		"highest": {
+			"name": "Zugspitze",
+			"elevation": 2962
+		},
+		"lowest": {
+			"name": "Neuendorf-Sachsenbande",
+			"elevation": 5
+		}
+	},
+	{
+		"name": "Ghana",
+		"area": 238535,
+		"highest": {
+			"name": "Mount Afadja",
+			"elevation": 2904
+		},
+		"lowest": {
+			"name": "Gulf of Guinea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Gibraltar",
+		"area": 6.843,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Greece",
+		"area": 131957,
+		"highest": {
+			"name": "Mount Olympus",
+			"elevation": 2918
+		},
+		"lowest": null
+	},
+	{
+		"name": "Greenland",
+		"area": 2166086,
+		"highest": {
+			"name": "Gunnbjørn Fjeld",
+			"elevation": 3694
+		},
+		"lowest": null
+	},
+	{
+		"name": "Grenada",
+		"area": 348.5,
+		"highest": {
+			"name": "Mount Saint Catherine",
+			"elevation": 840
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Guadeloupe",
+		"area": 1628,
+		"highest": {
+			"name": "Soufrière",
+			"elevation": 1467
+		},
+		"lowest": null
+	},
+	{
+		"name": "Guam",
+		"area": 544,
+		"highest": {
+			"name": "Mount Lamlam",
+			"elevation": 1332
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Guatemala",
+		"area": 108889,
+		"highest": {
+			"name": "Volcán Tajumulco",
+			"elevation": 4203
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Guernsey",
+		"area": 78,
+		"highest": {
+			"name": "Le Moulin",
+			"elevation": 114
+		},
+		"lowest": null
+	},
+	{
+		"name": "Guinea",
+		"area": 245857,
+		"highest": {
+			"name": "Mount Richard-Molard",
+			"elevation": 1752
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Guinea-Bissau",
+		"area": 36125,
+		"highest": {
+			"name": "Monte Torin",
+			"elevation": 262
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Guyana",
+		"area": 214970,
+		"highest": {
+			"name": "Mount Roraima",
+			"elevation": 2810
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Haiti",
+		"area": 27750,
+		"highest": {
+			"name": "Pic la Selle",
+			"elevation": 2674
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Heard Island and McDonald Islands",
+		"area": 368,
+		"highest": {
+			"name": "Mawson Peak",
+			"elevation": 2745
+		},
+		"lowest": null
+	},
+	{
+		"name": "Honduras",
+		"area": 112492,
+		"highest": {
+			"name": "Cerro Las Minas",
+			"elevation": 2849
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Hong Kong",
+		"area": 1105.69,
+		"highest": {
+			"name": "Tai Mo Shan",
+			"elevation": 957
+		},
+		"lowest": null
+	},
+	{
+		"name": "Hungary",
+		"area": 93011.4,
+		"highest": {
+			"name": "Kékes",
+			"elevation": 1014
+		},
+		"lowest": {
+			"name": "Gyálarét",
+			"elevation": 76
+		}
+	},
+	{
+		"name": "Iceland",
+		"area": 103004,
+		"highest": {
+			"name": "Hvannadalshnúkur",
+			"elevation": 2110
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "India",
+		"area": 3287263,
+		"highest": {
+			"name": "Kanchenjunga",
+			"elevation": 8586
+		},
+		"lowest": {
+			"name": "Kuttanad",
+			"elevation": -2
+		}
+	},
+	{
+		"name": "Indonesia",
+		"area": 1904570,
+		"highest": {
+			"name": "Puncak Jaya",
+			"elevation": 4884
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Iran",
+		"area": 1648195,
+		"highest": {
+			"name": "Damavand",
+			"elevation": 5610
+		},
+		"lowest": {
+			"name": "Caspian Sea",
+			"elevation": -28
+		}
+	},
+	{
+		"name": "Iraq",
+		"area": 437072,
+		"highest": {
+			"name": "Cheekha Dar",
+			"elevation": 3611
+		},
+		"lowest": null
+	},
+	{
+		"name": "Ireland",
+		"area": 69797,
+		"highest": {
+			"name": "Carrauntoohil",
+			"elevation": 1039
+		},
+		"lowest": {
+			"name": "North Slob",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Isle of Man",
+		"area": 572,
+		"highest": {
+			"name": "Snaefell",
+			"elevation": 621
+		},
+		"lowest": null
+	},
+	{
+		"name": "Israel",
+		"area": 20770,
+		"highest": {
+			"name": "Meron",
+			"elevation": 1208
+		},
+		"lowest": {
+			"name": "Dead Sea",
+			"elevation": -441
+		}
+	},
+	{
+		"name": "Italy",
+		"area": 302068,
+		"highest": {
+			"name": "Mont Blanc",
+			"elevation": 4806
+		},
+		"lowest": {
+			"name": "Contane",
+			"elevation": -3
+		}
+	},
+	{
+		"name": "Ivory Coast",
+		"area": 322463,
+		"highest": {
+			"name": "Mount Richard-Molard",
+			"elevation": 1752
+		},
+		"lowest": {
+			"name": "Gulf of Guinea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Yemen",
+		"area": 455503,
+		"highest": {
+			"name": "Jabal an Nabi Shu'ayb",
+			"elevation": 3666
+		},
+		"lowest": {
+			"name": "Arabian Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Yugoslavia",
+		"area": 255804,
+		"highest": {
+			"name": "Triglav",
+			"elevation": 2864
+		},
+		"lowest": null
+	},
+	{
+		"name": "Jamaica",
+		"area": 10991.90954,
+		"highest": {
+			"name": "Blue Mountain Peak",
+			"elevation": 2256
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Japan",
+		"area": 377972.28,
+		"highest": {
+			"name": "Mount Fuji",
+			"elevation": 3777
+		},
+		"lowest": {
+			"name": "Hachirōgata",
+			"elevation": -15
+		}
+	},
+	{
+		"name": "Jersey",
+		"area": 118.2,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Jordan",
+		"area": 89341,
+		"highest": {
+			"name": "Jabal Umm ad Dami",
+			"elevation": 1854
+		},
+		"lowest": {
+			"name": "Dead Sea",
+			"elevation": -441
+		}
+	},
+	{
+		"name": "Kazakhstan",
+		"area": 2724900,
+		"highest": {
+			"name": "Khan Tengri",
+			"elevation": 7010
+		},
+		"lowest": {
+			"name": "Karagiye",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Kenya",
+		"area": 581309,
+		"highest": {
+			"name": "Mount Kenya",
+			"elevation": 5199
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Kingdom of the Netherlands",
+		"area": 42201,
+		"highest": {
+			"name": "Mount Scenery",
+			"elevation": 870
+		},
+		"lowest": {
+			"name": "Zuidplaspolder",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Kiribati",
+		"area": 811,
+		"highest": {
+			"name": "Banaba Island",
+			"elevation": 81
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Kyrgyzstan",
+		"area": 199951,
+		"highest": {
+			"name": "Jengish Chokusu",
+			"elevation": 7439
+		},
+		"lowest": {
+			"name": "Kara Darya",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Kosovo",
+		"area": 10909,
+		"highest": {
+			"name": "Gjeravica",
+			"elevation": 2656
+		},
+		"lowest": null
+	},
+	{
+		"name": "Kuwait",
+		"area": 17818,
+		"highest": {
+			"name": "unnamed",
+			"elevation": 306
+		},
+		"lowest": {
+			"name": "Persian Gulf",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Laos",
+		"area": 236800,
+		"highest": {
+			"name": "Phou Bia",
+			"elevation": 2819
+		},
+		"lowest": {
+			"name": "Mekong River",
+			"elevation": 1
+		}
+	},
+	{
+		"name": "Latvia",
+		"area": 62226.85,
+		"highest": {
+			"name": "Gaiziņkalns",
+			"elevation": 312
+		},
+		"lowest": {
+			"name": "Baltic Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Lebanon",
+		"area": 10452,
+		"highest": {
+			"name": "Qurnat as Sawda'",
+			"elevation": 3088
+		},
+		"lowest": {
+			"name": "Mediterranean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Lesotho",
+		"area": 30355,
+		"highest": {
+			"name": "Thabana Ntlenyana",
+			"elevation": 3482
+		},
+		"lowest": {
+			"name": "Orange River",
+			"elevation": 1400
+		}
+	},
+	{
+		"name": "Liberia",
+		"area": 111369,
+		"highest": {
+			"name": "Mount Wuteve",
+			"elevation": 1440
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Libya",
+		"area": 1759541,
+		"highest": {
+			"name": "Bikku Bitti",
+			"elevation": 2267
+		},
+		"lowest": {
+			"name": "Sabkhat Ghuzayyil",
+			"elevation": -47
+		}
+	},
+	{
+		"name": "Liechtenstein",
+		"area": 160,
+		"highest": {
+			"name": "Grauspitz",
+			"elevation": 2599
+		},
+		"lowest": {
+			"name": "Rhine",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Lithuania",
+		"area": 65300,
+		"highest": {
+			"name": "Aukštojas Hill",
+			"elevation": 294
+		},
+		"lowest": {
+			"name": "Nemunas Delta",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Luxembourg",
+		"area": 2586.36,
+		"highest": {
+			"name": "Kneiff",
+			"elevation": 560
+		},
+		"lowest": {
+			"name": "Moselle",
+			"elevation": 65
+		}
+	},
+	{
+		"name": "Macau",
+		"area": 115.3,
+		"highest": {
+			"name": "Alto de Coloane",
+			"elevation": 1706
+		},
+		"lowest": null
+	},
+	{
+		"name": "Madagascar",
+		"area": 587295,
+		"highest": {
+			"name": "Maromokotro",
+			"elevation": 2876
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Mayotte",
+		"area": 374,
+		"highest": {
+			"name": "Benara",
+			"elevation": 660
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Malaysia",
+		"area": 330803,
+		"highest": {
+			"name": "Mount Kota Kinabalu",
+			"elevation": 4095
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Malawi",
+		"area": 118484,
+		"highest": {
+			"name": "Mulanje Massif",
+			"elevation": 3002
+		},
+		"lowest": {
+			"name": "Shire River",
+			"elevation": 37
+		}
+	},
+	{
+		"name": "Maldives",
+		"area": 298,
+		"highest": {
+			"name": "Addu City",
+			"elevation": 2
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Mali",
+		"area": 1240192,
+		"highest": {
+			"name": "Mount Hombori",
+			"elevation": 1153
+		},
+		"lowest": {
+			"name": "Senegal River",
+			"elevation": 23
+		}
+	},
+	{
+		"name": "Malta",
+		"area": 316,
+		"highest": {
+			"name": "Ta' Dmejrek",
+			"elevation": 253
+		},
+		"lowest": {
+			"name": "Mediterranean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Marshall Islands",
+		"area": 181.43,
+		"highest": {
+			"name": "Likiep Atoll",
+			"elevation": 10
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Martinique",
+		"area": 1128,
+		"highest": {
+			"name": "Mount Pelée",
+			"elevation": 1397
+		},
+		"lowest": null
+	},
+	{
+		"name": "Mauritania",
+		"area": 1030700,
+		"highest": {
+			"name": "Kediet ej Jill",
+			"elevation": 915
+		},
+		"lowest": {
+			"name": "Sebkha de Ndrhamcha",
+			"elevation": -5
+		}
+	},
+	{
+		"name": "Mauritius",
+		"area": 2040,
+		"highest": {
+			"name": "Piton de la Petite Rivière Noire",
+			"elevation": 828
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Mexico",
+		"area": 1964375,
+		"highest": {
+			"name": "Citlaltepetl",
+			"elevation": 5636
+		},
+		"lowest": {
+			"name": "Laguna Salada",
+			"elevation": -10
+		}
+	},
+	{
+		"name": "Myanmar",
+		"area": 676577.2,
+		"highest": {
+			"name": "Hkakabo Razi",
+			"elevation": 5881
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Moldova",
+		"area": 33843.5,
+		"highest": {
+			"name": "Bălănești Hill",
+			"elevation": 430
+		},
+		"lowest": {
+			"name": "Dniester",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Monaco",
+		"area": 2.08,
+		"highest": {
+			"name": "Chemin des Révoires",
+			"elevation": 162
+		},
+		"lowest": {
+			"name": "Mediterranean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Mongolia",
+		"area": 1564116,
+		"highest": {
+			"name": "Hüiten Peak",
+			"elevation": 4374
+		},
+		"lowest": {
+			"name": "Hoh Nuur",
+			"elevation": 560
+		}
+	},
+	{
+		"name": "Montenegro",
+		"area": 13883,
+		"highest": {
+			"name": "Zla Kolata",
+			"elevation": 2534
+		},
+		"lowest": {
+			"name": "Adriatic Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Montserrat",
+		"area": 102,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Morocco",
+		"area": 446550,
+		"highest": {
+			"name": "Jbel Toubkal",
+			"elevation": 4167
+		},
+		"lowest": {
+			"name": "Sebkha Tah",
+			"elevation": -55
+		}
+	},
+	{
+		"name": "Mozambique",
+		"area": 801590,
+		"highest": {
+			"name": "Monte Binga",
+			"elevation": 2436
+		},
+		"lowest": {
+			"name": "Mozambique Channel",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Namibia",
+		"area": 825615,
+		"highest": {
+			"name": "Brandberg",
+			"elevation": 2573
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Nauru",
+		"area": 21,
+		"highest": {
+			"name": "Command Ridge",
+			"elevation": 70
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Nepal",
+		"area": 147181.254346,
+		"highest": {
+			"name": "Mount Everest",
+			"elevation": 8849
+		},
+		"lowest": {
+			"name": "Kechana Kawal",
+			"elevation": 64
+		}
+	},
+	{
+		"name": "Netherlands Antilles",
+		"area": 800,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "New Caledonia",
+		"area": 18576,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "New Zealand",
+		"area": 268021,
+		"highest": {
+			"name": "Aoraki / Mount Cook",
+			"elevation": 3724
+		},
+		"lowest": {
+			"name": "Taieri Plain",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Nicaragua",
+		"area": 120340,
+		"highest": {
+			"name": "Cerro Mogotón",
+			"elevation": 2107
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Niger",
+		"area": 1267000,
+		"highest": {
+			"name": "Mont Idoukal-n-Taghès",
+			"elevation": 2022
+		},
+		"lowest": {
+			"name": "Niger River",
+			"elevation": 200
+		}
+	},
+	{
+		"name": "Nigeria",
+		"area": 923768,
+		"highest": {
+			"name": "Chappal Waddi",
+			"elevation": 2419
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Niue",
+		"area": 260,
+		"highest": {
+			"name": "Niue Highest Point",
+			"elevation": 68
+		},
+		"lowest": null
+	},
+	{
+		"name": "Norfolk Island",
+		"area": 34.6,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "North Korea",
+		"area": 120540,
+		"highest": {
+			"name": "Baekdu Mountain",
+			"elevation": 2744
+		},
+		"lowest": {
+			"name": "Sea of Japan",
+			"elevation": null
+		}
+	},
+	{
+		"name": "North Macedonia",
+		"area": 25713,
+		"highest": {
+			"name": "Korab",
+			"elevation": 2764
+		},
+		"lowest": {
+			"name": "Vardar",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Northern Mariana Islands",
+		"area": 464,
+		"highest": {
+			"name": "Mount Agrihan",
+			"elevation": null
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Norway",
+		"area": 385207,
+		"highest": {
+			"name": "Galdhøpiggen",
+			"elevation": 2469
+		},
+		"lowest": {
+			"name": "Norwegian Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Oman",
+		"area": 309500,
+		"highest": {
+			"name": "Jebel Shams",
+			"elevation": 3018
+		},
+		"lowest": {
+			"name": "Majlis al Jinn",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Pakistan",
+		"area": 881913,
+		"highest": {
+			"name": "K2",
+			"elevation": 8611
+		},
+		"lowest": {
+			"name": "Arabian Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Palau",
+		"area": 465.550362,
+		"highest": {
+			"name": "Mount Ngerchelchuus",
+			"elevation": 242
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Palestine",
+		"area": 6020,
+		"highest": {
+			"name": "Mount Nabi Yunis",
+			"elevation": 1026
+		},
+		"lowest": {
+			"name": "Dead Sea",
+			"elevation": -441
+		}
+	},
+	{
+		"name": "Panama",
+		"area": 74177.3,
+		"highest": {
+			"name": "Volcan Baru",
+			"elevation": 3475
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Papua New Guinea",
+		"area": 462840,
+		"highest": {
+			"name": "Mount Wilhelm",
+			"elevation": 4509
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Paraguay",
+		"area": 406756,
+		"highest": {
+			"name": "Cerro Tres Kandú",
+			"elevation": 842
+		},
+		"lowest": {
+			"name": "Paraguay River",
+			"elevation": null
+		}
+	},
+	{
+		"name": "People's Republic of China",
+		"area": 9596961,
+		"highest": {
+			"name": "Mount Everest",
+			"elevation": 8849
+		},
+		"lowest": {
+			"name": "Ayding Lake",
+			"elevation": -154
+		}
+	},
+	{
+		"name": "Peru",
+		"area": 1285216,
+		"highest": {
+			"name": "Huascarán",
+			"elevation": 6768
+		},
+		"lowest": {
+			"name": "Depresión de Sechura",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Philippines",
+		"area": 343448,
+		"highest": {
+			"name": "Mount Apo",
+			"elevation": 2954
+		},
+		"lowest": {
+			"name": "Philippine Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Pitcairn Islands",
+		"area": 47,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Poland",
+		"area": 312683,
+		"highest": {
+			"name": "Rysy",
+			"elevation": 2501
+		},
+		"lowest": {
+			"name": "Raczki Elbląskie",
+			"elevation": -2
+		}
+	},
+	{
+		"name": "Portugal",
+		"area": 92225,
+		"highest": {
+			"name": "Mount Pico",
+			"elevation": 2351
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Puerto Rico",
+		"area": 9104,
+		"highest": {
+			"name": "Cerro de Punta",
+			"elevation": 1338
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Qatar",
+		"area": 11437,
+		"highest": {
+			"name": "Qurayn Abu al Bawl",
+			"elevation": 103
+		},
+		"lowest": {
+			"name": "Persian Gulf",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Republic of the Congo",
+		"area": 342000,
+		"highest": {
+			"name": "Mont Nabemba",
+			"elevation": 1020
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Réunion",
+		"area": 2512,
+		"highest": {
+			"name": "Piton des Neiges",
+			"elevation": 3070
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Romania",
+		"area": 238397,
+		"highest": {
+			"name": "Moldoveanu Peak",
+			"elevation": 2544
+		},
+		"lowest": {
+			"name": "Black Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Russia",
+		"area": 17075400,
+		"highest": {
+			"name": "Mount Elbrus",
+			"elevation": 5642
+		},
+		"lowest": {
+			"name": "Caspian Sea",
+			"elevation": -28
+		}
+	},
+	{
+		"name": "Rwanda",
+		"area": 26338,
+		"highest": {
+			"name": "Mount Karisimbi",
+			"elevation": 4507
+		},
+		"lowest": {
+			"name": "Ruzizi River",
+			"elevation": 950
+		}
+	},
+	{
+		"name": "Saint Barthélemy",
+		"area": 24,
+		"highest": {
+			"name": "Morne du Vitet",
+			"elevation": 286
+		},
+		"lowest": null
+	},
+	{
+		"name": "Saint Helena, Ascension and Tristan da Cunha",
+		"area": 394,
+		"highest": {
+			"name": "Queen Mary's Peak",
+			"elevation": 2062
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Saint Kitts and Nevis",
+		"area": 269.358763,
+		"highest": {
+			"name": "Mount Liamuiga",
+			"elevation": 1156
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Saint Lucia",
+		"area": 617.012867,
+		"highest": {
+			"name": "Mount Gimie",
+			"elevation": 950
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Saint Pierre and Miquelon",
+		"area": 242,
+		"highest": {
+			"name": "Morne de la Grande Montagne",
+			"elevation": 240
+		},
+		"lowest": null
+	},
+	{
+		"name": "Saint Vincent and the Grenadines",
+		"area": 389,
+		"highest": {
+			"name": "La Soufrière",
+			"elevation": 1220
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Saint-Martin",
+		"area": 53.2,
+		"highest": {
+			"name": "Pic Paradis",
+			"elevation": 424
+		},
+		"lowest": null
+	},
+	{
+		"name": "Samoa",
+		"area": 2842,
+		"highest": {
+			"name": "Silisili",
+			"elevation": 1858
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "San Marino",
+		"area": 61.2,
+		"highest": {
+			"name": "Monte Titano",
+			"elevation": 756
+		},
+		"lowest": {
+			"name": "Ausa River",
+			"elevation": null
+		}
+	},
+	{
+		"name": "São Tomé and Príncipe",
+		"area": 1001,
+		"highest": {
+			"name": "Pico de São Tomé",
+			"elevation": 2024
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Sark",
+		"area": 5.5,
+		"highest": {
+			"name": "Le Moulin",
+			"elevation": 114
+		},
+		"lowest": null
+	},
+	{
+		"name": "Saudi Arabia",
+		"area": 2250000,
+		"highest": {
+			"name": "Jabal Sawda",
+			"elevation": 3133
+		},
+		"lowest": {
+			"name": "Red Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Seychelles",
+		"area": 459,
+		"highest": {
+			"name": "Morne Seychellois",
+			"elevation": 905
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Senegal",
+		"area": 196722,
+		"highest": {
+			"name": "Népin Cliff",
+			"elevation": 531
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Serbia",
+		"area": 88499,
+		"highest": {
+			"name": "Velika Rudoka",
+			"elevation": 2658
+		},
+		"lowest": {
+			"name": "Timok",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Sierra Leone",
+		"area": 71740,
+		"highest": {
+			"name": "Mount Bintumani",
+			"elevation": 1945
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Singapore",
+		"area": 719.1,
+		"highest": {
+			"name": "Bukit Timah",
+			"elevation": 164
+		},
+		"lowest": {
+			"name": "Singapore Strait",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Sint Maarten",
+		"area": 34,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Syria",
+		"area": 185180,
+		"highest": {
+			"name": "Mount Hermon",
+			"elevation": 2814
+		},
+		"lowest": {
+			"name": "Sea of Galilee",
+			"elevation": -213
+		}
+	},
+	{
+		"name": "Slovakia",
+		"area": 49033.720839,
+		"highest": {
+			"name": "Gerlachovský štít",
+			"elevation": 2655
+		},
+		"lowest": {
+			"name": "Bodrog",
+			"elevation": 95
+		}
+	},
+	{
+		"name": "Slovenia",
+		"area": 20271,
+		"highest": {
+			"name": "Triglav",
+			"elevation": 2864
+		},
+		"lowest": {
+			"name": "Adriatic Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Solomon Islands",
+		"area": 28400,
+		"highest": {
+			"name": "Mount Popomanaseu",
+			"elevation": 2335
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Somalia",
+		"area": 637657,
+		"highest": {
+			"name": "Shimbiris",
+			"elevation": 2460
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "South Africa",
+		"area": 1221037,
+		"highest": {
+			"name": "Mafadi",
+			"elevation": 3450
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "South Georgia and the South Sandwich Islands",
+		"area": 4066,
+		"highest": {
+			"name": "Mount Paget",
+			"elevation": 2934
+		},
+		"lowest": null
+	},
+	{
+		"name": "South Korea",
+		"area": 100295,
+		"highest": {
+			"name": "Hallasan",
+			"elevation": 1947
+		},
+		"lowest": {
+			"name": "Sea of Japan",
+			"elevation": null
+		}
+	},
+	{
+		"name": "South Sudan",
+		"area": 644329,
+		"highest": {
+			"name": "Kinyeti",
+			"elevation": 3187
+		},
+		"lowest": {
+			"name": "White Nile",
+			"elevation": 350
+		}
+	},
+	{
+		"name": "Spain",
+		"area": 505990,
+		"highest": {
+			"name": "Teide",
+			"elevation": 3715
+		},
+		"lowest": {
+			"name": "Mina de Las Cruces",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Sri Lanka",
+		"area": 65610,
+		"highest": {
+			"name": "Pidurutalagala",
+			"elevation": 2524
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Sudan",
+		"area": 1840687,
+		"highest": {
+			"name": "Deriba Caldera",
+			"elevation": 3042
+		},
+		"lowest": {
+			"name": "Red Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Suriname",
+		"area": 163270,
+		"highest": {
+			"name": "Julianatop",
+			"elevation": 1280
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Svalbard and Jan Mayen",
+		"area": 61399,
+		"highest": {
+			"name": "Newtontoppen",
+			"elevation": 1713
+		},
+		"lowest": null
+	},
+	{
+		"name": "Sweden",
+		"area": 447425.16,
+		"highest": {
+			"name": "Kebnekaise",
+			"elevation": 2097
+		},
+		"lowest": {
+			"name": "Kristianstad",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Switzerland",
+		"area": 41291,
+		"highest": {
+			"name": "Dufourspitze",
+			"elevation": 4634
+		},
+		"lowest": {
+			"name": "Lake Maggiore",
+			"elevation": 193
+		}
+	},
+	{
+		"name": "Taiwan",
+		"area": 36193,
+		"highest": {
+			"name": "Yushan Main Peak",
+			"elevation": 3952
+		},
+		"lowest": null
+	},
+	{
+		"name": "Tajikistan",
+		"area": 143100,
+		"highest": {
+			"name": "Ismoil Somoni Peak",
+			"elevation": 7495
+		},
+		"lowest": {
+			"name": "Syr Darya",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Tanzania",
+		"area": 947303,
+		"highest": {
+			"name": "Mount Kibo",
+			"elevation": 5895
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Thailand",
+		"area": 513119.5,
+		"highest": {
+			"name": "Doi Inthanon",
+			"elevation": 2565
+		},
+		"lowest": {
+			"name": "Andaman Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "The Bahamas",
+		"area": 13878,
+		"highest": {
+			"name": "Mount Alvernia",
+			"elevation": 63
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "The Gambia",
+		"area": 11300,
+		"highest": null,
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Timor-Leste",
+		"area": 14918.72,
+		"highest": {
+			"name": "Tatamailau",
+			"elevation": 2963
+		},
+		"lowest": {
+			"name": "Timor Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Togo",
+		"area": 56785,
+		"highest": {
+			"name": "Mount Agou",
+			"elevation": 986
+		},
+		"lowest": {
+			"name": "Bight of Benin",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Tokelau",
+		"area": 10,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Tonga",
+		"area": 748.506563,
+		"highest": {
+			"name": "Kao",
+			"elevation": 1030
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Trinidad and Tobago",
+		"area": 5128,
+		"highest": {
+			"name": "El Cerro del Aripo",
+			"elevation": 940
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Tristan da Cunha",
+		"area": null,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Trust Territory of the Pacific Islands",
+		"area": 1779,
+		"highest": null,
+		"lowest": null
+	},
+	{
+		"name": "Tunisia",
+		"area": 163610,
+		"highest": {
+			"name": "Jebel ech Chambi",
+			"elevation": 1544
+		},
+		"lowest": {
+			"name": "Shatt al Gharsah",
+			"elevation": -17
+		}
+	},
+	{
+		"name": "Turkey",
+		"area": 783562,
+		"highest": {
+			"name": "Mount Ararat",
+			"elevation": 5137
+		},
+		"lowest": {
+			"name": "Black Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Turkmenistan",
+		"area": 491210,
+		"highest": {
+			"name": "Aýrybaba",
+			"elevation": 3139
+		},
+		"lowest": {
+			"name": "Turan Depression",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Turks and Caicos Islands",
+		"area": 417,
+		"highest": {
+			"name": "Blue Hills",
+			"elevation": 49
+		},
+		"lowest": null
+	},
+	{
+		"name": "Tuvalu",
+		"area": 25.14,
+		"highest": {
+			"name": "Niulakita",
+			"elevation": 5
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Uganda",
+		"area": 241038,
+		"highest": {
+			"name": "Mount Stanley",
+			"elevation": 5109
+		},
+		"lowest": {
+			"name": "Lake Albert",
+			"elevation": 619
+		}
+	},
+	{
+		"name": "Ukraine",
+		"area": 603550,
+		"highest": {
+			"name": "Hoverla",
+			"elevation": 2061
+		},
+		"lowest": {
+			"name": "Kuialnyk Liman",
+			"elevation": null
+		}
+	},
+	{
+		"name": "United Arab Emirates",
+		"area": 83600,
+		"highest": {
+			"name": "Jebel Jais",
+			"elevation": 1911
+		},
+		"lowest": {
+			"name": "Persian Gulf",
+			"elevation": null
+		}
+	},
+	{
+		"name": "United Kingdom",
+		"area": 242495,
+		"highest": {
+			"name": "Ben Nevis",
+			"elevation": 1345
+		},
+		"lowest": {
+			"name": "The Fens",
+			"elevation": null
+		}
+	},
+	{
+		"name": "United States",
+		"area": 9826675,
+		"highest": {
+			"name": "Q130018",
+			"elevation": 6190
+		},
+		"lowest": {
+			"name": "Badwater Basin",
+			"elevation": -86
+		}
+	},
+	{
+		"name": "United States Minor Outlying Islands",
+		"area": 34.2,
+		"highest": {
+			"name": "Dunning Hill",
+			"elevation": 76
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "United States Virgin Islands",
+		"area": 346.36,
+		"highest": {
+			"name": "Crown Mountain",
+			"elevation": 473
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Uruguay",
+		"area": 176215,
+		"highest": {
+			"name": "Cerro Catedral",
+			"elevation": 514
+		},
+		"lowest": {
+			"name": "Atlantic Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Uzbekistan",
+		"area": 448978,
+		"highest": {
+			"name": "Khazret Sultan",
+			"elevation": 4643
+		},
+		"lowest": {
+			"name": "Sarygamysh Lake",
+			"elevation": 5
+		}
+	},
+	{
+		"name": "Vanuatu",
+		"area": 12190,
+		"highest": {
+			"name": "Mount Tabwemasana",
+			"elevation": 1879
+		},
+		"lowest": {
+			"name": "Pacific Ocean",
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Vatican City",
+		"area": 0.49,
+		"highest": {
+			"name": "Vatican Hill",
+			"elevation": 75
+		},
+		"lowest": {
+			"name": "Saint Peter's Square",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Venezuela",
+		"area": 912050,
+		"highest": {
+			"name": "Pico Bolívar",
+			"elevation": 4978
+		},
+		"lowest": {
+			"name": "Lagunillas",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Vietnam",
+		"area": 331690,
+		"highest": {
+			"name": "Fansipan",
+			"elevation": 3147
+		},
+		"lowest": {
+			"name": "South China Sea",
+			"elevation": null
+		}
+	},
+	{
+		"name": "Wallis and Futuna",
+		"area": 274,
+		"highest": {
+			"name": "Mont Puke",
+			"elevation": 524
+		},
+		"lowest": null
+	},
+	{
+		"name": "Western Sahara",
+		"area": 266000,
+		"highest": null,
+		"lowest": {
+			"name": "Sebkha Tah",
+			"elevation": -55
+		}
+	},
+	{
+		"name": "Zambia",
+		"area": 752618,
+		"highest": {
+			"name": "Mafinga Central",
+			"elevation": 2339
+		},
+		"lowest": {
+			"name": "Zambezi River",
+			"elevation": 329
+		}
+	},
+	{
+		"name": "Zimbabwe",
+		"area": 390757,
+		"highest": {
+			"name": "Mount Nyangani",
+			"elevation": 2592
+		},
+		"lowest": {
+			"name": "Runde River",
+			"elevation": 162
+		}
+	}
+]

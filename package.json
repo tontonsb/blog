@@ -39,6 +39,7 @@
 		"@tontonsb/karatsuba-display": "^2.0.0",
 		"fontfaceobserver": "^2.3.0",
 		"katex": "0.16.4",
+		"plotly.js-dist-min": "^3.5.1",
 		"svelte-loading-spinners": "^0.3.4"
 	}
 }
