@@ -13,7 +13,7 @@ intro: Outlier countries on the area–highest elevation plot.
 
 The whole of Australia is lower than some point in Liechtenstein.
 Let's formalize "quite mountainous for their size" and its opposite concept
-and see how Lithuania finally gets on a list of terrain extremes, lol.
+and see how Lithuania finally gets on a list of countries having extreme relief, lol.
 
 ## What?
 
@@ -80,8 +80,8 @@ The reflection countries make the more surprising list since people do not usual
 | Monaco		| 2.08			| Chemin des Révoires	| 162			|
 | Vatican City	| 0.49			| Vatican Hill			| 75			|
 
-Interestingly all of the European microstates are on the list.
-For most of them terrain is among the reasons why they are a separate country in the first place.
+Interestingly, all of the European microstates are on the list.
+For most of them relief is among the reasons why they are a separate country in the first place.
 
 Notable mentions:
 
@@ -115,7 +115,7 @@ Also Paraguay is larger than you expected, right? And you likely had no mental i
 Notable mentions:
 
 - Latvia nearly overlaps with Lithuania on the plot.
-- Senegal and Uruguay would be in the list in absence of Belarus.
+- Senegal and Uruguay would be in the list in the absence of Belarus.
 - Similarly Qatar & Kiribati are blocked by The Bahamas while Marshall Islands and Tuvalu by Maldives.
 
 ## Territories
@@ -141,6 +141,28 @@ Also see:
 
 - [Pareto efficiency on Wikipedia](https://en.wikipedia.org/wiki/Pareto_efficiency)
 - [Pareto front on Wikipedia](https://en.wikipedia.org/wiki/Pareto_front)
+
+There's a bunch of other approaches to measuring ruggedness and flatness:
+
+- [Elevation extremes (and the elevation span) on Wikipedia](https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country)
+- [Countries by average elevation on Wikipedia](https://en.wikipedia.org/wiki/List_of_countries_by_average_elevation)
+- [Terrain Ruggedness Index in Our World in Data](https://ourworldindata.org/grapher/terrain-ruggedness-index)
+- [Ruggedness: The blessing of bad geography in Africa by Puga & Nunn](https://diegopuga.org/research.html#rugged)
+
+The resources that I was able to identify either consider the elevation extrema per se
+or the local relief (ruggedness, jaggedness, ...). I selected highest point vs area to
+formalize the feeling of "a country this big must have some big mountains somewhere, right?"
+
+I did not notice any other authors discussing envelopes/Pareto fronts, but the concept of
+elevation span versus area [was discussed in the form of a ratio](https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country)
+in the elevation extrema page on Wikipedia where it was concluded that Monaco is the country
+with the highest ratio (I'd say steepest/slopiest) with 69 m per km² while Australia is the
+smoothest/flattest at 292 micrometers of elevation span per km² of area.
+
+I think it might also be interesting to look at elevation span vs diameter or other
+characteristic length since the steepness (albeit figurative in this case) is usually
+measured against length of the base, not the area. And area, as a quadratic quantity,
+likely underestimates the *steepness* of the larger countries by growing too fast.
 
 ## About
 
