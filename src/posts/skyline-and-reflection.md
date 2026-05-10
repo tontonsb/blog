@@ -10,6 +10,10 @@ intro: Outlier countries on the area–highest elevation plot.
 
 # Skyline and Reflection countries
 
+The whole of Australia is lower than some point in Liechtenstein.
+Let's formalize "quite mountainous for their size" and its opposite concept
+and see how Lithuania finally gets on a list of terrain extremes, lol.
+
 ## What?
 
 Consider comparing the countries by their area and the highest elevation.
@@ -22,7 +26,7 @@ Named after the reflection of a skyline in water since that's the contour formed
 
 <figure>
 
-![The skyline of Riga and its reflection in the Daugava river with arrows pointing to some of the locally noticable peaks in the skyline and in the reflection.](/images/skylines/riga.jpg)
+![The skyline of Riga and its reflection in the Daugava river with arrows pointing to some of the locally noticeable peaks in the skyline and in the reflection.](/images/skylines/riga.jpg)
 <figcaption>Skyline countries are the ones whose highest peak elevation stands out</figcaption>
 </figure>
 
@@ -35,7 +39,7 @@ Formal definition:
 
 The general term for the envelope entries on a plot is the *Pareto frontier*.
 
-Liechtenstein is an example of being Pareto-efficient in this mannner:
+Liechtenstein is an example of being Pareto-efficient in this manner:
 sure, you can find higher peaks than Grauspitz in the world, but to do that you must necessarily go to a larger country.
 If you go look at smaller countries you will only find lower points.
 
@@ -49,9 +53,9 @@ Formal definition:
 	<dt>Reflection country <dd>A country such that no larger country has a lower peak
 </dl>
 
-The reflection countries are the ones that have unusually low highest points for their size — the ones that are so large that you'd expect them to have some higher mountains somewhere, but they don't.
+The reflection countries are the ones that have unusually low highest points for their size — ones that are so large that you'd expect them to have some higher mountains somewhere, but they don't.
 
-Example: all the other countries that are as big as Mauritania or larger all have higher peaks than Mauritania does.
+Example: all the other countries that are as big as Mauritania or larger have higher peaks than Mauritania does.
 
 The reflection countries make the more surprising list since people do not usually expect Mali and Belarus to form a frontier of terrain extremes.
 
@@ -81,7 +85,7 @@ For most of them terrain is among the reasons why they are a separate country in
 Notable mentions:
 
 - Tajikistan & Kyrgyzstan (above 7400 m, below 200 000 km²) at the roof of the World.
-- In fact Tajikistan along with Georgia and Switzerland would be on the list if it wasn't for Bhutan.
+- In fact Tajikistan along with Georgia and Switzerland would be on the list if not for Bhutan.
 - Armenians have Ararat (5165 m) in their hearts (and on the coat of arms) which would allow them to stand above Rwanda in the list.
 - Andorra and Liechtenstein are extreme outliers who prevent six countries from getting in the skyline list: Cabo Verde, Comoros, São Tomé and Príncipe, Dominica, Saint Vincent and the Grenadines, Saint Kitts and Nevis.
 
@@ -104,7 +108,7 @@ Notable mentions:
 | Maldives		| 298			| Addu City				| 2				|
 <small>Some sources include Mount Vilingili at 5 m for Maldives. Their role in the list would remain unchanged. Changing Australia's definition to include Mawson Peak (2745 m on Heard Island) would let Libya on the list.</small>
 
-Not fun, but fact: the whole of Australia is lower than some point in Liechtenstein.
+As noted in the intro: the whole of Australia is lower than some point in Liechtenstein.
 Also Paraguay is larger than you expected, right? And you likely had no mental image of their mountain-ness at all.?
 
 Notable mentions:
@@ -119,17 +123,17 @@ You can also switch the plot above to include dependent territories.
 Although a bunch of them find a place on the skyline or the reflection list,
 the only country losing its skyline spot is San Marino which yields to Saint Martin.
 
-A curious one is the Mawson peak.
+A curious one is the Mawson Peak.
 As the highest point in Heard & McDonald Islands it is part of the skyline — it is a very high point for such a small territory.
 But it can also be considered as the highest peak of Australia.
-And in that case it would be on the reflection front since 2745 m is still unusually low highest point for such a large country.
+And in that case it would be on the reflection front since 2745 m is still an unusually low highest point for such a large country.
 
 ## reSources
 
 - [Data from Wikidata](https://www.wikidata.org)
-- [Image of by Svetlana Dik from Shutterstock](https://www.shutterstock.com/image-photo/riga-latvia-march-19-2015-beautiful-267877181) but I messed it up in MS Paint
+- [Image of Riga by Svetlana Dik from Shutterstock](https://www.shutterstock.com/image-photo/riga-latvia-march-19-2015-beautiful-267877181) but I messed it up in MS Paint
 
-Some data are hand patched, e.g. removed Mawson peak (on Heard & McDonald islands) for Australia in favor of Mount Kosciuszko which is on mainland Australia.
+Some data are hand patched, e.g. removed Mawson Peak (on Heard & McDonald Islands) for Australia in favor of Mount Kosciuszko which is on mainland Australia.
 And changed Kuwait's highest point.
 
 Also see:
@@ -141,4 +145,4 @@ Also see:
 
 I got interested in this cross-section because I was aware I'm living in an unusually low country (Latvia) and I had noticed there's only one country in the world that's both bigger and lower than us.
 
-If you see something wrong on this site, let me know by opening and issue on GitHub or try to hit me up on Discord.
+If you see something wrong on this site, let me know by opening an issue on GitHub or try to hit me up on Discord.
