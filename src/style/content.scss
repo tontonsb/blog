@@ -17,6 +17,7 @@ h1 {
 	text-align: center;
 
 	font-size: var(--font-xl);
+	font-weight: var(--font-normal);
 	text-transform: uppercase;
 
 	color: var(--color-accent);
@@ -28,7 +29,7 @@ h2 {
 }
 
 h3 {
-	font-size: var(--font-base)
+	font-size: var(--font-md)
 }
 
 main {
@@ -42,7 +43,7 @@ p {
 }
 
 p + p {
-	margin-top: var(--space-sm);
+	margin-top: var(--space-base);
 }
 
 // First paragraph deserves a special styling :)
@@ -72,6 +73,10 @@ h1 + p {
 
 * + :is(h1, h2, h3, h4, h5, h6) {
 	margin-top: var(--space-base);
+}
+
+* + h2 {
+	margin-top: var(--space-lg);
 }
 
 :is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
@@ -119,6 +124,35 @@ main ul {
 main li {
 	margin-left: var(--space-lg);
 	padding-left: var(--space-sm);
+	font-size: var(--font-sm);
+	color: var(--color-dim);
+}
+
+main dl {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	column-gap: var(--space-base);
+	row-gap: var(--space-sm);
+	align-items: baseline;
+
+	margin: var(--space-base) 0 var(--space-base) var(--space-base);
+	padding-left: var(--space-base);
+	border-left: var(--border-base) solid var(--color-light);
+	font-size: var(--font-sm);
+}
+
+main dt {
+	font-family: var(--font-alt);
+	font-weight: var(--font-strong);
+	color: var(--color-dim);
+
+	&::after {
+		content: '.';
+	}
+}
+
+main dd {
+	margin: 0;
 }
 
 main img {
