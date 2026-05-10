@@ -113,6 +113,17 @@ Notable mentions:
 - Senegal and Uruguay would be in the list in absence of Belarus.
 - Similarly Qatar & Kiribati are blocked by The Bahamas while Marshall Islands and Tuvalu by Maldives.
 
+## Territories
+
+You can also switch the plot above to include dependent territories.
+Although a bunch of them find a place on the skyline or the reflection list,
+the only country losing its skyline spot is San Marino which yields to Saint Martin.
+
+A curious one is the Mawson peak.
+As the highest point in Heard & McDonald Islands it is part of the skyline — it is a very high point for such a small territory.
+But it can also be considered as the highest peak of Australia.
+And in that case it would be on the reflection front since 2745 m is still unusually low highest point for such a large country.
+
 ## reSources
 
 - [Data from Wikidata](https://www.wikidata.org)
