@@ -107,6 +107,7 @@ Notable mentions:
 | Lithuania		| 65 300		| Aukštojas Hill		| 294			|
 | Denmark		| 43 094		| Møllehøj				| 171			|
 | Bahamas		| 13 878		| Mount Alvernia		| 63			|
+| The Gambia	| 11 300		| Sare Firasu Hill		| 51			|
 | Maldives		| 298			| Addu City				| 2				|
 <small>Some sources include Mount Vilingili at 5 m for Maldives. Their role in the list would remain unchanged. Changing Australia's definition to include Mawson Peak (2745 m on Heard Island) would let Libya on the list.</small>
 
