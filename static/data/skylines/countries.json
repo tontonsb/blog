@@ -44,7 +44,7 @@
 		},
 		"lowest": {
 			"name": "Gran Valira",
-			"elevation": null
+			"elevation": 840
 		}
 	},
 	{
@@ -92,7 +92,7 @@
 		},
 		"lowest": {
 			"name": "Debed",
-			"elevation": null
+			"elevation": 375
 		}
 	},
 	{
@@ -140,7 +140,7 @@
 		},
 		"lowest": {
 			"name": "Persian Gulf",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -152,7 +152,7 @@
 		},
 		"lowest": {
 			"name": "Bay of Bengal",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -176,7 +176,7 @@
 		},
 		"lowest": {
 			"name": "Neman",
-			"elevation": null
+			"elevation": 90
 		}
 	},
 	{
@@ -188,7 +188,7 @@
 		},
 		"lowest": {
 			"name": "De Moeren",
-			"elevation": null
+			"elevation": -4
 		}
 	},
 	{
@@ -224,7 +224,7 @@
 		},
 		"lowest": {
 			"name": "Drangme Chhu",
-			"elevation": null
+			"elevation": 97
 		}
 	},
 	{
@@ -236,7 +236,7 @@
 		},
 		"lowest": {
 			"name": "Paraguay River",
-			"elevation": null
+			"elevation": 90
 		}
 	},
 	{
@@ -284,7 +284,7 @@
 		},
 		"lowest": {
 			"name": "South China Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -296,7 +296,7 @@
 		},
 		"lowest": {
 			"name": "Black Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -332,7 +332,7 @@
 		},
 		"lowest": {
 			"name": "Gulf of Thailand",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -488,7 +488,7 @@
 		},
 		"lowest": {
 			"name": "Elbe",
-			"elevation": null
+			"elevation": 115
 		}
 	},
 	{
@@ -512,7 +512,7 @@
 		},
 		"lowest": {
 			"name": "Lammefjord",
-			"elevation": null
+			"elevation": -7
 		}
 	},
 	{
@@ -716,7 +716,7 @@
 		},
 		"lowest": {
 			"name": "Black Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -750,7 +750,10 @@
 			"name": "Mount Olympus",
 			"elevation": 2918
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Epitalio",
+			"elevation": -6
+		}
 	},
 	{
 		"name": "Grenada",
@@ -903,7 +906,10 @@
 			"name": "Cheekha Dar",
 			"elevation": 3611
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Persian Gulf",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Ireland",
@@ -914,7 +920,19 @@
 		},
 		"lowest": {
 			"name": "North Slob",
-			"elevation": null
+			"elevation": 0
+		}
+	},
+	{
+		"name": "Israel",
+		"area": 20770,
+		"highest": {
+			"name": "Meron",
+			"elevation": 1208
+		},
+		"lowest": {
+			"name": "Dead Sea",
+			"elevation": -441
 		}
 	},
 	{
@@ -950,7 +968,7 @@
 		},
 		"lowest": {
 			"name": "Arabian Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -998,7 +1016,7 @@
 		},
 		"lowest": {
 			"name": "Karagiye",
-			"elevation": null
+			"elevation": -134
 		}
 	},
 	{
@@ -1022,7 +1040,7 @@
 		},
 		"lowest": {
 			"name": "Zuidplaspolder",
-			"elevation": null
+			"elevation": -7
 		}
 	},
 	{
@@ -1046,19 +1064,19 @@
 		},
 		"lowest": {
 			"name": "Kara Darya",
-			"elevation": null
+			"elevation": 435
 		}
 	},
 	{
 		"name": "Kuwait",
 		"area": 17818,
 		"highest": {
-			"name": "unnamed",
-			"elevation": 306
+			"name": "unnamed location",
+			"elevation": 291
 		},
 		"lowest": {
 			"name": "Persian Gulf",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1142,7 +1160,7 @@
 		},
 		"lowest": {
 			"name": "Rhine",
-			"elevation": null
+			"elevation": 430
 		}
 	},
 	{
@@ -1154,7 +1172,7 @@
 		},
 		"lowest": {
 			"name": "Nemunas Delta",
-			"elevation": null
+			"elevation": -5
 		}
 	},
 	{
@@ -1310,7 +1328,7 @@
 		},
 		"lowest": {
 			"name": "Dniester",
-			"elevation": null
+			"elevation": 2
 		}
 	},
 	{
@@ -1418,7 +1436,7 @@
 		},
 		"lowest": {
 			"name": "Taieri Plain",
-			"elevation": null
+			"elevation": -2
 		}
 	},
 	{
@@ -1466,7 +1484,7 @@
 		},
 		"lowest": {
 			"name": "Sea of Japan",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1478,7 +1496,7 @@
 		},
 		"lowest": {
 			"name": "Vardar",
-			"elevation": null
+			"elevation": 50
 		}
 	},
 	{
@@ -1490,7 +1508,7 @@
 		},
 		"lowest": {
 			"name": "Norwegian Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1502,7 +1520,7 @@
 		},
 		"lowest": {
 			"name": "Majlis al Jinn",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1514,7 +1532,7 @@
 		},
 		"lowest": {
 			"name": "Arabian Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1574,7 +1592,7 @@
 		},
 		"lowest": {
 			"name": "Paraguay River",
-			"elevation": null
+			"elevation": 46
 		}
 	},
 	{
@@ -1598,7 +1616,7 @@
 		},
 		"lowest": {
 			"name": "Depresión de Sechura",
-			"elevation": null
+			"elevation": -34
 		}
 	},
 	{
@@ -1610,7 +1628,7 @@
 		},
 		"lowest": {
 			"name": "Philippine Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1646,7 +1664,7 @@
 		},
 		"lowest": {
 			"name": "Persian Gulf",
-			"elevation": null
+			"elevation": -6
 		}
 	},
 	{
@@ -1670,7 +1688,7 @@
 		},
 		"lowest": {
 			"name": "Black Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1714,7 +1732,7 @@
 		"area": 617.012867,
 		"highest": {
 			"name": "Mount Gimie",
-			"elevation": 950
+			"elevation": 952
 		},
 		"lowest": {
 			"name": "Caribbean Sea",
@@ -1754,7 +1772,7 @@
 		},
 		"lowest": {
 			"name": "Ausa River",
-			"elevation": null
+			"elevation": 55
 		}
 	},
 	{
@@ -1814,7 +1832,7 @@
 		},
 		"lowest": {
 			"name": "Timok",
-			"elevation": null
+			"elevation": 28
 		}
 	},
 	{
@@ -1838,7 +1856,7 @@
 		},
 		"lowest": {
 			"name": "Singapore Strait",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1922,7 +1940,7 @@
 		},
 		"lowest": {
 			"name": "Sea of Japan",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1946,7 +1964,7 @@
 		},
 		"lowest": {
 			"name": "Mina de Las Cruces",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1994,7 +2012,7 @@
 		},
 		"lowest": {
 			"name": "Kristianstad",
-			"elevation": null
+			"elevation": -2
 		}
 	},
 	{
@@ -2016,7 +2034,10 @@
 			"name": "Yushan Main Peak",
 			"elevation": 3952
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Philippine SeaSouth China SeaEast China Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Tajikistan",
@@ -2027,7 +2048,7 @@
 		},
 		"lowest": {
 			"name": "Syr Darya",
-			"elevation": null
+			"elevation": 300
 		}
 	},
 	{
@@ -2051,7 +2072,7 @@
 		},
 		"lowest": {
 			"name": "Andaman Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -2069,7 +2090,10 @@
 	{
 		"name": "The Gambia",
 		"area": 11300,
-		"highest": null,
+		"highest": {
+			"name": "Sare Firasu Hill",
+			"elevation": 51
+		},
 		"lowest": {
 			"name": "Atlantic Ocean",
 			"elevation": 0
@@ -2084,7 +2108,7 @@
 		},
 		"lowest": {
 			"name": "Timor Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -2144,7 +2168,7 @@
 		},
 		"lowest": {
 			"name": "Black Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -2156,7 +2180,7 @@
 		},
 		"lowest": {
 			"name": "Turan Depression",
-			"elevation": null
+			"elevation": -81
 		}
 	},
 	{
@@ -2192,7 +2216,7 @@
 		},
 		"lowest": {
 			"name": "Kuialnyk Liman",
-			"elevation": null
+			"elevation": -5
 		}
 	},
 	{
@@ -2204,7 +2228,7 @@
 		},
 		"lowest": {
 			"name": "Persian Gulf",
-			"elevation": null
+			"elevation": -17
 		}
 	},
 	{
@@ -2216,7 +2240,7 @@
 		},
 		"lowest": {
 			"name": "The Fens",
-			"elevation": null
+			"elevation": -3
 		}
 	},
 	{
@@ -2276,7 +2300,7 @@
 		},
 		"lowest": {
 			"name": "Saint Peter's Square",
-			"elevation": null
+			"elevation": 33
 		}
 	},
 	{
@@ -2288,7 +2312,7 @@
 		},
 		"lowest": {
 			"name": "Lagunillas",
-			"elevation": null
+			"elevation": -12
 		}
 	},
 	{
@@ -2300,7 +2324,7 @@
 		},
 		"lowest": {
 			"name": "South China Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{

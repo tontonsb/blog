@@ -65,7 +65,7 @@
 		},
 		"lowest": {
 			"name": "Gran Valira",
-			"elevation": null
+			"elevation": 840
 		}
 	},
 	{
@@ -83,8 +83,14 @@
 	{
 		"name": "Anguilla",
 		"area": 91,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Crocus Hill",
+			"elevation": 73
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Antarctic Treaty area",
@@ -102,7 +108,10 @@
 			"name": "Vinson Massif",
 			"elevation": 4892
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Deep Lake, Vestfold Hills",
+			"elevation": -50
+		}
 	},
 	{
 		"name": "Antigua and Barbuda",
@@ -137,7 +146,7 @@
 		},
 		"lowest": {
 			"name": "Debed",
-			"elevation": null
+			"elevation": 375
 		}
 	},
 	{
@@ -147,7 +156,10 @@
 			"name": "Mount Jamanota",
 			"elevation": 188
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Ascension",
@@ -200,7 +212,7 @@
 		},
 		"lowest": {
 			"name": "Persian Gulf",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -212,7 +224,7 @@
 		},
 		"lowest": {
 			"name": "Bay of Bengal",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -236,7 +248,7 @@
 		},
 		"lowest": {
 			"name": "Neman",
-			"elevation": null
+			"elevation": 90
 		}
 	},
 	{
@@ -248,7 +260,7 @@
 		},
 		"lowest": {
 			"name": "De Moeren",
-			"elevation": null
+			"elevation": -4
 		}
 	},
 	{
@@ -278,8 +290,14 @@
 	{
 		"name": "Bermuda",
 		"area": 53,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Town Hill",
+			"elevation": 79
+		},
+		"lowest": {
+			"name": "North Atlantic Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Bhutan",
@@ -290,7 +308,7 @@
 		},
 		"lowest": {
 			"name": "Drangme Chhu",
-			"elevation": null
+			"elevation": 97
 		}
 	},
 	{
@@ -302,7 +320,7 @@
 		},
 		"lowest": {
 			"name": "Paraguay River",
-			"elevation": null
+			"elevation": 90
 		}
 	},
 	{
@@ -356,7 +374,10 @@
 	{
 		"name": "British Indian Ocean Territory",
 		"area": 60,
-		"highest": null,
+		"highest": {
+			"name": "Unnamed location on Diego Garcia",
+			"elevation": 15
+		},
 		"lowest": {
 			"name": "Indian Ocean",
 			"elevation": 0
@@ -365,8 +386,14 @@
 	{
 		"name": "British Virgin Islands",
 		"area": 151,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Mount Sage on Tortola",
+			"elevation": 523
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Brunei",
@@ -377,7 +404,7 @@
 		},
 		"lowest": {
 			"name": "South China Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -389,7 +416,7 @@
 		},
 		"lowest": {
 			"name": "Black Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -419,8 +446,14 @@
 	{
 		"name": "Cayman Islands",
 		"area": 264,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "The Bluff on Cayman Brac",
+			"elevation": 43
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Cambodia",
@@ -431,7 +464,7 @@
 		},
 		"lowest": {
 			"name": "Gulf of Thailand",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -522,7 +555,10 @@
 			"name": "Murray Hill, Christmas Island",
 			"elevation": 361
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Cyprus",
@@ -543,7 +579,10 @@
 			"name": "Mount Olympus",
 			"elevation": 1952
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Mediterranean Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Clipperton Island",
@@ -560,8 +599,14 @@
 	{
 		"name": "Cocos (Keeling) Islands",
 		"area": 14,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "South Island",
+			"elevation": 9
+		},
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Colombia",
@@ -594,7 +639,10 @@
 			"name": "Te Manga",
 			"elevation": 652
 		},
-		"lowest": null
+		"lowest": {
+			"name": "South Pacific Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Costa Rica",
@@ -635,8 +683,14 @@
 	{
 		"name": "Curaçao",
 		"area": 444,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Sint Christoffelberg",
+			"elevation": 372
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Czech Republic",
@@ -647,7 +701,7 @@
 		},
 		"lowest": {
 			"name": "Elbe",
-			"elevation": null
+			"elevation": 115
 		}
 	},
 	{
@@ -671,7 +725,7 @@
 		},
 		"lowest": {
 			"name": "Lammefjord",
-			"elevation": null
+			"elevation": -7
 		}
 	},
 	{
@@ -818,8 +872,14 @@
 	{
 		"name": "Falkland Islands",
 		"area": 12200,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Mount Usborne on East Falkland",
+			"elevation": 705
+		},
+		"lowest": {
+			"name": "South Atlantic Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Faroe Islands",
@@ -828,7 +888,10 @@
 			"name": "Slættaratindur",
 			"elevation": 880
 		},
-		"lowest": null
+		"lowest": {
+			"name": "North Atlantic Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Federated States of Micronesia",
@@ -885,7 +948,10 @@
 			"name": "Bellevue de l'Inini",
 			"elevation": 831
 		},
-		"lowest": null
+		"lowest": {
+			"name": "North Atlantic Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "French Polynesia",
@@ -894,7 +960,10 @@
 			"name": "Mont Orohena",
 			"elevation": 2241
 		},
-		"lowest": null
+		"lowest": {
+			"name": "South Pacific Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "French Southern and Antarctic Lands",
@@ -929,7 +998,7 @@
 		},
 		"lowest": {
 			"name": "Black Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -965,8 +1034,14 @@
 	{
 		"name": "Gibraltar",
 		"area": 6.843,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Rock of Gibraltar",
+			"elevation": 426
+		},
+		"lowest": {
+			"name": "Strait of Gibraltar",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Greece",
@@ -975,7 +1050,10 @@
 			"name": "Mount Olympus",
 			"elevation": 2918
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Epitalio",
+			"elevation": -6
+		}
 	},
 	{
 		"name": "Greenland",
@@ -984,7 +1062,10 @@
 			"name": "Gunnbjørn Fjeld",
 			"elevation": 3694
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Arctic OceanNorth Atlantic Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Grenada",
@@ -1005,7 +1086,10 @@
 			"name": "Soufrière",
 			"elevation": 1467
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Guam",
@@ -1038,7 +1122,10 @@
 			"name": "Le Moulin",
 			"elevation": 114
 		},
-		"lowest": null
+		"lowest": {
+			"name": "English Channel",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Guinea",
@@ -1095,7 +1182,10 @@
 			"name": "Mawson Peak",
 			"elevation": 2745
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Indian Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Honduras",
@@ -1116,7 +1206,10 @@
 			"name": "Tai Mo Shan",
 			"elevation": 957
 		},
-		"lowest": null
+		"lowest": {
+			"name": "South China Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Hungary",
@@ -1185,7 +1278,10 @@
 			"name": "Cheekha Dar",
 			"elevation": 3611
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Persian Gulf",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Ireland",
@@ -1196,7 +1292,7 @@
 		},
 		"lowest": {
 			"name": "North Slob",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1206,7 +1302,10 @@
 			"name": "Snaefell",
 			"elevation": 621
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Irish Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Israel",
@@ -1253,7 +1352,7 @@
 		},
 		"lowest": {
 			"name": "Arabian Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1292,8 +1391,14 @@
 	{
 		"name": "Jersey",
 		"area": 118.2,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Les Platons",
+			"elevation": 136
+		},
+		"lowest": {
+			"name": "English Channel",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Jordan",
@@ -1316,7 +1421,7 @@
 		},
 		"lowest": {
 			"name": "Karagiye",
-			"elevation": null
+			"elevation": -134
 		}
 	},
 	{
@@ -1340,7 +1445,7 @@
 		},
 		"lowest": {
 			"name": "Zuidplaspolder",
-			"elevation": null
+			"elevation": -7
 		}
 	},
 	{
@@ -1364,7 +1469,7 @@
 		},
 		"lowest": {
 			"name": "Kara Darya",
-			"elevation": null
+			"elevation": 435
 		}
 	},
 	{
@@ -1374,18 +1479,21 @@
 			"name": "Gjeravica",
 			"elevation": 2656
 		},
-		"lowest": null
+		"lowest": {
+			"name": "White Drin",
+			"elevation": 297
+		}
 	},
 	{
 		"name": "Kuwait",
 		"area": 17818,
 		"highest": {
-			"name": "unnamed",
-			"elevation": 306
+			"name": "unnamed location",
+			"elevation": 291
 		},
 		"lowest": {
 			"name": "Persian Gulf",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1469,7 +1577,7 @@
 		},
 		"lowest": {
 			"name": "Rhine",
-			"elevation": null
+			"elevation": 430
 		}
 	},
 	{
@@ -1481,7 +1589,7 @@
 		},
 		"lowest": {
 			"name": "Nemunas Delta",
-			"elevation": null
+			"elevation": -5
 		}
 	},
 	{
@@ -1503,7 +1611,10 @@
 			"name": "Alto de Coloane",
 			"elevation": 1706
 		},
-		"lowest": null
+		"lowest": {
+			"name": "South China Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Madagascar",
@@ -1608,7 +1719,10 @@
 			"name": "Mount Pelée",
 			"elevation": 1397
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Mauritania",
@@ -1667,7 +1781,7 @@
 		},
 		"lowest": {
 			"name": "Dniester",
-			"elevation": null
+			"elevation": 2
 		}
 	},
 	{
@@ -1709,8 +1823,14 @@
 	{
 		"name": "Montserrat",
 		"area": 102,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Chances Peak",
+			"elevation": 915
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Morocco",
@@ -1781,8 +1901,14 @@
 	{
 		"name": "New Caledonia",
 		"area": 18576,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Mont Panié",
+			"elevation": 1628
+		},
+		"lowest": {
+			"name": "Coral Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "New Zealand",
@@ -1793,7 +1919,7 @@
 		},
 		"lowest": {
 			"name": "Taieri Plain",
-			"elevation": null
+			"elevation": -2
 		}
 	},
 	{
@@ -1839,13 +1965,22 @@
 			"name": "Niue Highest Point",
 			"elevation": 68
 		},
-		"lowest": null
+		"lowest": {
+			"name": "South Pacific Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Norfolk Island",
 		"area": 34.6,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Mount Bates",
+			"elevation": 319
+		},
+		"lowest": {
+			"name": "South Pacific Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "North Korea",
@@ -1856,7 +1991,7 @@
 		},
 		"lowest": {
 			"name": "Sea of Japan",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1868,7 +2003,7 @@
 		},
 		"lowest": {
 			"name": "Vardar",
-			"elevation": null
+			"elevation": 50
 		}
 	},
 	{
@@ -1876,7 +2011,7 @@
 		"area": 464,
 		"highest": {
 			"name": "Mount Agrihan",
-			"elevation": null
+			"elevation": 965
 		},
 		"lowest": {
 			"name": "Pacific Ocean",
@@ -1892,7 +2027,7 @@
 		},
 		"lowest": {
 			"name": "Norwegian Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1904,7 +2039,7 @@
 		},
 		"lowest": {
 			"name": "Majlis al Jinn",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1916,7 +2051,7 @@
 		},
 		"lowest": {
 			"name": "Arabian Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -1976,7 +2111,7 @@
 		},
 		"lowest": {
 			"name": "Paraguay River",
-			"elevation": null
+			"elevation": 46
 		}
 	},
 	{
@@ -2000,7 +2135,7 @@
 		},
 		"lowest": {
 			"name": "Depresión de Sechura",
-			"elevation": null
+			"elevation": -34
 		}
 	},
 	{
@@ -2012,14 +2147,20 @@
 		},
 		"lowest": {
 			"name": "Philippine Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
 		"name": "Pitcairn Islands",
 		"area": 47,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Pawala Valley Ridge",
+			"elevation": 347
+		},
+		"lowest": {
+			"name": "South Pacific Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Poland",
@@ -2066,7 +2207,7 @@
 		},
 		"lowest": {
 			"name": "Persian Gulf",
-			"elevation": null
+			"elevation": -6
 		}
 	},
 	{
@@ -2102,7 +2243,7 @@
 		},
 		"lowest": {
 			"name": "Black Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -2136,7 +2277,10 @@
 			"name": "Morne du Vitet",
 			"elevation": 286
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Saint Helena, Ascension and Tristan da Cunha",
@@ -2167,7 +2311,7 @@
 		"area": 617.012867,
 		"highest": {
 			"name": "Mount Gimie",
-			"elevation": 950
+			"elevation": 952
 		},
 		"lowest": {
 			"name": "Caribbean Sea",
@@ -2181,7 +2325,10 @@
 			"name": "Morne de la Grande Montagne",
 			"elevation": 240
 		},
-		"lowest": null
+		"lowest": {
+			"name": "North Atlantic Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Saint Vincent and the Grenadines",
@@ -2225,7 +2372,7 @@
 		},
 		"lowest": {
 			"name": "Ausa River",
-			"elevation": null
+			"elevation": 55
 		}
 	},
 	{
@@ -2294,7 +2441,7 @@
 		},
 		"lowest": {
 			"name": "Timok",
-			"elevation": null
+			"elevation": 28
 		}
 	},
 	{
@@ -2318,14 +2465,20 @@
 		},
 		"lowest": {
 			"name": "Singapore Strait",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
 		"name": "Sint Maarten",
 		"area": 34,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "200 m SW of Flagstaff Peak (The summit is wholly in Saint Martin.)",
+			"elevation": 383
+		},
+		"lowest": {
+			"name": "Caribbean Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Syria",
@@ -2406,7 +2559,10 @@
 			"name": "Mount Paget",
 			"elevation": 2934
 		},
-		"lowest": null
+		"lowest": {
+			"name": "South Atlantic Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "South Korea",
@@ -2417,7 +2573,7 @@
 		},
 		"lowest": {
 			"name": "Sea of Japan",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -2441,7 +2597,7 @@
 		},
 		"lowest": {
 			"name": "Mina de Las Cruces",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -2487,7 +2643,10 @@
 			"name": "Newtontoppen",
 			"elevation": 1713
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Norwegian Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Sweden",
@@ -2498,7 +2657,7 @@
 		},
 		"lowest": {
 			"name": "Kristianstad",
-			"elevation": null
+			"elevation": -2
 		}
 	},
 	{
@@ -2520,7 +2679,10 @@
 			"name": "Yushan Main Peak",
 			"elevation": 3952
 		},
-		"lowest": null
+		"lowest": {
+			"name": "Philippine SeaSouth China SeaEast China Sea",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Tajikistan",
@@ -2531,7 +2693,7 @@
 		},
 		"lowest": {
 			"name": "Syr Darya",
-			"elevation": null
+			"elevation": 300
 		}
 	},
 	{
@@ -2555,7 +2717,7 @@
 		},
 		"lowest": {
 			"name": "Andaman Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -2573,7 +2735,10 @@
 	{
 		"name": "The Gambia",
 		"area": 11300,
-		"highest": null,
+		"highest": {
+			"name": "Sare Firasu Hill",
+			"elevation": 51
+		},
 		"lowest": {
 			"name": "Atlantic Ocean",
 			"elevation": 0
@@ -2588,7 +2753,7 @@
 		},
 		"lowest": {
 			"name": "Timor Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -2606,8 +2771,14 @@
 	{
 		"name": "Tokelau",
 		"area": 10,
-		"highest": null,
-		"lowest": null
+		"highest": {
+			"name": "Unnamed location on Nukunonu",
+			"elevation": 5
+		},
+		"lowest": {
+			"name": "South Pacific Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Tonga",
@@ -2666,7 +2837,7 @@
 		},
 		"lowest": {
 			"name": "Black Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -2678,7 +2849,7 @@
 		},
 		"lowest": {
 			"name": "Turan Depression",
-			"elevation": null
+			"elevation": -81
 		}
 	},
 	{
@@ -2688,7 +2859,10 @@
 			"name": "Blue Hills",
 			"elevation": 49
 		},
-		"lowest": null
+		"lowest": {
+			"name": "North Atlantic Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Tuvalu",
@@ -2723,7 +2897,7 @@
 		},
 		"lowest": {
 			"name": "Kuialnyk Liman",
-			"elevation": null
+			"elevation": -5
 		}
 	},
 	{
@@ -2735,7 +2909,7 @@
 		},
 		"lowest": {
 			"name": "Persian Gulf",
-			"elevation": null
+			"elevation": -17
 		}
 	},
 	{
@@ -2747,7 +2921,7 @@
 		},
 		"lowest": {
 			"name": "The Fens",
-			"elevation": null
+			"elevation": -3
 		}
 	},
 	{
@@ -2831,7 +3005,7 @@
 		},
 		"lowest": {
 			"name": "Saint Peter's Square",
-			"elevation": null
+			"elevation": 33
 		}
 	},
 	{
@@ -2843,7 +3017,7 @@
 		},
 		"lowest": {
 			"name": "Lagunillas",
-			"elevation": null
+			"elevation": -12
 		}
 	},
 	{
@@ -2855,7 +3029,7 @@
 		},
 		"lowest": {
 			"name": "South China Sea",
-			"elevation": null
+			"elevation": 0
 		}
 	},
 	{
@@ -2865,7 +3039,10 @@
 			"name": "Mont Puke",
 			"elevation": 524
 		},
-		"lowest": null
+		"lowest": {
+			"name": "South Pacific Ocean",
+			"elevation": 0
+		}
 	},
 	{
 		"name": "Western Sahara",
