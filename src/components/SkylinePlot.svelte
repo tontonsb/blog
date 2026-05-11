@@ -20,10 +20,10 @@
 	let initialized = false
 
 	onMount(async () => {
-		;[{ default: Plotly }, countries, all] = await Promise.all([
+		;[{ default: Plotly }, { default: countries }, { default: all }] = await Promise.all([
 			import('plotly.js-dist-min'),
-			fetch('/data/skylines/countries.json').then(r => r.json()),
-			fetch('/data/skylines/countries-and-dependencies.json').then(r => r.json()),
+			import('$lib/data/skylines/countries.json'),
+			import('$lib/data/skylines/countries-and-dependencies.json'),
 		])
 
 		if (!plotEl) return
