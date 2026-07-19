@@ -14,6 +14,9 @@ let gender = 'm'
 let venueType = 'outdoor'
 
 /** @type string|null */
+let trackType = 'long'
+
+/** @type string|null */
 let discipline = null
 
 /** @type string[] */
@@ -23,10 +26,10 @@ let disciplines = []
 $: edition, gender, venueType, setOptions(), getDisciplines()
 
 // When anything changes -> load the new coefs
-$: edition, gender, venueType, discipline, setOptions(), reload()
+$: edition, gender, venueType, trackType, discipline, setOptions(), reload()
 
 function setOptions() {
-	calc.setOptions({edition, gender, venueType, discipline})
+	calc.setOptions({edition, gender, venueType, trackType, discipline})
 }
 
 function getDisciplines() {
@@ -97,6 +100,12 @@ function guessTrack() {
 		<option value={null}>Venue type</option>
 		<option value="outdoor">Outdoor</option>
 		<option value="indoor">Indoor</option>
+	</select>
+
+	<select bind:value={trackType}>
+		<option value={null}>Track type</option>
+		<option value="long">Long track</option>
+		<option value="short">Short track</option>
 	</select>
 
 	<select bind:value={discipline}>
